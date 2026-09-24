@@ -7,41 +7,11 @@
   "recent_errors_m": [
     0.2523
   ],
-  "active": {
-    "active": true,
-    "event_id": "1790116569370",
-    "mode": "recessao",
-    "status": "rio_em_recessao",
-    "current_level_m": 4.55,
-    "peak_level_m": 6.62,
-    "peak_at": "2026-09-22T16:00:00+00:00",
-    "published_peak_m": 6.8723,
-    "published_peak_in_hours": 0.0,
-    "projected_peak_at_ms": null,
-    "projected_peak_at": null,
-    "peak_window_hours": 0.0,
-    "confidence": 0.9,
-    "update_interval_minutes": 60,
-    "peak_at_ms": 1790092800000,
-    "peak_age_hours": 23.68,
-    "fallen_m": 2.07,
-    "fallen_cm": 207.0,
-    "remaining_post_peak_hours": 0.32,
-    "rain_24h_mm": 0.0,
-    "rain_since_peak_mm": 0.0,
-    "rain_3h_mm": 0.0,
-    "rain_since_peak_last_at": 1790178052165,
-    "rain_since_peak_last_h003": 0.0,
-    "rain_since_peak_started_at": 1790178052165,
-    "new_rain_detected": false,
-    "new_rise_detected": false,
-    "message": "Pico confirmado. Mantido até o encerramento do evento sem gatilho de 5 mm em 3h.",
-    "actual_peak_m": 6.62
-  },
+  "active": null,
   "last_completed": {
     "event_id": "1790116569370",
     "actual_peak_m": 6.62,
     "published_peak_m": 6.8723
   },
-  "updated_at": "2026-09-23T15:40:52.165000+00:00"
+  "updated_at": "2026-09-24T20:22:57.902000+00:00"
 }
