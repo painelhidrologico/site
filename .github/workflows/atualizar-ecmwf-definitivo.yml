@@ -1,0 +1,146 @@
+name: Atualizar ECMWF — 2 rodadas oficiais por dia
+
+on:
+  schedule:
+    - cron: "30 6 * * *"
+    - cron: "30 18 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: atualizar-ecmwf
+  cancel-in-progress: false
+
+jobs:
+  atualizar-ecmwf:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Instalar dependências
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install requests
+
+      - name: Validar script ECMWF
+        run: |
+          python -m py_compile scripts/update_ecmwf.py
+
+      - name: Atualizar ECMWF com tentativas
+        shell: bash
+        run: |
+          set -u
+
+          for attempt in 1 2 3 4 5 6; do
+            echo "Tentativa ECMWF ${attempt}/6"
+
+            if python scripts/update_ecmwf.py; then
+              echo "ECMWF: execução concluída."
+              exit 0
+            fi
+
+            if [ "$attempt" -lt 6 ]; then
+              echo "Nova tentativa em 10 minutos..."
+              sleep 600
+            fi
+          done
+
+          echo "::error::ECMWF não foi atualizado após 6 tentativas."
+          exit 1
+
+      - name: Verificar alterações
+        id: changes
+        run: |
+          if git diff --quiet -- data/ecmwf.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Validar JSON ECMWF
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          p = Path("data/ecmwf.json")
+          d = json.loads(p.read_text(encoding="utf-8"))
+
+          required = (
+              "run_utc",
+              "run_label",
+              "official_runs_per_day",
+              "official_run_hours_utc",
+              "captured_at",
+              "valid_points",
+              "totals",
+          )
+
+          missing = [k for k in required if k not in d]
+
+          if missing:
+              raise SystemExit(
+                  f"JSON ECMWF incompleto: {missing}"
+              )
+
+          if d["official_runs_per_day"] != 2:
+              raise SystemExit(
+                  "ECMWF deve declarar 2 rodadas oficiais/dia"
+              )
+
+          if d["official_run_hours_utc"] != [0, 12]:
+              raise SystemExit(
+                  "Rodadas oficiais esperadas: [0, 12] UTC"
+              )
+
+          if d["run_label"] not in ("00Z", "12Z"):
+              raise SystemExit(
+                  f"Rodada inválida: {d['run_label']}"
+              )
+
+          if int(d["valid_points"]) != 24:
+              raise SystemExit(
+                  f"Esperados 24 pontos válidos; "
+                  f"recebido: {d['valid_points']}"
+              )
+
+          for h in ("12", "24"):
+              if d["totals"].get(h) is None:
+                  raise SystemExit(
+                      f"Total ECMWF ausente para {h}h"
+                  )
+
+          print(
+              "JSON ECMWF validado:",
+              d["run_utc"],
+              d["run_label"]
+          )
+          PY
+
+      - name: Publicar nova rodada ECMWF
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add data/ecmwf.json
+
+          git commit -m "Atualiza rodada oficial ECMWF"
+
+          git push
+
+      - name: Nenhuma nova rodada
+        if: steps.changes.outputs.changed == 'false'
+        run: |
+          echo "Nenhuma alteração em data/ecmwf.json."
+          echo "A rodada atual permanece mantida até a próxima rodada oficial."
