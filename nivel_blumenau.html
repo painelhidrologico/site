@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitor do Rio Itajaí-Açu | Blumenau</title>
+    <meta name="description" content="Monitoramento em tempo real do nível do Rio Itajaí-Açu em Blumenau, SC. Dados oficiais da Defesa Civil com histórico de 24h.">
+    
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- Chart.js para o Gráfico -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        :root {
+            --primary: #2563eb;
+            --success: #16a34a;
+            --warning: #ca8a04;
+            --danger: #dc2626;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text: #1e293b;
+            --text-light: #64748b;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: var(--card-bg);
+            width: 100%;
+            max-width: 520px;
+            border-radius: 24px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            overflow: hidden;
+            text-align: center;
+            position: relative;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+            color: white;
+            padding: 25px 20px;
+        }
+
+        .header h1 { font-size: 1.4rem; font-weight: 800; margin-bottom: 3px; }
+        .header p { opacity: 0.9; font-size: 0.85rem; }
+
+        .content { padding: 25px 20px; }
+
+        .level-display {
+            margin: 10px 0;
+            position: relative;
+        }
+
+        .level-value {
+            font-size: 4.5rem;
+            font-weight: 800;
+            line-height: 1;
+            color: var(--text);
+            letter-spacing: -2px;
+        }
+
+        .level-unit {
+            font-size: 1.4rem;
+            color: var(--text-light);
+            font-weight: 600;
+            vertical-align: super;
+        }
+
+        .status-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-top: 8px;
+        }
+
+        .status-normal { background: #dcfce7; color: var(--success); }
+        .status-observacao { background: #dbeafe; color: #1d4ed8; }
+        .status-atencao { background: #fef3c7; color: #b45309; }
+        .status-alerta { background: #ffedd5; color: #c2410c; }
+        .status-critico { background: #fee2e2; color: var(--danger); animation: pulse-red 2s infinite; }
+
+        .details {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #e2e8f0;
+            font-size: 0.82rem;
+            color: var(--text-light);
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .details p {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .variation-up { color: var(--danger); font-weight: 600; }
+        .variation-down { color: var(--success); font-weight: 600; }
+        .variation-stable { color: var(--text-light); font-weight: 600; }
+
+        .chart-legend {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 15px;
+            font-size: 0.75rem;
+            color: var(--text-light);
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .legend-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+
+        .chart-container {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #e2e8f0;
+            position: relative;
+            width: 100%;
+            height: 200px;
+        }
+
+        .loading-spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid #e2e8f0;
+            border-top-color: var(--primary);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 40px auto;
+        }
+
+        .error-box {
+            background: #fef2f2;
+            color: var(--danger);
+            padding: 20px;
+            border-radius: 12px;
+            margin: 20px 0;
+            font-size: 0.9rem;
+        }
+
+        .btn-retry {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: transform 0.1s;
+        }
+        .btn-retry:active { transform: scale(0.98); }
+
+        footer {
+            margin-top: 25px;
+            font-size: 0.75rem;
+            color: #94a3b8;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+        @keyframes spin { to { transform: rotate(360deg); } }
+        @keyframes pulse-red {
+            0% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.4); }
+            70% { box-shadow: 0 0 0 10px rgba(220, 38, 38, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0); }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root { --bg: #0f172a; --card-bg: #1e293b; --text: #f1f5f9; --text-light: #94a3b8; }
+            .level-value { color: #f1f5f9; }
+            .details, .chart-container { border-color: #334155; }
+            .status-normal { background: #14532d; color: #86efac; }
+            .status-observacao { background: #1e3a8a; color: #bfdbfe; }
+            .status-atencao { background: #78350f; color: #fde68a; }
+            .status-alerta { background: #7c2d12; color: #fed7aa; }
+            .status-critico { background: #7f1d1d; color: #fca5a5; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Rio Itajaí-Açu</h1>
+            <p>Blumenau, Santa Catarina</p>
+        </div>
+
+        <div class="content" id="main-content">
+            <div class="loading-spinner"></div>
+            <p style="color: var(--text-light); margin-top: 15px;">Conectando aos sensores...</p>
+        </div>
+    </div>
+
+    <footer>
+        Fonte: Defesa Civil de Blumenau<br>
+        Atualização automática a cada 1 hora
+    </footer>
+
+    <script>
+        const TARGET_URL = 'https://defesacivil.blumenau.sc.gov.br/static/data/nivel_oficial.json';
+        
+        const SOURCES = [
+            { name: 'Direto', url: TARGET_URL },
+            { name: 'CorsProxy.io', url: `https://corsproxy.io/?${encodeURIComponent(TARGET_URL)}` },
+            { name: 'Jina Reader', url: `https://r.jina.ai/${TARGET_URL}` }
+        ];
+
+        const contentDiv = document.getElementById('main-content');
+        let chartInstance = null;
+
+        async function tryFetchData() {
+            contentDiv.innerHTML = `<div class="loading-spinner"></div><p style="color:var(--text-light);margin-top:15px">Buscando dados e histórico...</p>`;
+            
+            for (const source of SOURCES) {
+                try {
+                    const controller = new AbortController();
+                    const timeoutId = setTimeout(() => controller.abort(), 8000);
+
+                    const response = await fetch(source.url, { signal: controller.signal });
+                    clearTimeout(timeoutId);
+
+                    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+                    let data;
+                    if (source.name === 'Jina Reader') {
+                        const text = await response.text();
+                        const jsonMatch = text.match(/\{[\s\S]*\}/);
+                        if (!jsonMatch) throw new Error('Formato inválido do Jina');
+                        data = JSON.parse(jsonMatch[0]);
+                    } else {
+                        data = await response.json();
+                    }
+
+                    if (data && data.niveis && data.niveis.length > 0) {
+                        renderDataAndChart(data);
+                        return;
+                    } else {
+                        throw new Error('Dados vazios ou formato inesperado');
+                    }
+
+                } catch (err) {
+                    console.warn(`Falha na fonte ${source.name}:`, err.message);
+                    continue;
+                }
+            }
+
+            showError();
+        }
+
+        function renderDataAndChart(data) {
+            const todasLeituras = [...data.niveis].sort((a, b) => {
+                return new Date(a.horaLeitura) - new Date(b.horaLeitura);
+            });
+
+            const ultimaLeituraGlobal = todasLeituras[todasLeituras.length - 1];
+            const penúltimaLeitura = todasLeituras.length > 1 ? todasLeituras[todasLeituras.length - 2] : ultimaLeituraGlobal;
+
+            const ultimaDataObj = new Date(ultimaLeituraGlobal.horaLeitura);
+            const limite24h = new Date(ultimaDataObj.getTime() - (24 * 60 * 60 * 1000));
+
+            const leituras24h = todasLeituras.filter(item => new Date(item.horaLeitura) >= limite24h);
+
+            const nivelAtual = parseFloat(ultimaLeituraGlobal.nivel);
+            const nivelAnterior = parseFloat(penúltimaLeitura.nivel);
+            const diff = nivelAtual - nivelAnterior;
+
+            // Compartilha o dado numérico com o painel principal.
+            // A calculadora usa esta mesma leitura oficial do monitor, sem depender do DOM do iframe.
+            if (window.parent && window.parent !== window) {
+                window.parent.postMessage({
+                    type: 'blumenau-river-update',
+                    level: nivelAtual,
+                    previousLevel: nivelAnterior,
+                    trend: diff,
+                    updated: ultimaLeituraGlobal.horaLeitura,
+                    history: leituras24h.map(item => ({
+                        t: item.horaLeitura,
+                        level: parseFloat(item.nivel)
+                    })).filter(item => Number.isFinite(item.level))
+                }, window.location.origin);
+            }
+
+            let varText = 'Estável';
+            let varClass = 'variation-stable';
+            if (diff > 0.001) {
+                varText = `+${diff.toFixed(2)}m (Subiu)`;
+                varClass = 'variation-up';
+            } else if (diff < -0.001) {
+                varText = `${diff.toFixed(2)}m (Desceu)`;
+                varClass = 'variation-down';
+            }
+
+            const condicao = data.condicao ? data.condicao.trim() : "";
+            const mostrarCondicao = condicao && condicao.toLowerCase() !== "sem informação" && condicao.toLowerCase() !== "normalidade";
+
+            // Classificação dinâmica pelas cotas oficiais do AlertaBlu.
+            // 0–<3 m: Normalidade | 3–<4 m: Observação | 4–<6 m: Atenção |
+            // 6–<8 m: Alerta | acima de 8 m: Alerta Máximo.
+            let statusClass = 'status-normal';
+            let statusText = 'NORMALIDADE';
+            if (nivelAtual >= 3 && nivelAtual < 4) {
+                statusClass = 'status-observacao';
+                statusText = 'OBSERVAÇÃO';
+            } else if (nivelAtual >= 4 && nivelAtual < 6) {
+                statusClass = 'status-atencao';
+                statusText = 'ATENÇÃO';
+            } else if (nivelAtual >= 6 && nivelAtual < 8) {
+                statusClass = 'status-alerta';
+                statusText = 'ALERTA';
+            } else if (nivelAtual >= 8) {
+                statusClass = 'status-critico';
+                statusText = 'ALERTA MÁXIMO';
+            }
+
+            const formattedDate = ultimaDataObj.toLocaleString('pt-BR', {
+                day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit'
+            });
+
+            contentDiv.innerHTML = `
+                <div class="level-display">
+                    <span class="level-value">${nivelAtual.toFixed(2)}</span>
+                    <span class="level-unit">m</span>
+                </div>
+                
+                <div class="status-badge ${statusClass}">
+                    ${statusText}
+                </div>
+
+                <div class="details">
+                    ${mostrarCondicao ? `<p><span>Condição:</span> <strong>${condicao}</strong></p>` : ''}
+                    <p><span>Última leitura:</span> <strong>${formattedDate}</strong></p>
+                    <p><span>Variação recente:</span> <strong class="${varClass}">${varText}</strong></p>
+                </div>
+
+                <div class="chart-legend">
+                    <div class="legend-item"><div class="legend-dot" style="background:#16a34a"></div> Desceu / Estável</div>
+                    <div class="legend-item"><div class="legend-dot" style="background:#dc2626"></div> Subiu</div>
+                </div>
+
+                <div class="chart-container">
+                    <canvas id="riverChart"></canvas>
+                </div>
+            `;
+
+            const labels = leituras24h.map(item => {
+                const d = new Date(item.horaLeitura);
+                return d.toLocaleString('pt-BR', { 
+                    day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' 
+                });
+            });
+
+            const valores = leituras24h.map(item => parseFloat(item.nivel));
+
+            const pointColors = valores.map((val, index) => {
+                if (index === 0) return '#16a34a';
+                return val > valores[index - 1] ? '#dc2626' : '#16a34a';
+            });
+
+            if (chartInstance) {
+                chartInstance.destroy();
+            }
+
+            const ctx = document.getElementById('riverChart').getContext('2d');
+            const isDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const gridColor = isDark ? '#334155' : '#e2e8f0';
+            const fontColor = isDark ? '#94a3b8' : '#64748b';
+
+            chartInstance = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Nível (m)',
+                        data: valores,
+                        borderColor: '#3b82f6',
+                        backgroundColor: 'rgba(59, 130, 246, 0.08)',
+                        borderWidth: 2,
+                        fill: true,
+                        tension: 0.2,
+                        cubicInterpolationMode: 'monotone',
+                        pointRadius: 4.5,
+                        pointBackgroundColor: pointColors,
+                        pointBorderColor: '#ffffff',
+                        pointBorderWidth: 1.5,
+                        pointHoverRadius: 7
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: {
+                            backgroundColor: isDark ? 'rgba(30, 41, 59, 0.95)' : 'rgba(15, 23, 42, 0.9)',
+                            titleFont: { size: 12, weight: 'bold' },
+                            bodyFont: { size: 13 },
+                            padding: 10,
+                            callbacks: {
+                                title: (context) => `Data: ${context[0].label}`,
+                                label: (context) => ` Nível: ${context.parsed.y.toFixed(2)} m`
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            grid: { display: false },
+                            ticks: { display: false }
+                        },
+                        y: {
+                            min: 0,
+                            max: Math.max(5, Math.ceil(Math.max(...valores, 0))),
+                            grid: { color: gridColor },
+                            ticks: {
+                                stepSize: 1,
+                                color: fontColor,
+                                font: { size: 10 },
+                                callback: (value) => value === 0 ? '' : `${value} m`
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        function showError() {
+            contentDiv.innerHTML = `
+                <div class="error-box">
+                    <p><strong>Não foi possível obter os dados.</strong></p>
+                    <p style="font-size:0.8rem; margin-top:5px; opacity:0.8">O servidor da Defesa Civil pode estar indisponível ou bloqueando acessos externos no momento.</p>
+                </div>
+                <button class="btn-retry" onclick="tryFetchData()">Tentar Novamente</button>
+            `;
+        }
+
+        tryFetchData();
+        setInterval(tryFetchData, 120000);
+    </script>
+</body>
+</html>
+

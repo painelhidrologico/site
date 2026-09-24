@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#eaf3f7">
+<meta name="description" content="Painel público de monitoramento de chuva do Alto e Médio Vale do Itajaí.">
+<title>Monitoramento | Vale do Itajaí</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="top-glow"></div>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">
+      <div class="brand-mark" aria-hidden="true"><span>≈</span></div>
+      <div>
+        <div class="eyebrow">MONITORAMENTO HIDROMETEOROLÓGICO</div>
+        <h1>Vale do Itajaí</h1>
+        <p>Chuva em tempo real · Alto + Médio Vale</p>
+      </div>
+    </div>
+    <button id="refresh" class="refresh-btn" type="button"><span class="refresh-icon">↻</span> Atualizar</button>
+  </div>
+</header>
+
+<main class="page-shell">
+
+  <!-- Status técnico mantido para o JavaScript, oculto para deixar a página mais objetiva. -->
+  <section id="status" class="status compact-hidden" aria-live="polite">Conectando ao WebSocket oficial…</section>
+
+  <!-- Resumo técnico das estações mantido em segundo plano; não ocupa espaço na interface. -->
+  <section class="kpi-grid compact-hidden" aria-label="Resumo da rede">
+    <article class="kpi-card"><div class="kpi-icon">◉</div><div><strong id="received">0</strong><span>estações recebidas</span></div></article>
+    <article class="kpi-card"><div class="kpi-icon rain-icon">☁</div><div><strong id="rainCount">0</strong><span>com dados de chuva</span></div></article>
+    <article class="kpi-card"><div class="kpi-icon selected-icon">✓</div><div><strong id="selectedCount">0</strong><span>estações monitoradas</span></div></article>
+  </section>
+
+
+  <section class="panel-section rain-overview-section">
+    <div class="compact-rain-heading">
+      <div>
+        <div class="section-kicker">MONITORAMENTO EM TEMPO REAL</div>
+        <h2>Chuva no Vale do Itajaí</h2>
+      </div>
+      <div class="compact-live-pill"><span></span> AO VIVO</div>
+    </div>
+    <article id="rainNowCard" class="rain-now-card rain-now-none" aria-live="polite">
+      <div class="rain-now-visual" aria-hidden="true">
+        <div class="rain-cloud"><span></span><span></span><span></span><span></span><i></i></div>
+      </div>
+      <div class="rain-now-content">
+        <div class="rain-now-kicker">CHUVA AGORA · MÉDIA DA REDE</div>
+        <div id="rainNowLabel" class="rain-now-label">SEM CHUVA REGISTRADA NO MOMENTO</div>
+        <strong id="rainNowValue">0,0 <em>mm/h</em></strong>
+        <p id="rainNowMeta">Média móvel dos últimos 30 minutos · aguardando as estações</p>
+      </div>
+      <div id="rainNowStatus" class="rain-now-status">SEM CHUVA</div>
+    </article>
+  </section>
+
+  <section class="panel-section rain-accumulated-section">
+    <div class="section-title-row">
+      <div>
+        <div class="section-kicker">VISÃO REGIONAL</div>
+        <h2>Chuva média <span>— Alto + Médio Vale</span></h2>
+      </div>
+      <div class="source-badge">Defesa Civil SC</div>
+    </div>
+    <p id="selectionInfo" class="section-note">Aguardando dados. A conexão usa o WebSocket oficial, sem proxy.</p>
+    <div id="rainCards" class="grid rain-grid"></div>
+    <div class="method-note"><span>i</span><div><strong>Acumulados oficiais</strong><br>Os períodos exibidos são obtidos diretamente da rede estadual de monitoramento.</div></div>
+  </section>
+
+  <section class="panel-section river-monitor-section">
+    <div class="section-title-row">
+      <div>
+        <div class="section-kicker">NÍVEL DO RIO</div>
+        <h2>Monitor do Rio Itajaí-Açu <span>— Blumenau</span></h2>
+      </div>
+      <div class="network-pill"><span></span> Monitor ativo</div>
+    </div>
+    <div class="river-frame-wrap">
+      <iframe class="river-frame blumenau-frame" src="nivel_blumenau.html" title="Monitor do Rio Itajaí-Açu em Blumenau" loading="eager" scrolling="no"></iframe>
+    </div>
+
+  </section>
+
+  <section class="panel-section calculator-section">
+    <article id="riverCalculator" class="river-calc-card" aria-live="polite">
+      <div class="river-calc-head">
+        <div>
+          <div class="river-calc-kicker">CALCULADORA EXPERIMENTAL · ITAJAÍ-AÇU</div>
+          <h3>Projeção dinâmica do nível em Blumenau</h3>
+          <p>Aguardando o nível do rio e os acumulados de chuva.</p>
+        </div>
+        <span class="river-calc-badge waiting">AGUARDANDO DADOS</span>
+      </div>
+    </article>
+  </section>
+
+  <section class="panel-section event-history-section">
+    <article id="hydroEventHistoryCard" class="hydro-history-card" aria-live="polite">
+      <div class="hydro-history-head">
+        <div>
+          <div class="hydro-history-kicker">HISTÓRICO · EVENTOS REGISTRADOS</div>
+          <h3>Eventos hidrológicos — Blumenau</h3>
+          <p>Consulte os eventos reais registrados e a evolução do rio.</p>
+        </div>
+        <span id="hydroHistoryCount" class="hydro-history-count">— eventos</span>
+      </div>
+      <button id="openHydroHistory" class="hydro-history-access" type="button">
+        <span class="hydro-history-access-icon">↗</span>
+        <span><strong>Acessar histórico de eventos</strong><small>Ver eventos em ordem de data</small></span>
+        <span class="hydro-history-access-arrow">›</span>
+      </button>
+      <div class="hydro-history-meta">Os eventos ficam armazenados automaticamente conforme novos registros são fechados.</div>
+    </article>
+  </section>
+
+  <div id="hydroHistoryModal" class="hydro-history-modal" aria-hidden="true">
+    <div class="hydro-history-backdrop" data-close-hydro-history></div>
+    <section class="hydro-history-dialog" role="dialog" aria-modal="true" aria-labelledby="hydroHistoryModalTitle">
+      <header class="hydro-history-modal-head">
+        <div>
+          <div class="hydro-history-kicker">HISTÓRICO · EVENTOS REGISTRADOS</div>
+          <h3 id="hydroHistoryModalTitle">Eventos hidrológicos — Blumenau</h3>
+          <p>Selecione um evento para visualizar todos os dados registrados.</p>
+        </div>
+        <button class="hydro-history-close" type="button" data-close-hydro-history aria-label="Fechar histórico">×</button>
+      </header>
+      <div id="hydroHistoryBody" class="hydro-history-body">
+        <div class="hydro-history-empty">Carregando histórico de eventos…</div>
+      </div>
+    </section>
+  </div>
+
+
+
+<section class="panel-section forecast-section">
+    <article id="rainForecastCard" class="rain-forecast-card" aria-live="polite">
+      <div class="rain-forecast-head">
+        <div>
+          <div class="rain-forecast-kicker">PREVISÃO · BACIA DO ITAJAÍ-AÇU</div>
+          <h3>Previsão de chuva acumulada</h3>
+          <p>ECMWF IFS · média espacial de toda a bacia entre o Alto Vale e Blumenau</p>
+        </div>
+        <span id="rainForecastStatus" class="rain-forecast-status">CONSULTANDO</span>
+      </div>
+      <div class="rain-forecast-grid rain-forecast-periods">
+        <div class="rain-forecast-total"><small>MÉDIA · PRÓXIMAS 12 HORAS</small><strong id="rainForecast12">—</strong><span>mm acumulados</span></div>
+        <div class="rain-forecast-total"><small>MÉDIA · PRÓXIMAS 24 HORAS</small><strong id="rainForecast24">—</strong><span>mm acumulados</span></div>
+        <div class="rain-forecast-total"><small>MÉDIA · PRÓXIMAS 48 HORAS</small><strong id="rainForecast48">—</strong><span>mm acumulados</span></div>
+        <div class="rain-forecast-total"><small>MÉDIA · PRÓXIMAS 72 HORAS</small><strong id="rainForecast72">—</strong><span>mm acumulados</span></div>
+        <div class="rain-forecast-total"><small>MÉDIA · PRÓXIMOS 8 DIAS</small><strong id="rainForecast8d">—</strong><span>mm acumulados</span></div>
+        <div class="rain-forecast-total"><small>MÉDIA · PRÓXIMOS 15 DIAS</small><strong id="rainForecast15d">—</strong><span>mm acumulados</span></div>
+      </div>
+      <div id="rainForecastMeta" class="rain-forecast-meta">Aguardando a previsão ECMWF.</div>
+    </article>
+  </section>
+
+
+
+
+
+
+
+  <section class="panel-section dams-section">
+    <div class="section-title-row">
+      <div>
+        <div class="section-kicker">BARRAGENS DO ALTO VALE</div>
+        <h2>Nível das barragens <span>— José Boiteux + Ituporanga + Taió</span></h2>
+      </div>
+      <div class="network-pill"><span></span> Defesa Civil SC</div>
+    </div>
+    <p class="section-note">Níveis, capacidade e situação das comportas, obtidos diretamente da rede oficial da Defesa Civil SC. Atualização automática a cada minuto.</p>
+    <div id="damCards" class="dam-cards"></div>
+  </section>
+
+
+
+  <section class="panel-section river-camera-section">
+    <div class="section-title-row">
+      <div>
+        <div class="section-kicker">TRANSMISSÃO AO VIVO</div>
+        <h2>Rio Itajaí-Açu <span>— Blumenau</span></h2>
+      </div>
+      <div class="network-pill camera-live-pill"><span></span> AO VIVO</div>
+    </div>
+    <p class="section-note">Câmera ao vivo do Rio Itajaí-Açu em Blumenau.</p>
+    <div class="river-camera-card">
+      <div class="river-camera-video-wrap">
+        <video
+          id="blumenauCamera"
+          class="river-camera-video"
+          controls
+          autoplay
+          muted
+          playsinline
+          preload="auto"
+          poster=""
+          aria-label="Transmissão ao vivo do Rio Itajaí-Açu em Blumenau">
+        </video>
+        <div id="cameraLoading" class="camera-overlay">Conectando à transmissão…</div>
+      </div>
+      <div class="river-camera-footer">
+        <span class="camera-source-dot"></span>
+        <span>Clube Náutico América · BNU.tv</span>
+        <span id="cameraStatus" class="camera-status">Conectando</span>
+      </div>
+    </div>
+
+    <div class="river-camera-card river-camera-youtube-card">
+      <div class="river-camera-video-wrap">
+        <iframe
+          class="river-camera-video river-camera-youtube"
+          src="https://www.youtube.com/embed/luJMi327bkM?autoplay=1&mute=1&playsinline=1&rel=0"
+          title="Câmera ao vivo — Rio Itajaí-Açu em Blumenau"
+          loading="lazy"
+          allow="autoplay; encrypted-media; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="river-camera-footer">
+        <span class="camera-source-dot"></span>
+        <span>Câmera ao vivo · YouTube</span>
+        <span class="camera-status is-live">AO VIVO</span>
+      </div>
+    </div>
+  </section>
+
+  
+
+
+
+  <!-- Lista detalhada de estações permanece no DOM para não interferir na coleta/cálculo, mas fica oculta na interface principal. -->
+  <section class="panel-section stations-section compact-hidden">
+    <div class="section-title-row">
+      <div>
+        <div class="section-kicker">REDE DE ESTAÇÕES</div>
+        <h2>Estações de chuva</h2>
+      </div>
+      <div class="network-pill"><span></span> Rede conectada</div>
+    </div>
+    <p class="section-note">Rede fixa de monitoramento: 42 municípios — 28 do Alto Vale (AMAVI) e 14 do Médio Vale (AMVE). Todas as estações elegíveis entram automaticamente no cálculo regional.</p>
+    <div id="stations" class="stations"></div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div><strong>Monitoramento do Vale do Itajaí</strong><span>Fonte: Rede Integrada de Monitoramento da Secretaria da Proteção e Defesa Civil de Santa Catarina.</span></div>
+    <div class="footer-tech">WebSocket oficial · sem proxy</div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+<script>
+(() => {
+  const video = document.getElementById('blumenauCamera');
+  const loading = document.getElementById('cameraLoading');
+  const status = document.getElementById('cameraStatus');
+  if (!video) return;
+
+  const streamUrl = 'https://5a8d73edc0407.streamlock.net:443/bnutv20/bnutv2004.stream/playlist.m3u8';
+  let hls = null;
+
+  const setStatus = (text, live = false) => {
+    status.textContent = text;
+    status.classList.toggle('is-live', live);
+  };
+
+  const hideLoading = () => {
+    loading.classList.add('is-hidden');
+  };
+
+  const showError = () => {
+    loading.textContent = 'Não foi possível carregar a transmissão agora.';
+    loading.classList.remove('is-hidden');
+    setStatus('Indisponível');
+  };
+
+  video.addEventListener('playing', () => {
+    hideLoading();
+    setStatus('AO VIVO', true);
+  });
+
+  video.addEventListener('waiting', () => {
+    loading.textContent = 'Carregando transmissão…';
+    loading.classList.remove('is-hidden');
+    setStatus('Carregando');
+  });
+
+  video.addEventListener('error', showError);
+
+  if (video.canPlayType('application/vnd.apple.mpegurl')) {
+    video.src = streamUrl;
+    video.addEventListener('loadedmetadata', () => {
+      video.play().catch(() => {});
+    }, { once: true });
+  } else if (window.Hls && Hls.isSupported()) {
+    hls = new Hls({
+      enableWorker: true,
+      lowLatencyMode: true,
+      liveSyncDurationCount: 3,
+      maxLiveSyncPlaybackRate: 1.5
+    });
+
+    hls.loadSource(streamUrl);
+    hls.attachMedia(video);
+
+    hls.on(Hls.Events.MANIFEST_PARSED, () => {
+      video.play().catch(() => {});
+    });
+
+    hls.on(Hls.Events.ERROR, (_, data) => {
+      if (data && data.fatal) {
+        if (data.type === Hls.ErrorTypes.NETWORK_ERROR) {
+          setStatus('Reconectando');
+          hls.startLoad();
+        } else if (data.type === Hls.ErrorTypes.MEDIA_ERROR) {
+          hls.recoverMediaError();
+        } else {
+          showError();
+        }
+      }
+    });
+  } else {
+    showError();
+  }
+
+  window.addEventListener('beforeunload', () => {
+    if (hls) hls.destroy();
+  });
+})();
+</script>
+<script src="app.js?v=20260907-10"></script>
+
+</body>
+</html>
