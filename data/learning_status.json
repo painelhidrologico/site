@@ -1,9 +1,9 @@
 {
   "version": 12,
-  "updated_at": "2026-09-24T22:53:53.223153+00:00",
-  "evaluated": 5480,
+  "updated_at": "2026-09-24T23:12:51.341133+00:00",
+  "evaluated": 5483,
   "mae_m": {
-    "2": 0.1165,
+    "2": 0.1163,
     "4": 0.2093,
     "6": 0.303,
     "12": 0.5488,
@@ -12,15 +12,12 @@
   },
   "metrics_by_horizon": {
     "2": {
-      "evaluated": 1040,
-      "sum_abs_error": 121.10969999999988,
-      "sum_error": -17.906699999999972,
-      "mae_m": 0.1165,
-      "bias_m": -0.0172,
+      "evaluated": 1043,
+      "sum_abs_error": 121.31969999999987,
+      "sum_error": -17.696699999999975,
+      "mae_m": 0.1163,
+      "bias_m": -0.017,
       "recent_abs_errors": [
-        0.098,
-        0.03,
-        0.03,
         0.03,
         0.08,
         0.006,
@@ -67,12 +64,12 @@
         0.072,
         0.072,
         0.022,
-        0.04
+        0.04,
+        0.08,
+        0.08,
+        0.05
       ],
       "recent_errors": [
-        0.098,
-        -0.03,
-        -0.03,
         -0.03,
         0.08,
         -0.006,
@@ -119,12 +116,12 @@
         0.072,
         0.072,
         -0.022,
-        0.04
+        0.04,
+        0.08,
+        0.08,
+        0.05
       ],
       "recent_persistence_errors": [
-        0.31,
-        0.19,
-        0.19,
         0.19,
         0.3,
         0.21,
@@ -171,7 +168,10 @@
         0.24,
         0.24,
         0.15,
-        0.04
+        0.04,
+        0.08,
+        0.08,
+        0.08
       ]
     },
     "4": {
@@ -864,7 +864,7 @@
     "24": 1.0
   },
   "bias_correction": {
-    "2": -0.00833,
+    "2": -0.00953,
     "4": -0.01127,
     "6": -0.00073,
     "8": 0.05085,
@@ -891,17 +891,17 @@
     "h003": {
       "stations": 48,
       "cities": 35,
-      "value": 0.02142857164144516
+      "value": 0.01885714302105563
     },
     "h006": {
       "stations": 48,
       "cities": 35,
-      "value": 0.040714285629136225
+      "value": 0.03728571449007307
     },
     "h012": {
       "stations": 48,
       "cities": 35,
-      "value": 0.08795238180706899
+      "value": 0.08752381065416905
     },
     "h024": {
       "stations": 48,
@@ -916,7 +916,7 @@
     "h096": {
       "stations": 48,
       "cities": 35,
-      "value": 54.179047648111975
+      "value": 54.17876187279111
     }
   },
   "spatial_rain": {
@@ -1031,7 +1031,7 @@
       },
       "Rio do Sul": {
         "h003": 0.07,
-        "h006": 0.24,
+        "h006": 0.19,
         "h012": 0.47,
         "h024": 0.67
       },
@@ -1056,7 +1056,7 @@
       "Trombudo Central": {
         "h003": 0.0,
         "h006": 0.0,
-        "h012": 0.005,
+        "h012": 0.0,
         "h024": 0.005
       },
       "Vidal Ramos": {
@@ -1066,7 +1066,7 @@
         "h024": 0.0
       },
       "Vitor Meireles": {
-        "h003": 0.1,
+        "h003": 0.01,
         "h006": 0.15,
         "h012": 0.15,
         "h024": 0.24
@@ -1103,8 +1103,8 @@
       },
       "Indaial": {
         "h003": 0.06,
-        "h006": 0.48,
-        "h012": 0.92,
+        "h006": 0.41,
+        "h012": 0.91,
         "h024": 1.04
       },
       "Pomerode": {
@@ -1134,15 +1134,15 @@
     },
     "regions": {
       "alto": {
-        "h003": 0.026,
-        "h006": 0.034,
-        "h012": 0.081,
+        "h003": 0.022,
+        "h006": 0.032,
+        "h012": 0.08,
         "h024": 0.158
       },
       "medio": {
         "h003": 0.009,
-        "h006": 0.059,
-        "h012": 0.109,
+        "h006": 0.052,
+        "h012": 0.108,
         "h024": 0.124
       }
     },
@@ -1969,7 +1969,7 @@
       "baseline_level": 2.55,
       "pattern": "10_30mm_3h_long"
     },
-    "updated_at": "2026-09-24T22:53:52.880012+00:00",
+    "updated_at": "2026-09-24T23:12:51.184280+00:00",
     "awaiting_rain_reset": false,
     "last_rain_episode": {
       "started_at": 1789813610146,
@@ -2329,23 +2329,23 @@
     "active": true,
     "mode": "recessao",
     "status": "rio_em_recessao",
-    "current_level_m": 3.91,
+    "current_level_m": 3.87,
     "peak_level_m": 3.95,
     "peak_at_ms": 1790280000000,
     "peak_source": "observed_post_peak",
-    "latest_reading_at_ms": 1790287200000,
-    "readings_used": 3,
-    "drop_intervals_used": 2,
-    "fall_rate_m_h": 0.02,
-    "fall_rate_cm_h": 2.0,
-    "rain_3h_mm": 0.021,
+    "latest_reading_at_ms": 1790290800000,
+    "readings_used": 4,
+    "drop_intervals_used": 3,
+    "fall_rate_m_h": 0.02667,
+    "fall_rate_cm_h": 2.67,
+    "rain_3h_mm": 0.019,
     "rain_24h_mm": 0.149,
     "projections": {
-      "2": 3.87,
-      "4": 3.83,
-      "6": 3.79,
-      "8": 3.75,
-      "12": 3.67
+      "2": 3.8167,
+      "4": 3.7633,
+      "6": 3.71,
+      "8": 3.6567,
+      "12": 3.55
     },
     "message": "Recessão projetada pelas leituras observadas. O encerramento do estado de pico não reativa o pico; apenas permite a projeção pós-pico enquanto a queda permanece confirmada."
   },
