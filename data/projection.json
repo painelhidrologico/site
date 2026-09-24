@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-09-24T22:30:30.965000+00:00",
+  "generated_at": "2026-09-24T22:53:52.879000+00:00",
   "river_timestamp": "2026-09-24T22:00:00+00:00",
   "current": 3.91,
   "pred": {
@@ -18,7 +18,7 @@
       "fall_rate_cm_h": 2.0,
       "readings_used": 3,
       "drop_intervals_used": 2,
-      "rain_3h_mm": 0.023,
+      "rain_3h_mm": 0.021,
       "rain_24h_mm": 0.149
     },
     "4": {
@@ -28,7 +28,7 @@
       "fall_rate_cm_h": 2.0,
       "readings_used": 3,
       "drop_intervals_used": 2,
-      "rain_3h_mm": 0.023,
+      "rain_3h_mm": 0.021,
       "rain_24h_mm": 0.149
     },
     "6": {
@@ -38,7 +38,7 @@
       "fall_rate_cm_h": 2.0,
       "readings_used": 3,
       "drop_intervals_used": 2,
-      "rain_3h_mm": 0.023,
+      "rain_3h_mm": 0.021,
       "rain_24h_mm": 0.149
     },
     "8": {
@@ -48,7 +48,7 @@
       "fall_rate_cm_h": 2.0,
       "readings_used": 3,
       "drop_intervals_used": 2,
-      "rain_3h_mm": 0.023,
+      "rain_3h_mm": 0.021,
       "rain_24h_mm": 0.149
     },
     "12": {
@@ -58,7 +58,7 @@
       "fall_rate_cm_h": 2.0,
       "readings_used": 3,
       "drop_intervals_used": 2,
-      "rain_3h_mm": 0.023,
+      "rain_3h_mm": 0.021,
       "rain_24h_mm": 0.149
     }
   },
@@ -101,7 +101,7 @@
       "24": 1.0
     },
     "bias_correction": {
-      "2": -0.00804,
+      "2": -0.00833,
       "4": -0.01127,
       "6": -0.00073,
       "8": 0.05085,
@@ -158,7 +158,7 @@
       "drop_intervals_used": 2,
       "fall_rate_m_h": 0.02,
       "fall_rate_cm_h": 2.0,
-      "rain_3h_mm": 0.023,
+      "rain_3h_mm": 0.021,
       "rain_24h_mm": 0.149,
       "projections": {
         "2": 3.87,
@@ -171,6 +171,6 @@
     },
     "peak_uses_24h_prediction": false,
     "learned_delay_hours": 6.527,
-    "evaluated": 5479
+    "evaluated": 5480
   }
 }
