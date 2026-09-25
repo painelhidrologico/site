@@ -1,0 +1,472 @@
+name: Aprendizado da calculadora do rio
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "* * * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: smart-calculator-learning
+  cancel-in-progress: false
+
+jobs:
+  learn:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependências
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install requests websockets pillow pytesseract
+
+      # ==========================================================
+      # VALIDAR CÓDIGO PYTHON
+      # ==========================================================
+
+      - name: Validar scripts Python
+        run: |
+          set -e
+
+          python -m py_compile \
+            scripts/collect_and_learn.py \
+            scripts/smart_model.py \
+            scripts/event_peak_model.py \
+            scripts/recession_model.py
+
+          echo "OK: scripts Python compilados sem erros."
+
+      # ==========================================================
+      # APRENDIZADO DA CALCULADORA
+      #
+      # collect_and_learn.py já importa e executa
+      # event_peak_model.py.
+      #
+      # NÃO executar event_peak_model.py separadamente,
+      # para evitar cálculo duplicado.
+      # ==========================================================
+
+      - name: Executar coleta e aprendizado
+        run: |
+          python scripts/collect_and_learn.py
+
+      # ==========================================================
+      # VALIDAR ARQUIVOS JSON
+      # ==========================================================
+
+      - name: Validar arquivos JSON
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          files = [
+              "data/learning.json",
+              "data/learning_snapshots.json",
+              "data/learning_status.json",
+              "data/river_history.json",
+              "data/dam_history.json",
+              "data/rain_response.json",
+              "data/flood_events.json",
+              "data/projection.json",
+              "data/peak_learning.json",
+              "data/peak_events.json",
+          ]
+
+          for filename in files:
+              path = Path(filename)
+
+              if not path.exists():
+                  raise SystemExit(
+                      f"ERRO: arquivo ausente: {filename}"
+                  )
+
+              try:
+                  with path.open("r", encoding="utf-8") as f:
+                      json.load(f)
+              except Exception as exc:
+                  raise SystemExit(
+                      f"ERRO: JSON inválido em {filename}: {exc}"
+                  )
+
+              print(f"OK: {filename}")
+
+          print("Todos os JSONs são válidos.")
+          PY
+
+      # ==========================================================
+      # VALIDAR CHUVA OBSERVADA
+      # ==========================================================
+
+      - name: Validar chuva observada
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          path = Path("data/learning_snapshots.json")
+
+          with path.open("r", encoding="utf-8") as f:
+              snapshots = json.load(f)
+
+          if snapshots:
+              rain = snapshots[-1].get("rain") or {}
+
+              required = (
+                  "h003",
+                  "h006",
+                  "h012",
+                  "h024",
+                  "h048",
+                  "h096",
+              )
+
+              for key in required:
+                  value = rain.get(key)
+
+                  if not isinstance(value, (int, float)):
+                      raise SystemExit(
+                          f"ERRO: chuva observada inválida "
+                          f"em {key}: {value!r}"
+                      )
+
+              print(
+                  "OK: último snapshot contém "
+                  "chuva observada válida."
+              )
+
+              print({
+                  key: rain[key]
+                  for key in required
+              })
+
+          else:
+              print("OK: nenhum snapshot novo.")
+          PY
+
+      # ==========================================================
+      # VALIDAR PROJEÇÃO NORMAL
+      #
+      # A previsão de nível em +24h foi removida do modelo.
+      # Permanecem somente +2h, +4h, +6h, +8h e +12h.
+      # Os acumulados de chuva h024/h048/h096 acima são
+      # históricos/observados e não são previsão de nível.
+      # ==========================================================
+
+      - name: Validar projeção do backend
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          path = Path("data/projection.json")
+
+          if not path.exists():
+              raise SystemExit(
+                  "ERRO: data/projection.json não foi gerado."
+              )
+
+          with path.open("r", encoding="utf-8") as f:
+              data = json.load(f)
+
+          pred = data.get("pred") or {}
+
+          # IMPORTANTE:
+          # Não exigir mais a previsão de nível em +24h.
+          # A calculadora pública trabalha com +2h, +4h,
+          # +6h e +12h.
+          required = ("2", "4", "6", "8", "12")
+
+          for key in required:
+              value = pred.get(key)
+
+              if not isinstance(value, (int, float)):
+                  raise SystemExit(
+                      f"ERRO: projeção inválida para "
+                      f"+{key}h: {value!r}"
+                  )
+
+          current = data.get("current")
+
+          if not isinstance(current, (int, float)):
+              raise SystemExit(
+                  "ERRO: nível atual inválido em "
+                  f"projection.json: {current!r}"
+              )
+
+          print(
+              "OK: projection.json contém nível atual "
+              "e todas as projeções de +2h, +4h, +6h, +8h e +12h."
+          )
+
+          from datetime import datetime, timezone
+
+          generated_at = data.get("generated_at")
+          if not generated_at:
+              raise SystemExit("ERRO: generated_at ausente em projection.json.")
+
+          try:
+              generated = datetime.fromisoformat(generated_at.replace("Z", "+00:00"))
+              age_minutes = (datetime.now(timezone.utc) - generated).total_seconds() / 60.0
+          except Exception as exc:
+              raise SystemExit(f"ERRO: generated_at inválido: {exc}")
+
+          if age_minutes > 120:
+              raise SystemExit(
+                  f"ERRO: projection.json está antigo demais ({age_minutes:.1f} min)."
+              )
+
+          print({
+              f"+{key}h": pred[key]
+              for key in required
+          })
+          print(f"Idade da projeção: {age_minutes:.1f} min")
+          PY
+
+      # ==========================================================
+      # VALIDAR PROJEÇÃO DE REDUÇÃO
+      # ==========================================================
+
+      - name: Validar projeção de redução
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          with Path("data/projection.json").open("r", encoding="utf-8") as f:
+              data = json.load(f)
+
+          recession = data.get("recession") or {}
+          pred = data.get("pred") or {}
+
+          if recession.get("active"):
+              required = ("2", "4", "6", "8", "12")
+              values = []
+              for key in required:
+                  value = pred.get(key)
+                  if not isinstance(value, (int, float)):
+                      raise SystemExit(f"ERRO: redução sem projeção em +{key}h: {value!r}")
+                  values.append(float(value))
+
+              current = float(data.get("current"))
+              if not all(values[i] < current + 1e-9 for i in range(len(values))):
+                  raise SystemExit("ERRO: projeção de redução não está abaixo do nível atual.")
+              if not all(values[i] >= values[i+1] - 1e-9 for i in range(len(values)-1)):
+                  raise SystemExit("ERRO: projeção de redução não é monotônica.")
+
+              if float(recession.get("rain_3h_mm", 0.0)) >= 5.0:
+                  raise SystemExit("ERRO: redução ativa apesar do gatilho de 5 mm/3h.")
+
+              if not isinstance(recession.get("fall_rate_cm_h"), (int, float)) or recession.get("fall_rate_cm_h") <= 0:
+                  raise SystemExit("ERRO: taxa de queda inválida.")
+
+              print("OK: projeção de redução ativa e válida.")
+              print({"taxa_cm_h": recession.get("fall_rate_cm_h"), "leituras": recession.get("readings_used"), "projecoes": {h: pred[h] for h in required}})
+          else:
+              print("OK: recessão não ativa neste ciclo.")
+          PY
+
+      # ==========================================================
+      # VALIDAR PREVISÃO ADAPTATIVA DO PICO
+      # ==========================================================
+
+      - name: Validar previsão adaptativa do pico
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          projection_path = Path("data/projection.json")
+          learning_path = Path("data/peak_learning.json")
+          events_path = Path("data/peak_events.json")
+
+          with projection_path.open("r", encoding="utf-8") as f:
+              projection = json.load(f)
+
+          with learning_path.open("r", encoding="utf-8") as f:
+              learning = json.load(f)
+
+          with events_path.open("r", encoding="utf-8") as f:
+              events = json.load(f)
+
+          if not isinstance(events, list):
+              raise SystemExit(
+                  "ERRO: peak_events.json deve conter uma lista."
+              )
+
+          peak = projection.get("peak_estimate")
+
+          if not isinstance(peak, dict):
+              raise SystemExit(
+                  "ERRO: projection.json não contém "
+                  "peak_estimate válido."
+              )
+
+          active = peak.get("active")
+
+          if active is True:
+              required = (
+                  "event_id",
+                  "current_level_m",
+                  "published_peak_m",
+                  "confidence",
+                  "update_interval_minutes",
+              )
+
+              for key in required:
+                  if key not in peak:
+                      raise SystemExit(
+                          f"ERRO: peak_estimate sem campo: {key}"
+                      )
+
+              if peak.get("update_interval_minutes") != 60:
+                  raise SystemExit(
+                      "ERRO: intervalo oficial do pico "
+                      "deve ser 60 minutos."
+                  )
+
+              if not isinstance(
+                  peak.get("published_peak_m"),
+                  (int, float)
+              ):
+                  raise SystemExit(
+                      "ERRO: published_peak_m inválido."
+                  )
+
+              if not isinstance(
+                  peak.get("confidence"),
+                  (int, float)
+              ):
+                  raise SystemExit(
+                  "ERRO: confidence inválida."
+                  )
+
+              current = projection.get("current")
+              pred = projection.get("pred") or {}
+              published_peak = float(peak.get("published_peak_m"))
+
+              if not isinstance(current, (int, float)):
+                  raise SystemExit(
+                      "ERRO: nível atual inválido."
+                  )
+
+              max_pred = max(
+                  float(pred[h])
+                  for h in ("2", "4", "6", "8", "12")
+                  if isinstance(pred.get(h), (int, float))
+              )
+
+              if published_peak + 1e-9 < float(current):
+                  raise SystemExit(
+                      "ERRO: pico publicado abaixo do nível atual."
+                  )
+
+              if published_peak + 1e-9 < max_pred:
+                  raise SystemExit(
+                      "ERRO: pico publicado abaixo de uma projeção futura."
+                  )
+
+              print(
+                  "OK: evento ativo e previsão de pico válida."
+              )
+
+              print({
+                  "pico_m": peak.get("published_peak_m"),
+                  "confianca": peak.get("confidence"),
+                  "janela_h": peak.get("peak_window_hours"),
+                  "atualizacao_min": peak.get(
+                      "update_interval_minutes"
+                  ),
+              })
+
+          else:
+              if peak.get("status") != "no_event":
+                  raise SystemExit(
+                      "ERRO: sem evento ativo, "
+                      "peak_estimate deveria estar em no_event."
+                  )
+
+              print(
+                  "OK: nenhum evento ativo; "
+                  "previsão de pico permanece desativada."
+              )
+
+          if not isinstance(learning, dict):
+              raise SystemExit(
+                  "ERRO: peak_learning.json inválido."
+              )
+
+          print(
+              "Eventos de pico avaliados:",
+              learning.get("evaluated_events", 0)
+          )
+
+          print(
+              "Histórico de previsões:",
+              len(events)
+          )
+          PY
+
+      # ==========================================================
+      # SALVAR APRENDIZADO
+      # ==========================================================
+
+      - name: Salvar aprendizado com sincronização segura
+        run: |
+          set -e
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          BRANCH="${GITHUB_REF_NAME}"
+
+          git fetch origin "$BRANCH"
+          git rebase --autostash "origin/$BRANCH"
+
+          git add \
+            data/learning.json \
+            data/learning_snapshots.json \
+            data/learning_status.json \
+            data/river_history.json \
+            data/dam_history.json \
+            data/rain_response.json \
+            data/flood_events.json \
+            data/projection.json \
+            data/peak_learning.json \
+            data/peak_events.json
+
+          if git diff --cached --quiet; then
+            echo "Nenhuma alteração para salvar."
+            exit 0
+          fi
+
+          git commit -m "Atualiza aprendizado da calculadora do rio"
+
+          for attempt in 1 2 3; do
+            if git push origin "HEAD:$BRANCH"; then
+              echo "Push realizado com sucesso."
+              exit 0
+            fi
+
+            if [ "$attempt" -eq 3 ]; then
+              echo "ERRO: não foi possível realizar o push após 3 tentativas."
+              exit 1
+            fi
+
+            echo "Push falhou. Sincronizando novamente..."
+
+            git fetch origin "$BRANCH"
+            git rebase --autostash "origin/$BRANCH"
+          done
