@@ -1,65 +1,65 @@
 {
   "version": 2,
-  "generated_at": "2026-09-25T14:02:25.898000+00:00",
-  "river_timestamp": "2026-09-25T13:00:00+00:00",
-  "current": 3.59,
+  "generated_at": "2026-09-25T14:24:49.791000+00:00",
+  "river_timestamp": "2026-09-25T14:00:00+00:00",
+  "current": 3.56,
   "pred": {
-    "2": 3.522,
-    "4": 3.454,
-    "6": 3.386,
-    "8": 3.318,
-    "12": 3.182
+    "2": 3.4933,
+    "4": 3.4267,
+    "6": 3.36,
+    "8": 3.2933,
+    "12": 3.16
   },
   "components": {
     "2": {
       "recession": true,
-      "curve_value": 3.522,
-      "fall_rate_m_h": 0.034,
-      "fall_rate_cm_h": 3.4,
-      "readings_used": 6,
-      "drop_intervals_used": 5,
-      "rain_3h_mm": 0.035,
-      "rain_24h_mm": 0.115
+      "curve_value": 3.4933,
+      "fall_rate_m_h": 0.03333,
+      "fall_rate_cm_h": 3.33,
+      "readings_used": 7,
+      "drop_intervals_used": 6,
+      "rain_3h_mm": 0.036,
+      "rain_24h_mm": 0.114
     },
     "4": {
       "recession": true,
-      "curve_value": 3.454,
-      "fall_rate_m_h": 0.034,
-      "fall_rate_cm_h": 3.4,
-      "readings_used": 6,
-      "drop_intervals_used": 5,
-      "rain_3h_mm": 0.035,
-      "rain_24h_mm": 0.115
+      "curve_value": 3.4267,
+      "fall_rate_m_h": 0.03333,
+      "fall_rate_cm_h": 3.33,
+      "readings_used": 7,
+      "drop_intervals_used": 6,
+      "rain_3h_mm": 0.036,
+      "rain_24h_mm": 0.114
     },
     "6": {
       "recession": true,
-      "curve_value": 3.386,
-      "fall_rate_m_h": 0.034,
-      "fall_rate_cm_h": 3.4,
-      "readings_used": 6,
-      "drop_intervals_used": 5,
-      "rain_3h_mm": 0.035,
-      "rain_24h_mm": 0.115
+      "curve_value": 3.36,
+      "fall_rate_m_h": 0.03333,
+      "fall_rate_cm_h": 3.33,
+      "readings_used": 7,
+      "drop_intervals_used": 6,
+      "rain_3h_mm": 0.036,
+      "rain_24h_mm": 0.114
     },
     "8": {
       "recession": true,
-      "curve_value": 3.318,
-      "fall_rate_m_h": 0.034,
-      "fall_rate_cm_h": 3.4,
-      "readings_used": 6,
-      "drop_intervals_used": 5,
-      "rain_3h_mm": 0.035,
-      "rain_24h_mm": 0.115
+      "curve_value": 3.2933,
+      "fall_rate_m_h": 0.03333,
+      "fall_rate_cm_h": 3.33,
+      "readings_used": 7,
+      "drop_intervals_used": 6,
+      "rain_3h_mm": 0.036,
+      "rain_24h_mm": 0.114
     },
     "12": {
       "recession": true,
-      "curve_value": 3.182,
-      "fall_rate_m_h": 0.034,
-      "fall_rate_cm_h": 3.4,
-      "readings_used": 6,
-      "drop_intervals_used": 5,
-      "rain_3h_mm": 0.035,
-      "rain_24h_mm": 0.115
+      "curve_value": 3.16,
+      "fall_rate_m_h": 0.03333,
+      "fall_rate_cm_h": 3.33,
+      "readings_used": 7,
+      "drop_intervals_used": 6,
+      "rain_3h_mm": 0.036,
+      "rain_24h_mm": 0.114
     }
   },
   "peak_estimate": {
@@ -101,7 +101,7 @@
       "24": 1.0
     },
     "bias_correction": {
-      "2": -0.00843,
+      "2": -0.00898,
       "4": -0.01608,
       "6": -0.05685,
       "8": 0.01765,
@@ -149,28 +149,28 @@
       "active": true,
       "mode": "recessao",
       "status": "rio_em_recessao",
-      "current_level_m": 3.59,
+      "current_level_m": 3.56,
       "peak_level_m": 3.76,
       "peak_at_ms": 1790323200000,
       "peak_source": "observed_post_peak",
-      "latest_reading_at_ms": 1790341200000,
-      "readings_used": 6,
-      "drop_intervals_used": 5,
-      "fall_rate_m_h": 0.034,
-      "fall_rate_cm_h": 3.4,
-      "rain_3h_mm": 0.035,
-      "rain_24h_mm": 0.115,
+      "latest_reading_at_ms": 1790344800000,
+      "readings_used": 7,
+      "drop_intervals_used": 6,
+      "fall_rate_m_h": 0.03333,
+      "fall_rate_cm_h": 3.33,
+      "rain_3h_mm": 0.036,
+      "rain_24h_mm": 0.114,
       "projections": {
-        "2": 3.522,
-        "4": 3.454,
-        "6": 3.386,
-        "8": 3.318,
-        "12": 3.182
+        "2": 3.4933,
+        "4": 3.4267,
+        "6": 3.36,
+        "8": 3.2933,
+        "12": 3.16
       },
       "message": "Recessão projetada pelas leituras observadas. O encerramento do estado de pico não reativa o pico; apenas permite a projeção pós-pico enquanto a queda permanece confirmada."
     },
     "peak_uses_24h_prediction": false,
     "learned_delay_hours": 6.527,
-    "evaluated": 5424
+    "evaluated": 5426
   }
 }
