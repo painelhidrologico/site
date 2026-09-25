@@ -1,7 +1,12 @@
 {
   "version": 12,
+<<<<<<< Updated upstream
   "updated_at": "2026-09-24T23:54:53.898025+00:00",
   "evaluated": 5484,
+=======
+  "updated_at": "2026-09-25T00:16:37.769346+00:00",
+  "evaluated": 5486,
+>>>>>>> Stashed changes
   "mae_m": {
     "2": 0.1163,
     "4": 0.2093,
@@ -12,14 +17,12 @@
   },
   "metrics_by_horizon": {
     "2": {
-      "evaluated": 1044,
-      "sum_abs_error": 121.38969999999986,
-      "sum_error": -17.626699999999975,
+      "evaluated": 1046,
+      "sum_abs_error": 121.60969999999986,
+      "sum_error": -17.406699999999976,
       "mae_m": 0.1163,
-      "bias_m": -0.0169,
+      "bias_m": -0.0166,
       "recent_abs_errors": [
-        0.08,
-        0.006,
         0.006,
         0.006,
         0.074,
@@ -67,11 +70,11 @@
         0.08,
         0.08,
         0.05,
-        0.07
+        0.07,
+        0.11,
+        0.11
       ],
       "recent_errors": [
-        0.08,
-        -0.006,
         -0.006,
         -0.006,
         0.074,
@@ -119,11 +122,11 @@
         0.08,
         0.08,
         0.05,
-        0.07
+        0.07,
+        0.11,
+        0.11
       ],
       "recent_persistence_errors": [
-        0.3,
-        0.21,
         0.21,
         0.21,
         0.29,
@@ -171,7 +174,9 @@
         0.08,
         0.08,
         0.08,
-        0.07
+        0.07,
+        0.11,
+        0.11
       ]
     },
     "4": {
@@ -864,7 +869,7 @@
     "24": 1.0
   },
   "bias_correction": {
-    "2": -0.01023,
+    "2": -0.01126,
     "4": -0.01127,
     "6": -0.00073,
     "8": 0.05085,
@@ -891,22 +896,34 @@
     "h003": {
       "stations": 48,
       "cities": 35,
-      "value": 0.012571428662964276
+      "value": 0.004285714296357972
     },
     "h006": {
       "stations": 48,
       "cities": 35,
+<<<<<<< Updated upstream
       "value": 0.031857143129621235
+=======
+      "value": 0.027428571613771574
+>>>>>>> Stashed changes
     },
     "h012": {
       "stations": 48,
       "cities": 35,
+<<<<<<< Updated upstream
       "value": 0.07409523925965741
+=======
+      "value": 0.07038095309620812
+>>>>>>> Stashed changes
     },
     "h024": {
       "stations": 48,
       "cities": 35,
+<<<<<<< Updated upstream
       "value": 0.14866666842606804
+=======
+      "value": 0.13152381060201496
+>>>>>>> Stashed changes
     },
     "h048": {
       "stations": 48,
@@ -970,7 +987,7 @@
         "h024": 0.333
       },
       "Jose Boiteux": {
-        "h003": 0.2,
+        "h003": 0.0,
         "h006": 0.4,
         "h012": 0.4,
         "h024": 0.4
@@ -1020,8 +1037,13 @@
       "Rio do Campo": {
         "h003": 0.0,
         "h006": 0.0,
+<<<<<<< Updated upstream
         "h012": 0.135,
         "h024": 1.39
+=======
+        "h012": 0.025,
+        "h024": 0.79
+>>>>>>> Stashed changes
       },
       "Rio do Oeste": {
         "h003": 0.0,
@@ -1030,9 +1052,15 @@
         "h024": 0.0
       },
       "Rio do Sul": {
+<<<<<<< Updated upstream
         "h003": 0.07,
         "h006": 0.15,
         "h012": 0.43,
+=======
+        "h003": 0.02,
+        "h006": 0.07,
+        "h012": 0.41,
+>>>>>>> Stashed changes
         "h024": 0.67
       },
       "Salete": {
@@ -1066,7 +1094,7 @@
         "h024": 0.0
       },
       "Vitor Meireles": {
-        "h003": 0.01,
+        "h003": 0.0,
         "h006": 0.15,
         "h012": 0.15,
         "h024": 0.24
@@ -1091,7 +1119,7 @@
       },
       "Benedito Novo": {
         "h003": 0.0,
-        "h006": 0.01,
+        "h006": 0.0,
         "h012": 0.01,
         "h024": 0.02
       },
@@ -1102,8 +1130,13 @@
         "h024": 0.0
       },
       "Indaial": {
+<<<<<<< Updated upstream
         "h003": 0.04,
         "h006": 0.26,
+=======
+        "h003": 0.01,
+        "h006": 0.21,
+>>>>>>> Stashed changes
         "h012": 0.92,
         "h024": 1.03
       },
@@ -1115,7 +1148,7 @@
       },
       "Rio dos Cedros": {
         "h003": 0.0,
-        "h006": 0.025,
+        "h006": 0.01,
         "h012": 0.035,
         "h024": 0.035
       },
@@ -1134,6 +1167,7 @@
     },
     "regions": {
       "alto": {
+<<<<<<< Updated upstream
         "h003": 0.015,
         "h006": 0.031,
         "h012": 0.062,
@@ -1142,6 +1176,16 @@
       "medio": {
         "h003": 0.007,
         "h006": 0.035,
+=======
+        "h003": 0.005,
+        "h006": 0.028,
+        "h012": 0.057,
+        "h024": 0.135
+      },
+      "medio": {
+        "h003": 0.003,
+        "h006": 0.027,
+>>>>>>> Stashed changes
         "h012": 0.109,
         "h024": 0.123
       }
@@ -1969,7 +2013,11 @@
       "baseline_level": 2.55,
       "pattern": "10_30mm_3h_long"
     },
+<<<<<<< Updated upstream
     "updated_at": "2026-09-24T23:54:53.739905+00:00",
+=======
+    "updated_at": "2026-09-25T00:16:37.630857+00:00",
+>>>>>>> Stashed changes
     "awaiting_rain_reset": false,
     "last_rain_episode": {
       "started_at": 1789813610146,
@@ -2329,10 +2377,11 @@
     "active": true,
     "mode": "recessao",
     "status": "rio_em_recessao",
-    "current_level_m": 3.87,
+    "current_level_m": 3.83,
     "peak_level_m": 3.95,
     "peak_at_ms": 1790280000000,
     "peak_source": "observed_post_peak",
+<<<<<<< Updated upstream
     "latest_reading_at_ms": 1790290800000,
     "readings_used": 4,
     "drop_intervals_used": 3,
@@ -2340,12 +2389,21 @@
     "fall_rate_cm_h": 2.67,
     "rain_3h_mm": 0.013,
     "rain_24h_mm": 0.149,
+=======
+    "latest_reading_at_ms": 1790294400000,
+    "readings_used": 5,
+    "drop_intervals_used": 4,
+    "fall_rate_m_h": 0.03,
+    "fall_rate_cm_h": 3.0,
+    "rain_3h_mm": 0.004,
+    "rain_24h_mm": 0.132,
+>>>>>>> Stashed changes
     "projections": {
-      "2": 3.8167,
-      "4": 3.7633,
-      "6": 3.71,
-      "8": 3.6567,
-      "12": 3.55
+      "2": 3.77,
+      "4": 3.71,
+      "6": 3.65,
+      "8": 3.59,
+      "12": 3.47
     },
     "message": "Recessão projetada pelas leituras observadas. O encerramento do estado de pico não reativa o pico; apenas permite a projeção pós-pico enquanto a queda permanece confirmada."
   },

@@ -819,7 +819,11 @@
     "baseline_level": 2.55,
     "pattern": "10_30mm_3h_long"
   },
+<<<<<<< Updated upstream
   "updated_at": "2026-09-24T23:54:53.739905+00:00",
+=======
+  "updated_at": "2026-09-25T00:16:37.630857+00:00",
+>>>>>>> Stashed changes
   "awaiting_rain_reset": false,
   "last_rain_episode": {
     "started_at": 1789813610146,
