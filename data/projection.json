@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-09-25T03:13:08.510000+00:00",
+  "generated_at": "2026-09-25T03:30:24.502000+00:00",
   "river_timestamp": "2026-09-25T03:00:00+00:00",
   "current": 3.75,
   "pred": {
@@ -18,8 +18,8 @@
       "fall_rate_cm_h": 2.86,
       "readings_used": 8,
       "drop_intervals_used": 7,
-      "rain_3h_mm": 0.0,
-      "rain_24h_mm": 0.125
+      "rain_3h_mm": 0.001,
+      "rain_24h_mm": 0.114
     },
     "4": {
       "recession": true,
@@ -28,8 +28,8 @@
       "fall_rate_cm_h": 2.86,
       "readings_used": 8,
       "drop_intervals_used": 7,
-      "rain_3h_mm": 0.0,
-      "rain_24h_mm": 0.125
+      "rain_3h_mm": 0.001,
+      "rain_24h_mm": 0.114
     },
     "6": {
       "recession": true,
@@ -38,8 +38,8 @@
       "fall_rate_cm_h": 2.86,
       "readings_used": 8,
       "drop_intervals_used": 7,
-      "rain_3h_mm": 0.0,
-      "rain_24h_mm": 0.125
+      "rain_3h_mm": 0.001,
+      "rain_24h_mm": 0.114
     },
     "8": {
       "recession": true,
@@ -48,8 +48,8 @@
       "fall_rate_cm_h": 2.86,
       "readings_used": 8,
       "drop_intervals_used": 7,
-      "rain_3h_mm": 0.0,
-      "rain_24h_mm": 0.125
+      "rain_3h_mm": 0.001,
+      "rain_24h_mm": 0.114
     },
     "12": {
       "recession": true,
@@ -58,8 +58,8 @@
       "fall_rate_cm_h": 2.86,
       "readings_used": 8,
       "drop_intervals_used": 7,
-      "rain_3h_mm": 0.0,
-      "rain_24h_mm": 0.125
+      "rain_3h_mm": 0.001,
+      "rain_24h_mm": 0.114
     }
   },
   "peak_estimate": {
@@ -101,7 +101,7 @@
       "24": 1.0
     },
     "bias_correction": {
-      "2": -0.00014,
+      "2": -7e-05,
       "4": 0.0,
       "6": 0.0,
       "8": 0.0,
@@ -158,8 +158,8 @@
       "drop_intervals_used": 7,
       "fall_rate_m_h": 0.02857,
       "fall_rate_cm_h": 2.86,
-      "rain_3h_mm": 0.0,
-      "rain_24h_mm": 0.125,
+      "rain_3h_mm": 0.001,
+      "rain_24h_mm": 0.114,
       "projections": {
         "2": 3.6929,
         "4": 3.6357,
@@ -171,6 +171,6 @@
     },
     "peak_uses_24h_prediction": false,
     "learned_delay_hours": 5.0,
-    "evaluated": 2
+    "evaluated": 3
   }
 }
