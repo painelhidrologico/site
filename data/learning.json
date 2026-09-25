@@ -41,7 +41,7 @@
     "24": 1.0
   },
   "bias_correction": {
-    "2": 0.0,
+    "2": -0.0,
     "4": 0.0,
     "6": 0.0,
     "8": 0.0,
@@ -65,9 +65,9 @@
     "24": 0.4
   },
   "metrics": {
-    "evaluated": 0,
+    "evaluated": 1,
     "mae_m": {
-      "2": null,
+      "2": 0.0,
       "4": null,
       "6": null,
       "8": null,
@@ -76,12 +76,20 @@
     },
     "by_horizon": {
       "2": {
-        "evaluated": 0,
+        "evaluated": 1,
         "sum_abs_error": 0.0,
         "sum_error": 0.0,
-        "mae_m": null,
-        "bias_m": null,
-        "recent_abs_errors": []
+        "mae_m": 0.0,
+        "bias_m": 0.0,
+        "recent_abs_errors": [
+          0.0
+        ],
+        "recent_errors": [
+          0.0
+        ],
+        "recent_persistence_errors": [
+          0.06
+        ]
       },
       "4": {
         "evaluated": 0,
@@ -124,8 +132,8 @@
         "recent_abs_errors": []
       }
     },
-    "last_update": "2026-09-25T02:30:22.729913+00:00",
-    "last_snapshot": "2026-09-25T02:30:22.714000+00:00"
+    "last_update": "2026-09-25T02:54:04.959820+00:00",
+    "last_snapshot": "2026-09-25T02:54:04.947000+00:00"
   },
-  "updated_at": "2026-09-25T02:30:22.729913+00:00"
+  "updated_at": "2026-09-25T02:54:04.959820+00:00"
 }
