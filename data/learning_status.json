@@ -1,6 +1,6 @@
 {
   "version": 12,
-  "updated_at": "2026-09-23T15:40:52.268066+00:00",
+  "updated_at": "2026-09-25T10:14:18.914623+00:00",
   "evaluated": 5417,
   "mae_m": {
     "2": 0.1165,
@@ -837,32 +837,32 @@
     "h003": {
       "stations": 48,
       "cities": 35,
-      "value": 0.012357143059905087
+      "value": 0.009142857044935226
     },
     "h006": {
       "stations": 48,
       "cities": 35,
-      "value": 0.01985714321157762
+      "value": 0.009142857044935226
     },
     "h012": {
       "stations": 48,
       "cities": 35,
-      "value": 0.2845000027944999
+      "value": 0.012000000051089695
     },
     "h024": {
       "stations": 48,
       "cities": 35,
-      "value": 0.3103571452067367
+      "value": 0.10309523807927257
     },
     "h048": {
       "stations": 48,
       "cities": 35,
-      "value": 54.96811909902663
+      "value": 0.19180952548271132
     },
     "h096": {
       "stations": 48,
       "cities": 35,
-      "value": 89.43290458860851
+      "value": 54.17761896224249
     }
   },
   "spatial_rain": {
@@ -870,8 +870,8 @@
       "Agrolandia": {
         "h003": 0.0,
         "h006": 0.0,
-        "h012": 0.0,
-        "h024": 0.0
+        "h012": 0.06,
+        "h024": 0.06
       },
       "Agronomica": {
         "h003": 0.0,
@@ -899,9 +899,9 @@
       },
       "Dona Emma": {
         "h003": 0.0,
-        "h006": 0.01,
-        "h012": 0.01,
-        "h024": 0.07
+        "h006": 0.0,
+        "h012": 0.0,
+        "h024": 0.0
       },
       "Ibirama": {
         "h003": 0.0,
@@ -913,13 +913,13 @@
         "h003": 0.0,
         "h006": 0.0,
         "h012": 0.0,
-        "h024": 0.0
+        "h024": 0.333
       },
       "Jose Boiteux": {
         "h003": 0.0,
         "h006": 0.0,
         "h012": 0.0,
-        "h024": 0.0
+        "h024": 0.4
       },
       "Laurentino": {
         "h003": 0.0,
@@ -964,10 +964,10 @@
         "h024": 0.0
       },
       "Rio do Campo": {
-        "h003": 0.05,
-        "h006": 0.06,
-        "h012": 0.06,
-        "h024": 0.06
+        "h003": 0.1,
+        "h006": 0.1,
+        "h012": 0.1,
+        "h024": 0.685
       },
       "Rio do Oeste": {
         "h003": 0.0,
@@ -977,33 +977,33 @@
       },
       "Rio do Sul": {
         "h003": 0.04,
-        "h006": 0.12,
-        "h012": 0.17,
-        "h024": 0.25
+        "h006": 0.04,
+        "h012": 0.04,
+        "h024": 0.56
       },
       "Salete": {
         "h003": 0.0,
         "h006": 0.0,
         "h012": 0.0,
-        "h024": 0.2
+        "h024": 0.0
       },
       "Santa Terezinha": {
         "h003": 0.0,
         "h006": 0.0,
-        "h012": 2.3,
-        "h024": 2.3
+        "h012": 0.0,
+        "h024": 0.1
       },
       "Taio": {
-        "h003": 0.002,
-        "h006": 0.002,
-        "h012": 0.007,
-        "h024": 0.007
+        "h003": 0.05,
+        "h006": 0.05,
+        "h012": 0.05,
+        "h024": 0.05
       },
       "Trombudo Central": {
         "h003": 0.0,
         "h006": 0.0,
         "h012": 0.0,
-        "h024": 0.0
+        "h024": 0.005
       },
       "Vidal Ramos": {
         "h003": 0.0,
@@ -1012,16 +1012,16 @@
         "h024": 0.0
       },
       "Vitor Meireles": {
-        "h003": 0.03,
-        "h006": 0.09,
-        "h012": 0.09,
-        "h024": 0.26
+        "h003": 0.0,
+        "h006": 0.0,
+        "h012": 0.0,
+        "h024": 0.21
       },
       "Witmarsum": {
-        "h003": 0.18,
-        "h006": 0.18,
-        "h012": 0.18,
-        "h024": 0.21
+        "h003": 0.0,
+        "h006": 0.0,
+        "h012": 0.0,
+        "h024": 0.0
       },
       "Apiuna": {
         "h003": 0.0,
@@ -1032,67 +1032,67 @@
       "Ascurra": {
         "h003": 0.0,
         "h006": 0.0,
-        "h012": 0.69,
-        "h024": 0.71
+        "h012": 0.0,
+        "h024": 0.02
       },
       "Benedito Novo": {
-        "h003": 0.03,
-        "h006": 0.03,
-        "h012": 0.98,
-        "h024": 0.99
+        "h003": 0.0,
+        "h006": 0.0,
+        "h012": 0.0,
+        "h024": 0.02
       },
       "Doutor Pedrinho": {
         "h003": 0.0,
         "h006": 0.0,
-        "h012": 0.8,
-        "h024": 0.8
+        "h012": 0.0,
+        "h024": 0.0
       },
       "Indaial": {
-        "h003": 0.1,
-        "h006": 0.18,
-        "h012": 1.51,
-        "h024": 1.84
+        "h003": 0.13,
+        "h006": 0.13,
+        "h012": 0.17,
+        "h024": 1.13
       },
       "Pomerode": {
         "h003": 0.0,
         "h006": 0.0,
-        "h012": 0.4,
-        "h024": 0.4
+        "h012": 0.0,
+        "h024": 0.0
       },
       "Rio dos Cedros": {
         "h003": 0.0,
-        "h006": 0.02,
-        "h012": 1.155,
-        "h024": 1.155
+        "h006": 0.0,
+        "h012": 0.0,
+        "h024": 0.035
       },
       "Rodeio": {
         "h003": 0.0,
         "h006": 0.0,
-        "h012": 0.8,
-        "h024": 0.8
+        "h012": 0.0,
+        "h024": 0.0
       },
       "Timbo": {
         "h003": 0.0,
-        "h006": 0.002,
-        "h012": 0.805,
-        "h024": 0.81
+        "h006": 0.0,
+        "h012": 0.0,
+        "h024": 0.0
       }
     },
     "regions": {
       "alto": {
-        "h003": 0.012,
-        "h006": 0.018,
-        "h012": 0.108,
-        "h024": 0.129
+        "h003": 0.007,
+        "h006": 0.007,
+        "h012": 0.01,
+        "h024": 0.092
       },
       "medio": {
         "h003": 0.014,
-        "h006": 0.026,
-        "h012": 0.793,
-        "h024": 0.834
+        "h006": 0.014,
+        "h012": 0.019,
+        "h024": 0.134
       }
     },
-    "station_count": 49
+    "station_count": 50
   },
   "rain_response": {
     "version": 2,
@@ -1915,7 +1915,7 @@
       "baseline_level": 2.55,
       "pattern": "10_30mm_3h_long"
     },
-    "updated_at": "2026-09-23T15:40:52.166332+00:00",
+    "updated_at": "2026-09-25T10:14:18.798401+00:00",
     "awaiting_rain_reset": false,
     "last_rain_episode": {
       "started_at": 1789813610146,
@@ -2267,58 +2267,33 @@
     }
   },
   "peak_estimate": {
-    "active": true,
-    "event_id": "1790116569370",
-    "mode": "recessao",
-    "status": "rio_em_recessao",
-    "current_level_m": 4.55,
-    "peak_level_m": 6.62,
-    "peak_at": "2026-09-22T16:00:00+00:00",
-    "published_peak_m": 6.8723,
-    "published_peak_in_hours": 0.0,
-    "projected_peak_at_ms": null,
-    "projected_peak_at": null,
-    "peak_window_hours": 0.0,
-    "confidence": 0.9,
-    "update_interval_minutes": 60,
-    "peak_at_ms": 1790092800000,
-    "peak_age_hours": 23.68,
-    "fallen_m": 2.07,
-    "fallen_cm": 207.0,
-    "remaining_post_peak_hours": 0.32,
-    "rain_24h_mm": 0.0,
-    "rain_since_peak_mm": 0.0,
-    "rain_3h_mm": 0.0,
-    "rain_since_peak_last_at": 1790178052165,
-    "rain_since_peak_last_h003": 0.0,
-    "rain_since_peak_started_at": 1790178052165,
-    "new_rain_detected": false,
-    "new_rise_detected": false,
-    "message": "Pico confirmado. Mantido até o encerramento do evento sem gatilho de 5 mm em 3h.",
-    "actual_peak_m": 6.62
+    "active": false,
+    "status": "no_event",
+    "update_interval_minutes": 60
   },
   "recession": {
     "active": true,
     "mode": "recessao",
     "status": "rio_em_recessao",
-    "current_level_m": 4.55,
-    "peak_level_m": 6.62,
-    "peak_at_ms": 1790092800000,
-    "latest_reading_at_ms": 1790175600000,
-    "readings_used": 6,
-    "drop_intervals_used": 5,
-    "fall_rate_m_h": 0.082,
-    "fall_rate_cm_h": 8.2,
-    "rain_3h_mm": 0.012,
-    "rain_24h_mm": 0.31,
+    "current_level_m": 3.7,
+    "peak_level_m": 3.76,
+    "peak_at_ms": 1790323200000,
+    "peak_source": "observed_post_peak",
+    "latest_reading_at_ms": 1790330400000,
+    "readings_used": 3,
+    "drop_intervals_used": 2,
+    "fall_rate_m_h": 0.03,
+    "fall_rate_cm_h": 3.0,
+    "rain_3h_mm": 0.009,
+    "rain_24h_mm": 0.103,
     "projections": {
-      "2": 4.386,
-      "4": 4.222,
-      "6": 4.058,
-      "8": 3.894,
-      "12": 3.566
+      "2": 3.64,
+      "4": 3.58,
+      "6": 3.52,
+      "8": 3.46,
+      "12": 3.34
     },
-    "message": "Recessão projetada a partir da média das últimas leituras horárias. Chuva de 24h já contabilizada não bloqueia a queda; 5 mm em 3h inicia novo ciclo."
+    "message": "Recessão projetada pelas leituras observadas. O encerramento do estado de pico não reativa o pico; apenas permite a projeção pós-pico enquanto a queda permanece confirmada."
   },
   "peak_learning": {
     "evaluated_events": 1,
