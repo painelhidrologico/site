@@ -1,19 +1,19 @@
 {
   "version": 2,
-  "generated_at": "2026-09-26T20:01:54.772000+00:00",
-  "river_timestamp": "2026-09-26T19:00:00+00:00",
-  "current": 3.36,
+  "generated_at": "2026-09-26T20:21:45.171000+00:00",
+  "river_timestamp": "2026-09-26T20:00:00+00:00",
+  "current": 3.38,
   "pred": {
-    "2": 3.36,
-    "4": 3.36,
-    "6": 3.36,
-    "8": 3.36,
-    "12": 3.36
+    "2": 3.38,
+    "4": 3.38,
+    "6": 3.38,
+    "8": 3.38,
+    "12": 3.38
   },
   "components": {
     "2": {
       "unified_curve": true,
-      "curve_value": 3.36,
+      "curve_value": 3.38,
       "rain_mm": 0.0,
       "cm_per_mm": 4.5,
       "total_response_m": 0.0,
@@ -25,7 +25,7 @@
     },
     "4": {
       "unified_curve": true,
-      "curve_value": 3.36,
+      "curve_value": 3.38,
       "rain_mm": 0.0,
       "cm_per_mm": 4.5,
       "total_response_m": 0.0,
@@ -37,7 +37,7 @@
     },
     "6": {
       "unified_curve": true,
-      "curve_value": 3.36,
+      "curve_value": 3.38,
       "rain_mm": 0.0,
       "cm_per_mm": 4.5,
       "total_response_m": 0.0,
@@ -49,7 +49,7 @@
     },
     "8": {
       "unified_curve": true,
-      "curve_value": 3.36,
+      "curve_value": 3.38,
       "rain_mm": 0.0,
       "cm_per_mm": 4.5,
       "total_response_m": 0.0,
@@ -61,7 +61,7 @@
     },
     "12": {
       "unified_curve": true,
-      "curve_value": 3.36,
+      "curve_value": 3.38,
       "rain_mm": 0.0,
       "cm_per_mm": 4.5,
       "total_response_m": 0.0,
@@ -111,19 +111,19 @@
       "24": 1.0
     },
     "bias_correction": {
-      "2": 0.00286,
-      "4": 0.00397,
-      "6": 0.00223,
-      "8": -0.00042,
-      "12": 0.00507,
+      "2": 0.00352,
+      "4": 0.00521,
+      "6": 0.00363,
+      "8": 0.00028,
+      "12": 0.00437,
       "24": 0.0
     },
     "persistence_blend": {
       "2": 5e-05,
-      "4": 0.0018,
-      "6": 0.08517,
-      "8": 0.16969,
-      "12": 0.08119,
+      "4": 0.00146,
+      "6": 0.09426,
+      "8": 0.15962,
+      "12": 0.06576,
       "24": 0.0
     },
     "damping": {
@@ -157,12 +157,10 @@
     ],
     "recession": {
       "active": false,
-      "reason": "rise_detected_after_peak",
-      "rise_count": 1,
-      "rise_total_m": 0.06
+      "reason": "no_recent_post_peak"
     },
     "peak_uses_24h_prediction": false,
     "learned_delay_hours": 6.527,
-    "evaluated": 5964
+    "evaluated": 5974
   }
 }
