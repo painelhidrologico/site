@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-09-26T15:22:09.486000+00:00",
+  "generated_at": "2026-09-26T15:35:44.840000+00:00",
   "river_timestamp": "2026-09-26T15:00:00+00:00",
   "current": 3.32,
   "pred": {
@@ -19,7 +19,7 @@
       "readings_used": 8,
       "drop_intervals_used": 7,
       "rain_3h_mm": 0.003,
-      "rain_24h_mm": 0.125
+      "rain_24h_mm": 0.126
     },
     "4": {
       "recession": true,
@@ -29,7 +29,7 @@
       "readings_used": 8,
       "drop_intervals_used": 7,
       "rain_3h_mm": 0.003,
-      "rain_24h_mm": 0.125
+      "rain_24h_mm": 0.126
     },
     "6": {
       "recession": true,
@@ -39,7 +39,7 @@
       "readings_used": 8,
       "drop_intervals_used": 7,
       "rain_3h_mm": 0.003,
-      "rain_24h_mm": 0.125
+      "rain_24h_mm": 0.126
     },
     "8": {
       "recession": true,
@@ -49,7 +49,7 @@
       "readings_used": 8,
       "drop_intervals_used": 7,
       "rain_3h_mm": 0.003,
-      "rain_24h_mm": 0.125
+      "rain_24h_mm": 0.126
     },
     "12": {
       "recession": true,
@@ -59,7 +59,7 @@
       "readings_used": 8,
       "drop_intervals_used": 7,
       "rain_3h_mm": 0.003,
-      "rain_24h_mm": 0.125
+      "rain_24h_mm": 0.126
     }
   },
   "peak_estimate": {
@@ -159,7 +159,7 @@
       "fall_rate_m_h": 0.02714,
       "fall_rate_cm_h": 2.71,
       "rain_3h_mm": 0.003,
-      "rain_24h_mm": 0.125,
+      "rain_24h_mm": 0.126,
       "projections": {
         "2": 3.2657,
         "4": 3.2114,
