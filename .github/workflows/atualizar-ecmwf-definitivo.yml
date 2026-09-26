@@ -2,8 +2,12 @@ name: Atualizar ECMWF — 2 rodadas oficiais por dia
 
 on:
   schedule:
-    - cron: "30 6 * * *"
-    - cron: "30 18 * * *"
+    # 06:30 Brasil (UTC-3) — após a rodada oficial 00Z
+    - cron: "30 9 * * *"
+
+    # 18:30 Brasil (UTC-3) — após a rodada oficial 12Z
+    - cron: "30 21 * * *"
+
   workflow_dispatch:
 
 permissions:
@@ -86,61 +90,4 @@ jobs:
               "totals",
           )
 
-          missing = [k for k in required if k not in d]
-
-          if missing:
-              raise SystemExit(
-                  f"JSON ECMWF incompleto: {missing}"
-              )
-
-          if d["official_runs_per_day"] != 2:
-              raise SystemExit(
-                  "ECMWF deve declarar 2 rodadas oficiais/dia"
-              )
-
-          if d["official_run_hours_utc"] != [0, 12]:
-              raise SystemExit(
-                  "Rodadas oficiais esperadas: [0, 12] UTC"
-              )
-
-          if d["run_label"] not in ("00Z", "12Z"):
-              raise SystemExit(
-                  f"Rodada inválida: {d['run_label']}"
-              )
-
-          if int(d["valid_points"]) != 24:
-              raise SystemExit(
-                  f"Esperados 24 pontos válidos; "
-                  f"recebido: {d['valid_points']}"
-              )
-
-          for h in ("12", "24"):
-              if d["totals"].get(h) is None:
-                  raise SystemExit(
-                      f"Total ECMWF ausente para {h}h"
-                  )
-
-          print(
-              "JSON ECMWF validado:",
-              d["run_utc"],
-              d["run_label"]
-          )
-          PY
-
-      - name: Publicar nova rodada ECMWF
-        if: steps.changes.outputs.changed == 'true'
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          git add data/ecmwf.json
-
-          git commit -m "Atualiza rodada oficial ECMWF"
-
-          git push
-
-      - name: Nenhuma nova rodada
-        if: steps.changes.outputs.changed == 'false'
-        run: |
-          echo "Nenhuma alteração em data/ecmwf.json."
-          echo "A rodada atual permanece mantida até a próxima rodada oficial."
+          missing = [k for k in required if
