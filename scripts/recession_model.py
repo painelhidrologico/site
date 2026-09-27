@@ -91,6 +91,63 @@ def build_recession_projection(current, history, peak_status, rain=None, now=Non
     if len(all_rows) < 3:
         return {"active": False, "reason": "not_enough_readings"}
 
+    # ---------------------------------------------------------------
+    # RECESSÃO INICIAL (SEM REABRIR O MÓDULO DE PICO)
+    # ---------------------------------------------------------------
+    # Quando não há pico oficial ativo, uma queda recente já observada
+    # pode alimentar as projeções. O motor anterior exigia duas quedas
+    # consecutivas e 2 cm acumulados; isso congelava a projeção após uma
+    # queda real de 2 cm seguida de estabilidade.
+    #
+    # Usa somente as três últimas leituras e exige:
+    #   * última variação <= -1 cm;
+    #   * variação líquida da janela <= -1 cm;
+    #   * nenhuma chuva nova >= 5 mm/3h (validada acima).
+    #
+    # A taxa é a média das duas inclinações da janela. Assim, uma leitura
+    # estável anterior não é descartada e uma única queda não é extrapolada
+    # integralmente para todas as horas.
+    if not official_peak:
+        early = all_rows[-3:]
+        deltas = []
+        for (t0, l0), (t1, l1) in zip(early, early[1:]):
+            dt_h = max(MIN_INTERVAL_H, (t1 - t0) / 3600000.0)
+            deltas.append((l1 - l0) / dt_h)
+
+        net_drop = early[-1][1] - early[0][1]
+        last_delta = early[-1][1] - early[-2][1]
+
+        if last_delta <= -MIN_DROP_M + 1e-9 and net_drop <= -MIN_DROP_M + 1e-9:
+            fall_rate_m_h = max(0.0, -sum(deltas) / len(deltas))
+            if fall_rate_m_h > 0:
+                peak_idx = max(range(len(early)), key=lambda i: early[i][1])
+                projections = {
+                    str(h): round(max(0.0, early[-1][1] - fall_rate_m_h * h), 4)
+                    for h in HORIZONS
+                }
+                return {
+                    "active": True,
+                    "mode": "recessao_inicial",
+                    "status": "rio_em_recessao",
+                    "current_level_m": round(early[-1][1], 4),
+                    "peak_level_m": round(early[peak_idx][1], 4),
+                    "peak_at_ms": early[peak_idx][0],
+                    "peak_source": "observed_recent_trend",
+                    "latest_reading_at_ms": early[-1][0],
+                    "readings_used": len(early),
+                    "drop_intervals_used": sum(1 for d in deltas if d < 0),
+                    "fall_rate_m_h": round(fall_rate_m_h, 5),
+                    "fall_rate_cm_h": round(fall_rate_m_h * 100.0, 2),
+                    "rain_3h_mm": round(rain3, 3),
+                    "rain_24h_mm": round(max(0.0, _num(rain.get("h024"))), 3),
+                    "projections": projections,
+                    "message": (
+                        "Recessão inicial projetada pelas três últimas leituras. "
+                        "Não reativa nem altera o módulo de pico; se uma nova chuva "
+                        "atingir 5 mm em 3h, esta projeção é cancelada."
+                    ),
+                }
+
     if peak_at:
         rows = _readings(history, peak_at, now)
         if len(rows) < 2:
@@ -161,18 +218,18 @@ def build_recession_projection(current, history, peak_status, rain=None, now=Non
     projections = {}
     for horizon in HORIZONS:
         projections[str(horizon)] = round(
-            max(0.0, latest_level - fall_rate_m_h * horizon), 4
+            max(0.0, early[-1][1] - fall_rate_m_h * horizon), 4
         )
 
     return {
         "active": True,
         "mode": "recessao",
         "status": "rio_em_recessao",
-        "current_level_m": round(latest_level, 4),
+        "current_level_m": round(early[-1][1], 4),
         "peak_level_m": round(peak_level, 4),
         "peak_at_ms": peak_at,
         "peak_source": "official_peak" if official_peak else "observed_post_peak",
-        "latest_reading_at_ms": latest_t,
+        "latest_reading_at_ms": early[-1][0],
         "readings_used": len(rows),
         "drop_intervals_used": len(drop_intervals),
         "fall_rate_m_h": round(fall_rate_m_h, 5),
