@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-09-27T00:02:30.246000+00:00",
+  "generated_at": "2026-09-27T00:30:52.274000+00:00",
   "river_timestamp": "2026-09-27T00:00:00+00:00",
   "current": 3.36,
   "pred": {
@@ -18,7 +18,7 @@
       "fall_rate_cm_h": 2.0,
       "readings_used": 4,
       "drop_intervals_used": 3,
-      "rain_3h_mm": 0.006,
+      "rain_3h_mm": 0.0,
       "rain_24h_mm": 0.083
     },
     "4": {
@@ -28,7 +28,7 @@
       "fall_rate_cm_h": 2.0,
       "readings_used": 4,
       "drop_intervals_used": 3,
-      "rain_3h_mm": 0.006,
+      "rain_3h_mm": 0.0,
       "rain_24h_mm": 0.083
     },
     "6": {
@@ -38,7 +38,7 @@
       "fall_rate_cm_h": 2.0,
       "readings_used": 4,
       "drop_intervals_used": 3,
-      "rain_3h_mm": 0.006,
+      "rain_3h_mm": 0.0,
       "rain_24h_mm": 0.083
     },
     "8": {
@@ -48,7 +48,7 @@
       "fall_rate_cm_h": 2.0,
       "readings_used": 4,
       "drop_intervals_used": 3,
-      "rain_3h_mm": 0.006,
+      "rain_3h_mm": 0.0,
       "rain_24h_mm": 0.083
     },
     "12": {
@@ -58,7 +58,7 @@
       "fall_rate_cm_h": 2.0,
       "readings_used": 4,
       "drop_intervals_used": 3,
-      "rain_3h_mm": 0.006,
+      "rain_3h_mm": 0.0,
       "rain_24h_mm": 0.083
     }
   },
@@ -102,18 +102,18 @@
     },
     "bias_correction": {
       "2": 0.00679,
-      "4": 0.01371,
-      "6": 0.01552,
-      "8": 0.01395,
-      "12": 0.00486,
+      "4": 0.01399,
+      "6": 0.0172,
+      "8": 0.01615,
+      "12": 0.00563,
       "24": 0.0
     },
     "persistence_blend": {
       "2": 5e-05,
-      "4": 0.00029,
-      "6": 0.15129,
-      "8": 0.17219,
-      "12": 0.01354,
+      "4": 0.00026,
+      "6": 0.15778,
+      "8": 0.18011,
+      "12": 0.01219,
       "24": 0.0
     },
     "damping": {
@@ -158,7 +158,7 @@
       "drop_intervals_used": 3,
       "fall_rate_m_h": 0.02,
       "fall_rate_cm_h": 2.0,
-      "rain_3h_mm": 0.006,
+      "rain_3h_mm": 0.0,
       "rain_24h_mm": 0.083,
       "projections": {
         "2": 3.32,
@@ -171,6 +171,6 @@
     },
     "peak_uses_24h_prediction": false,
     "learned_delay_hours": 6.527,
-    "evaluated": 6047
+    "evaluated": 6054
   }
 }
