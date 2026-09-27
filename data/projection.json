@@ -1,64 +1,64 @@
 {
   "version": 2,
-  "generated_at": "2026-09-27T16:01:52.089000+00:00",
-  "river_timestamp": "2026-09-27T15:00:00+00:00",
-  "current": 3.24,
+  "generated_at": "2026-09-27T16:23:10.364000+00:00",
+  "river_timestamp": "2026-09-27T16:00:00+00:00",
+  "current": 3.19,
   "pred": {
-    "2": 3.17,
-    "4": 3.1,
-    "6": 3.03,
-    "8": 2.96,
-    "12": 2.82
+    "2": 3.11,
+    "4": 3.03,
+    "6": 2.95,
+    "8": 2.87,
+    "12": 2.71
   },
   "components": {
     "2": {
       "recession": true,
-      "curve_value": 3.17,
-      "fall_rate_m_h": 0.035,
-      "fall_rate_cm_h": 3.5,
+      "curve_value": 3.11,
+      "fall_rate_m_h": 0.04,
+      "fall_rate_cm_h": 4.0,
       "readings_used": 3,
       "drop_intervals_used": 2,
-      "rain_3h_mm": 0.012,
+      "rain_3h_mm": 0.011,
       "rain_24h_mm": 0.027
     },
     "4": {
       "recession": true,
-      "curve_value": 3.1,
-      "fall_rate_m_h": 0.035,
-      "fall_rate_cm_h": 3.5,
+      "curve_value": 3.03,
+      "fall_rate_m_h": 0.04,
+      "fall_rate_cm_h": 4.0,
       "readings_used": 3,
       "drop_intervals_used": 2,
-      "rain_3h_mm": 0.012,
+      "rain_3h_mm": 0.011,
       "rain_24h_mm": 0.027
     },
     "6": {
       "recession": true,
-      "curve_value": 3.03,
-      "fall_rate_m_h": 0.035,
-      "fall_rate_cm_h": 3.5,
+      "curve_value": 2.95,
+      "fall_rate_m_h": 0.04,
+      "fall_rate_cm_h": 4.0,
       "readings_used": 3,
       "drop_intervals_used": 2,
-      "rain_3h_mm": 0.012,
+      "rain_3h_mm": 0.011,
       "rain_24h_mm": 0.027
     },
     "8": {
       "recession": true,
-      "curve_value": 2.96,
-      "fall_rate_m_h": 0.035,
-      "fall_rate_cm_h": 3.5,
+      "curve_value": 2.87,
+      "fall_rate_m_h": 0.04,
+      "fall_rate_cm_h": 4.0,
       "readings_used": 3,
       "drop_intervals_used": 2,
-      "rain_3h_mm": 0.012,
+      "rain_3h_mm": 0.011,
       "rain_24h_mm": 0.027
     },
     "12": {
       "recession": true,
-      "curve_value": 2.82,
-      "fall_rate_m_h": 0.035,
-      "fall_rate_cm_h": 3.5,
+      "curve_value": 2.71,
+      "fall_rate_m_h": 0.04,
+      "fall_rate_cm_h": 4.0,
       "readings_used": 3,
       "drop_intervals_used": 2,
-      "rain_3h_mm": 0.012,
+      "rain_3h_mm": 0.011,
       "rain_24h_mm": 0.027
     }
   },
@@ -101,19 +101,19 @@
       "24": 1.0
     },
     "bias_correction": {
-      "2": 0.00504,
-      "4": 0.00805,
-      "6": 0.01498,
-      "8": 0.02735,
-      "12": 0.07081,
+      "2": 0.00434,
+      "4": 0.00679,
+      "6": 0.01274,
+      "8": 0.0231,
+      "12": 0.0686,
       "24": 0.0
     },
     "persistence_blend": {
       "2": 5e-05,
-      "4": 0.06683,
-      "6": 0.21683,
-      "8": 0.3359,
-      "12": 0.42803,
+      "4": 0.05414,
+      "6": 0.20774,
+      "8": 0.3213,
+      "12": 0.42564,
       "24": 0.0
     },
     "damping": {
@@ -149,28 +149,28 @@
       "active": true,
       "mode": "recessao_inicial",
       "status": "rio_em_recessao",
-      "current_level_m": 3.24,
-      "peak_level_m": 3.31,
-      "peak_at_ms": 1790514000000,
+      "current_level_m": 3.19,
+      "peak_level_m": 3.27,
+      "peak_at_ms": 1790517600000,
       "peak_source": "observed_recent_trend",
-      "latest_reading_at_ms": 1790521200000,
+      "latest_reading_at_ms": 1790524800000,
       "readings_used": 3,
       "drop_intervals_used": 2,
-      "fall_rate_m_h": 0.035,
-      "fall_rate_cm_h": 3.5,
-      "rain_3h_mm": 0.012,
+      "fall_rate_m_h": 0.04,
+      "fall_rate_cm_h": 4.0,
+      "rain_3h_mm": 0.011,
       "rain_24h_mm": 0.027,
       "projections": {
-        "2": 3.17,
-        "4": 3.1,
-        "6": 3.03,
-        "8": 2.96,
-        "12": 2.82
+        "2": 3.11,
+        "4": 3.03,
+        "6": 2.95,
+        "8": 2.87,
+        "12": 2.71
       },
       "message": "Recessão inicial projetada pelas três últimas leituras. Não reativa nem altera o módulo de pico; se uma nova chuva atingir 5 mm em 3h, esta projeção é cancelada."
     },
     "peak_uses_24h_prediction": false,
     "learned_delay_hours": 6.527,
-    "evaluated": 6365
+    "evaluated": 6375
   }
 }
