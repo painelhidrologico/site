@@ -1,65 +1,65 @@
 {
   "version": 2,
-  "generated_at": "2026-09-27T14:02:01.457000+00:00",
-  "river_timestamp": "2026-09-27T13:00:00+00:00",
-  "current": 3.31,
+  "generated_at": "2026-09-27T14:21:46.857000+00:00",
+  "river_timestamp": "2026-09-27T14:00:00+00:00",
+  "current": 3.27,
   "pred": {
-    "2": 3.22,
-    "4": 3.13,
-    "6": 3.04,
+    "2": 3.19,
+    "4": 3.11,
+    "6": 3.03,
     "8": 2.95,
-    "12": 2.77
+    "12": 2.79
   },
   "components": {
     "2": {
       "recession": true,
-      "curve_value": 3.22,
-      "fall_rate_m_h": 0.045,
-      "fall_rate_cm_h": 4.5,
+      "curve_value": 3.19,
+      "fall_rate_m_h": 0.04,
+      "fall_rate_cm_h": 4.0,
       "readings_used": 3,
       "drop_intervals_used": 2,
       "rain_3h_mm": 0.004,
-      "rain_24h_mm": 0.066
+      "rain_24h_mm": 0.065
     },
     "4": {
       "recession": true,
-      "curve_value": 3.13,
-      "fall_rate_m_h": 0.045,
-      "fall_rate_cm_h": 4.5,
+      "curve_value": 3.11,
+      "fall_rate_m_h": 0.04,
+      "fall_rate_cm_h": 4.0,
       "readings_used": 3,
       "drop_intervals_used": 2,
       "rain_3h_mm": 0.004,
-      "rain_24h_mm": 0.066
+      "rain_24h_mm": 0.065
     },
     "6": {
       "recession": true,
-      "curve_value": 3.04,
-      "fall_rate_m_h": 0.045,
-      "fall_rate_cm_h": 4.5,
+      "curve_value": 3.03,
+      "fall_rate_m_h": 0.04,
+      "fall_rate_cm_h": 4.0,
       "readings_used": 3,
       "drop_intervals_used": 2,
       "rain_3h_mm": 0.004,
-      "rain_24h_mm": 0.066
+      "rain_24h_mm": 0.065
     },
     "8": {
       "recession": true,
       "curve_value": 2.95,
-      "fall_rate_m_h": 0.045,
-      "fall_rate_cm_h": 4.5,
+      "fall_rate_m_h": 0.04,
+      "fall_rate_cm_h": 4.0,
       "readings_used": 3,
       "drop_intervals_used": 2,
       "rain_3h_mm": 0.004,
-      "rain_24h_mm": 0.066
+      "rain_24h_mm": 0.065
     },
     "12": {
       "recession": true,
-      "curve_value": 2.77,
-      "fall_rate_m_h": 0.045,
-      "fall_rate_cm_h": 4.5,
+      "curve_value": 2.79,
+      "fall_rate_m_h": 0.04,
+      "fall_rate_cm_h": 4.0,
       "readings_used": 3,
       "drop_intervals_used": 2,
       "rain_3h_mm": 0.004,
-      "rain_24h_mm": 0.066
+      "rain_24h_mm": 0.065
     }
   },
   "peak_estimate": {
@@ -101,19 +101,19 @@
       "24": 1.0
     },
     "bias_correction": {
-      "2": 0.00511,
-      "4": 0.01302,
-      "6": 0.02562,
-      "8": 0.04662,
-      "12": 0.07717,
+      "2": 0.00441,
+      "4": 0.01134,
+      "6": 0.02226,
+      "8": 0.04226,
+      "12": 0.07551,
       "24": 0.0
     },
     "persistence_blend": {
       "2": 5e-05,
-      "4": 0.1309,
-      "6": 0.25736,
-      "8": 0.36835,
-      "12": 0.4222,
+      "4": 0.1244,
+      "6": 0.24689,
+      "8": 0.36408,
+      "12": 0.42596,
       "24": 0.0
     },
     "damping": {
@@ -149,28 +149,28 @@
       "active": true,
       "mode": "recessao_inicial",
       "status": "rio_em_recessao",
-      "current_level_m": 3.31,
-      "peak_level_m": 3.4,
-      "peak_at_ms": 1790506800000,
+      "current_level_m": 3.27,
+      "peak_level_m": 3.35,
+      "peak_at_ms": 1790510400000,
       "peak_source": "observed_recent_trend",
-      "latest_reading_at_ms": 1790514000000,
+      "latest_reading_at_ms": 1790517600000,
       "readings_used": 3,
       "drop_intervals_used": 2,
-      "fall_rate_m_h": 0.045,
-      "fall_rate_cm_h": 4.5,
+      "fall_rate_m_h": 0.04,
+      "fall_rate_cm_h": 4.0,
       "rain_3h_mm": 0.004,
-      "rain_24h_mm": 0.066,
+      "rain_24h_mm": 0.065,
       "projections": {
-        "2": 3.22,
-        "4": 3.13,
-        "6": 3.04,
+        "2": 3.19,
+        "4": 3.11,
+        "6": 3.03,
         "8": 2.95,
-        "12": 2.77
+        "12": 2.79
       },
       "message": "Recessão inicial projetada pelas três últimas leituras. Não reativa nem altera o módulo de pico; se uma nova chuva atingir 5 mm em 3h, esta projeção é cancelada."
     },
     "peak_uses_24h_prediction": false,
     "learned_delay_hours": 6.527,
-    "evaluated": 6322
+    "evaluated": 6332
   }
 }
