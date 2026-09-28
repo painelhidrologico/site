@@ -563,7 +563,7 @@
     "started_at": 1790581179630,
     "rain_started_at": 1790581179630,
     "rain_ended_at": null,
-    "last_rain_active_at": 1790634989537,
+    "last_rain_active_at": 1790635863988,
     "dry_gap_started_at": null,
     "baseline_level": 3.25,
     "max_level": 3.54,
@@ -572,12 +572,12 @@
     "max_rain_h006": 17.965809548717168,
     "max_rain_h012": 21.390047626516647,
     "max_rain_h024": 23.367500045434348,
-    "max_rain_h048": 23.443857110362675,
-    "max_rain_h096": 23.824714360031344,
+    "max_rain_h048": 23.471476249716112,
+    "max_rain_h096": 23.85147633690919,
     "rain_baseline_h048": 3.4190714211336206,
     "rain_baseline_h096": 3.5997380889242603,
-    "event_rain_mm_h048": 20.024785689229056,
-    "event_rain_mm_h096": 20.22497627110708,
+    "event_rain_mm_h048": 20.052404828582493,
+    "event_rain_mm_h096": 20.25173824798493,
     "response_detected_at": 1790589683081,
     "response_level": 3.38,
     "initial_rise_rate_cm_h": 5.222499999999998,
@@ -919,7 +919,7 @@
         "Rio do Campo": {
           "h003": 13.805,
           "h006": 17.27,
-          "h012": 18.17,
+          "h012": 18.27,
           "h024": 22.62
         },
         "Rio do Oeste": {
@@ -943,8 +943,8 @@
         "Santa Terezinha": {
           "h003": 7.6,
           "h006": 8.7,
-          "h012": 9.1,
-          "h024": 10.4
+          "h012": 9.2,
+          "h024": 10.5
         },
         "Taio": {
           "h003": 20.227,
@@ -1027,7 +1027,7 @@
         "Timbo": {
           "h003": 16.178,
           "h006": 23.312,
-          "h012": 24.155,
+          "h012": 24.405,
           "h024": 26.44
         }
       },
@@ -1047,7 +1047,7 @@
       },
       "station_count": 50
     },
-    "rain_duration_hours": 14.947,
+    "rain_duration_hours": 15.19,
     "last_meaningful_rise_at": 1790634234584,
     "response_delay_hours": 2.362069722222222,
     "response_max_level": 3.54
@@ -1311,7 +1311,7 @@
     "baseline_level": 2.55,
     "pattern": "10_30mm_3h_long"
   },
-  "updated_at": "2026-09-28T22:36:29.538722+00:00",
+  "updated_at": "2026-09-28T22:51:03.989561+00:00",
   "awaiting_rain_reset": false,
   "last_rain_episode": {
     "started_at": 1789813610146,
@@ -1631,7 +1631,7 @@
   "similarity_status": {
     "matches": [
       {
-        "score": 0.134,
+        "score": 0.137,
         "pattern": "10_30mm_3h_long",
         "peak_level": 6.62,
         "rise_cm": 407.0,
