@@ -563,21 +563,21 @@
     "started_at": 1790581179630,
     "rain_started_at": 1790581179630,
     "rain_ended_at": null,
-    "last_rain_active_at": 1790636681801,
+    "last_rain_active_at": 1790637837774,
     "dry_gap_started_at": null,
     "baseline_level": 3.25,
-    "max_level": 3.54,
-    "last_observed_level": 3.54,
+    "max_level": 3.58,
+    "last_observed_level": 3.58,
     "max_rain_h003": 9.681309566717772,
     "max_rain_h006": 17.965809548717168,
     "max_rain_h012": 21.390047626516647,
     "max_rain_h024": 23.367500045434348,
-    "max_rain_h048": 23.49926186427474,
-    "max_rain_h096": 23.879547685916936,
+    "max_rain_h048": 23.55461903437972,
+    "max_rain_h096": 23.93490491051759,
     "rain_baseline_h048": 3.4190714211336206,
     "rain_baseline_h096": 3.5997380889242603,
-    "event_rain_mm_h048": 20.08019044314112,
-    "event_rain_mm_h096": 20.279809596992678,
+    "event_rain_mm_h048": 20.1355476132461,
+    "event_rain_mm_h096": 20.335166821593333,
     "response_detected_at": 1790589683081,
     "response_level": 3.38,
     "initial_rise_rate_cm_h": 5.222499999999998,
@@ -853,7 +853,7 @@
         "Dona Emma": {
           "h003": 19.71,
           "h006": 28.4,
-          "h012": 29.17,
+          "h012": 29.46,
           "h024": 31.39
         },
         "Ibirama": {
@@ -925,7 +925,7 @@
         "Rio do Oeste": {
           "h003": 11.6,
           "h006": 19.2,
-          "h012": 19.8,
+          "h012": 20.2,
           "h024": 21.0
         },
         "Rio do Sul": {
@@ -949,7 +949,7 @@
         "Taio": {
           "h003": 20.227,
           "h006": 27.643,
-          "h012": 29.22,
+          "h012": 29.292,
           "h024": 32.512
         },
         "Trombudo Central": {
@@ -1047,10 +1047,10 @@
       },
       "station_count": 50
     },
-    "rain_duration_hours": 15.417,
-    "last_meaningful_rise_at": 1790634234584,
+    "rain_duration_hours": 15.738,
+    "last_meaningful_rise_at": 1790637837774,
     "response_delay_hours": 2.362069722222222,
-    "response_max_level": 3.54
+    "response_max_level": 3.58
   },
   "last_event": {
     "rain_started_at": 1789813610146,
@@ -1311,7 +1311,7 @@
     "baseline_level": 2.55,
     "pattern": "10_30mm_3h_long"
   },
-  "updated_at": "2026-09-28T23:04:41.802107+00:00",
+  "updated_at": "2026-09-28T23:23:57.775307+00:00",
   "awaiting_rain_reset": false,
   "last_rain_episode": {
     "started_at": 1789813610146,
@@ -1631,7 +1631,7 @@
   "similarity_status": {
     "matches": [
       {
-        "score": 0.139,
+        "score": 0.143,
         "pattern": "10_30mm_3h_long",
         "peak_level": 6.62,
         "rise_cm": 407.0,
