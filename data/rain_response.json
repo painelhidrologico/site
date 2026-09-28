@@ -563,13 +563,13 @@
     "started_at": 1790581179630,
     "rain_started_at": 1790581179630,
     "rain_ended_at": null,
-    "last_rain_active_at": 1790593101860,
+    "last_rain_active_at": 1790593687036,
     "dry_gap_started_at": null,
     "baseline_level": 3.25,
     "max_level": 3.38,
     "last_observed_level": 3.36,
     "max_rain_h003": 2.1368809509845006,
-    "max_rain_h006": 2.7110714307498367,
+    "max_rain_h006": 2.71135714518882,
     "max_rain_h012": 3.8684047619501754,
     "max_rain_h024": 3.91004762621153,
     "max_rain_h048": 3.9859762056952435,
@@ -582,7 +582,9 @@
     "response_level": 3.38,
     "initial_rise_rate_cm_h": 5.222499999999998,
     "max_rise_rate_cm_h": 5.222499999999998,
-    "response_checkpoints_cm": {},
+    "response_checkpoints_cm": {
+      "1": 0.0
+    },
     "spatial_start": {
       "cities": {
         "Agrolandia": {
@@ -846,9 +848,9 @@
         },
         "Dona Emma": {
           "h003": 0.24,
-          "h006": 0.24,
+          "h006": 0.25,
           "h012": 2.23,
-          "h024": 2.62
+          "h024": 2.63
         },
         "Ibirama": {
           "h003": 0.4,
@@ -1041,7 +1043,7 @@
       },
       "station_count": 50
     },
-    "rain_duration_hours": 3.312,
+    "rain_duration_hours": 3.474,
     "last_meaningful_rise_at": 1790589683081,
     "response_delay_hours": 2.362069722222222,
     "response_max_level": 3.38
@@ -1305,7 +1307,7 @@
     "baseline_level": 2.55,
     "pattern": "10_30mm_3h_long"
   },
-  "updated_at": "2026-09-28T10:58:21.861640+00:00",
+  "updated_at": "2026-09-28T11:08:07.037582+00:00",
   "awaiting_rain_reset": false,
   "last_rain_episode": {
     "started_at": 1789813610146,
