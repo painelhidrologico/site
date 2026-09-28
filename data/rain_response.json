@@ -563,20 +563,20 @@
     "started_at": 1790581179630,
     "rain_started_at": 1790581179630,
     "rain_ended_at": null,
-    "last_rain_active_at": 1790593687036,
+    "last_rain_active_at": 1790594736883,
     "dry_gap_started_at": null,
     "baseline_level": 3.25,
     "max_level": 3.38,
-    "last_observed_level": 3.36,
+    "last_observed_level": 3.31,
     "max_rain_h003": 2.1368809509845006,
-    "max_rain_h006": 2.71135714518882,
+    "max_rain_h006": 2.723357133744728,
     "max_rain_h012": 3.8684047619501754,
-    "max_rain_h024": 3.91004762621153,
-    "max_rain_h048": 3.9859762056952435,
+    "max_rain_h024": 3.9211904757079625,
+    "max_rain_h048": 3.987690472319013,
     "max_rain_h096": 4.164928592599574,
     "rain_baseline_h048": 3.4190714211336206,
     "rain_baseline_h096": 3.5997380889242603,
-    "event_rain_mm_h048": 0.5669047845616229,
+    "event_rain_mm_h048": 0.5686190511853924,
     "event_rain_mm_h096": 0.5651905036753133,
     "response_detected_at": 1790589683081,
     "response_level": 3.38,
@@ -842,9 +842,9 @@
         },
         "Braco do Trombudo": {
           "h003": 6.8,
-          "h006": 6.8,
-          "h012": 6.8,
-          "h024": 7.0
+          "h006": 7.0,
+          "h012": 7.0,
+          "h024": 7.2
         },
         "Dona Emma": {
           "h003": 0.24,
@@ -890,9 +890,9 @@
         },
         "Petrolandia": {
           "h003": 11.2,
-          "h006": 11.8,
+          "h006": 12.0,
           "h012": 12.6,
-          "h024": 12.6
+          "h024": 12.8
         },
         "Pouso Redondo": {
           "h003": 1.8,
@@ -926,9 +926,9 @@
         },
         "Rio do Sul": {
           "h003": 4.57,
-          "h006": 4.76,
+          "h006": 4.78,
           "h012": 6.0,
-          "h024": 6.13
+          "h024": 6.15
         },
         "Salete": {
           "h003": 0.0,
@@ -1030,9 +1030,9 @@
       "regions": {
         "alto": {
           "h003": 2.869,
-          "h006": 3.54,
+          "h006": 3.556,
           "h012": 4.986,
-          "h024": 5.041
+          "h024": 5.057
         },
         "medio": {
           "h003": 0.317,
@@ -1043,7 +1043,7 @@
       },
       "station_count": 50
     },
-    "rain_duration_hours": 3.474,
+    "rain_duration_hours": 3.766,
     "last_meaningful_rise_at": 1790589683081,
     "response_delay_hours": 2.362069722222222,
     "response_max_level": 3.38
@@ -1307,7 +1307,7 @@
     "baseline_level": 2.55,
     "pattern": "10_30mm_3h_long"
   },
-  "updated_at": "2026-09-28T11:08:07.037582+00:00",
+  "updated_at": "2026-09-28T11:25:36.884112+00:00",
   "awaiting_rain_reset": false,
   "last_rain_episode": {
     "started_at": 1789813610146,
