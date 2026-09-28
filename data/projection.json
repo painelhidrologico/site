@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-09-28T07:26:43.843000+00:00",
+  "generated_at": "2026-09-28T07:39:39.630000+00:00",
   "river_timestamp": "2026-09-28T07:00:00+00:00",
   "current": 3.25,
   "pred": {
@@ -73,8 +73,34 @@
     }
   },
   "peak_estimate": {
-    "active": false,
-    "status": "no_event",
+    "active": true,
+    "event_id": "1790581179630",
+    "status": "pico_atingido",
+    "mode": "pico_atingido",
+    "current_level_m": 3.25,
+    "published_peak_m": 3.25,
+    "raw_peak_m": 3.25,
+    "temporal_peak_m": 3.25,
+    "published_peak_in_hours": 0.0,
+    "raw_peak_in_hours": 0.0,
+    "peak_in_hours": 0.0,
+    "projected_peak_at_ms": 1790581179630,
+    "projected_peak_at": "2026-09-28T07:39:39.630000+00:00",
+    "peak_window_hours": 1.0,
+    "confidence": 0.585,
+    "sample_count": 1,
+    "rain_mm": 0.0,
+    "cm_per_mm": 4.5,
+    "effective_rate_m_h": 0.0,
+    "acceleration_m_h2": 0.0,
+    "decelerating": false,
+    "response_delay_hours": 6.527,
+    "remaining_m": 0.0,
+    "total_response_m": 0.0,
+    "curve_source": "calculadora_unificada",
+    "curve_version": 3,
+    "last_update_at": 1790581179630,
+    "next_official_update_at": 1790584779630,
     "update_interval_minutes": 60
   },
   "model": {
@@ -111,19 +137,19 @@
       "24": 1.0
     },
     "bias_correction": {
-      "2": 0.01713,
+      "2": 0.0172,
       "4": 0.03028,
-      "6": 0.04249,
-      "8": 0.06004,
-      "12": 0.07896,
+      "6": 0.04368,
+      "8": 0.06109,
+      "12": 0.0805,
       "24": 0.0
     },
     "persistence_blend": {
-      "2": 0.07011,
+      "2": 0.0799,
       "4": 0.14988,
-      "6": 0.25777,
-      "8": 0.34703,
-      "12": 0.30301,
+      "6": 0.2664,
+      "8": 0.35309,
+      "12": 0.31101,
       "24": 0.0
     },
     "damping": {
@@ -163,6 +189,6 @@
     },
     "peak_uses_24h_prediction": false,
     "learned_delay_hours": 6.527,
-    "evaluated": 6681
+    "evaluated": 6685
   }
 }
