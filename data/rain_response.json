@@ -563,21 +563,21 @@
     "started_at": 1790581179630,
     "rain_started_at": 1790581179630,
     "rain_ended_at": null,
-    "last_rain_active_at": 1790591160401,
+    "last_rain_active_at": 1790591391886,
     "dry_gap_started_at": null,
     "baseline_level": 3.25,
     "max_level": 3.38,
     "last_observed_level": 3.36,
     "max_rain_h003": 2.1368809509845006,
-    "max_rain_h006": 2.708500002501976,
+    "max_rain_h006": 2.7096428594064146,
     "max_rain_h012": 3.8684047619501754,
-    "max_rain_h024": 3.9074762000924066,
+    "max_rain_h024": 3.9086190561453504,
     "max_rain_h048": 3.9859762056952435,
-    "max_rain_h096": 4.1645000047626946,
+    "max_rain_h096": 4.164928585787614,
     "rain_baseline_h048": 3.4190714211336206,
     "rain_baseline_h096": 3.5997380889242603,
     "event_rain_mm_h048": 0.5669047845616229,
-    "event_rain_mm_h096": 0.5647619158384343,
+    "event_rain_mm_h096": 0.5651904968633534,
     "response_detected_at": 1790589683081,
     "response_level": 3.38,
     "initial_rise_rate_cm_h": 5.222499999999998,
@@ -845,10 +845,10 @@
           "h024": 7.0
         },
         "Dona Emma": {
-          "h003": 0.15,
-          "h006": 0.15,
+          "h003": 0.19,
+          "h006": 0.19,
           "h012": 2.23,
-          "h024": 2.53
+          "h024": 2.57
         },
         "Ibirama": {
           "h003": 0.4,
@@ -1028,9 +1028,9 @@
       "regions": {
         "alto": {
           "h003": 2.869,
-          "h006": 3.536,
+          "h006": 3.538,
           "h012": 4.986,
-          "h024": 5.038
+          "h024": 5.039
         },
         "medio": {
           "h003": 0.317,
@@ -1041,7 +1041,7 @@
       },
       "station_count": 50
     },
-    "rain_duration_hours": 2.772,
+    "rain_duration_hours": 2.837,
     "last_meaningful_rise_at": 1790589683081,
     "response_delay_hours": 2.362069722222222,
     "response_max_level": 3.38
@@ -1305,7 +1305,7 @@
     "baseline_level": 2.55,
     "pattern": "10_30mm_3h_long"
   },
-  "updated_at": "2026-09-28T10:26:00.401913+00:00",
+  "updated_at": "2026-09-28T10:29:51.887302+00:00",
   "awaiting_rain_reset": false,
   "last_rain_episode": {
     "started_at": 1789813610146,
