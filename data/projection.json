@@ -1,74 +1,74 @@
 {
   "version": 2,
-  "generated_at": "2026-09-28T10:03:45.328000+00:00",
-  "river_timestamp": "2026-09-28T09:00:00+00:00",
-  "current": 3.38,
+  "generated_at": "2026-09-28T10:26:00.401000+00:00",
+  "river_timestamp": "2026-09-28T10:00:00+00:00",
+  "current": 3.36,
   "pred": {
-    "2": 3.38,
-    "4": 3.38,
-    "6": 3.38,
-    "8": 3.38,
-    "12": 3.38
+    "2": 3.36,
+    "4": 3.36,
+    "6": 3.36,
+    "8": 3.36,
+    "12": 3.36
   },
   "components": {
     "2": {
       "unified_curve": true,
-      "curve_value": 3.38,
+      "curve_value": 3.36,
       "rain_mm": 0.567,
       "cm_per_mm": 4.5,
       "total_response_m": 0.0,
       "remaining_response_m": 0.0,
       "response_delay_hours": 2.362,
-      "effective_rate_m_h": 0.01867,
-      "acceleration_m_h2": -0.00754,
+      "effective_rate_m_h": 0.00502,
+      "acceleration_m_h2": -0.00767,
       "decelerating": true
     },
     "4": {
       "unified_curve": true,
-      "curve_value": 3.38,
+      "curve_value": 3.36,
       "rain_mm": 0.567,
       "cm_per_mm": 4.5,
       "total_response_m": 0.0,
       "remaining_response_m": 0.0,
       "response_delay_hours": 2.362,
-      "effective_rate_m_h": 0.01867,
-      "acceleration_m_h2": -0.00754,
+      "effective_rate_m_h": 0.00502,
+      "acceleration_m_h2": -0.00767,
       "decelerating": true
     },
     "6": {
       "unified_curve": true,
-      "curve_value": 3.38,
+      "curve_value": 3.36,
       "rain_mm": 0.567,
       "cm_per_mm": 4.5,
       "total_response_m": 0.0,
       "remaining_response_m": 0.0,
       "response_delay_hours": 2.362,
-      "effective_rate_m_h": 0.01867,
-      "acceleration_m_h2": -0.00754,
+      "effective_rate_m_h": 0.00502,
+      "acceleration_m_h2": -0.00767,
       "decelerating": true
     },
     "8": {
       "unified_curve": true,
-      "curve_value": 3.38,
+      "curve_value": 3.36,
       "rain_mm": 0.567,
       "cm_per_mm": 4.5,
       "total_response_m": 0.0,
       "remaining_response_m": 0.0,
       "response_delay_hours": 2.362,
-      "effective_rate_m_h": 0.01867,
-      "acceleration_m_h2": -0.00754,
+      "effective_rate_m_h": 0.00502,
+      "acceleration_m_h2": -0.00767,
       "decelerating": true
     },
     "12": {
       "unified_curve": true,
-      "curve_value": 3.38,
+      "curve_value": 3.36,
       "rain_mm": 0.567,
       "cm_per_mm": 4.5,
       "total_response_m": 0.0,
       "remaining_response_m": 0.0,
       "response_delay_hours": 2.362,
-      "effective_rate_m_h": 0.01867,
-      "acceleration_m_h2": -0.00754,
+      "effective_rate_m_h": 0.00502,
+      "acceleration_m_h2": -0.00767,
       "decelerating": true
     }
   },
@@ -77,7 +77,7 @@
     "event_id": "1790581179630",
     "status": "pico_atingido",
     "mode": "pico_atingido",
-    "current_level_m": 3.38,
+    "current_level_m": 3.36,
     "published_peak_m": 3.25,
     "raw_peak_m": 3.25,
     "temporal_peak_m": 3.25,
@@ -105,11 +105,15 @@
     "actual_peak_m": 3.38,
     "actual_peak_at_ms": 1790589683081,
     "actual_peak_at": "2026-09-28T10:01:23.081000+00:00",
-    "fallen_m": 0.0,
-    "fallen_cm": 0.0,
+    "fallen_m": 0.02,
+    "fallen_cm": 2.0,
     "rain_3h_mm": 0.0,
     "new_rain_trigger": false,
-    "message": "Pico atingido. Mantendo o pico real até o encerramento do evento."
+    "message": "Pico atingido. Mantendo o pico real até o encerramento do evento.",
+    "reprojection_started_at_ms": null,
+    "reprojection_deadline_at_ms": null,
+    "reprojection_window_hours": 0.0,
+    "reprojection_confirmed_new_peak": false
   },
   "model": {
     "trend_gain": {
@@ -146,18 +150,18 @@
     },
     "bias_correction": {
       "2": 0.01837,
-      "4": 0.03614,
-      "6": 0.05264,
-      "8": 0.06494,
-      "12": 0.09856,
+      "4": 0.03516,
+      "6": 0.05404,
+      "8": 0.0669,
+      "12": 0.1001,
       "24": 0.0
     },
     "persistence_blend": {
       "2": 0.115,
-      "4": 0.2245,
-      "6": 0.31245,
-      "8": 0.39342,
-      "12": 0.36724,
+      "4": 0.22575,
+      "6": 0.31351,
+      "8": 0.3973,
+      "12": 0.37126,
       "24": 0.0
     },
     "damping": {
@@ -197,6 +201,6 @@
     },
     "peak_uses_24h_prediction": false,
     "learned_delay_hours": 6.527,
-    "evaluated": 6730
+    "evaluated": 6737
   }
 }
