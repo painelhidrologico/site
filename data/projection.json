@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-09-28T06:56:31.894000+00:00",
+  "generated_at": "2026-09-28T07:07:28.615000+00:00",
   "river_timestamp": "2026-09-28T06:00:00+00:00",
   "current": 3.19,
   "pred": {
@@ -18,8 +18,8 @@
       "fall_rate_cm_h": 3.0,
       "readings_used": 8,
       "drop_intervals_used": 3,
-      "rain_3h_mm": 0.48,
-      "rain_24h_mm": 1.683
+      "rain_3h_mm": 0.754,
+      "rain_24h_mm": 1.957
     },
     "4": {
       "recession": true,
@@ -28,8 +28,8 @@
       "fall_rate_cm_h": 3.0,
       "readings_used": 8,
       "drop_intervals_used": 3,
-      "rain_3h_mm": 0.48,
-      "rain_24h_mm": 1.683
+      "rain_3h_mm": 0.754,
+      "rain_24h_mm": 1.957
     },
     "6": {
       "recession": true,
@@ -38,8 +38,8 @@
       "fall_rate_cm_h": 3.0,
       "readings_used": 8,
       "drop_intervals_used": 3,
-      "rain_3h_mm": 0.48,
-      "rain_24h_mm": 1.683
+      "rain_3h_mm": 0.754,
+      "rain_24h_mm": 1.957
     },
     "8": {
       "recession": true,
@@ -48,8 +48,8 @@
       "fall_rate_cm_h": 3.0,
       "readings_used": 8,
       "drop_intervals_used": 3,
-      "rain_3h_mm": 0.48,
-      "rain_24h_mm": 1.683
+      "rain_3h_mm": 0.754,
+      "rain_24h_mm": 1.957
     },
     "12": {
       "recession": true,
@@ -58,8 +58,8 @@
       "fall_rate_cm_h": 3.0,
       "readings_used": 8,
       "drop_intervals_used": 3,
-      "rain_3h_mm": 0.48,
-      "rain_24h_mm": 1.683
+      "rain_3h_mm": 0.754,
+      "rain_24h_mm": 1.957
     }
   },
   "peak_estimate": {
@@ -102,18 +102,18 @@
     },
     "bias_correction": {
       "2": 0.01592,
-      "4": 0.02884,
+      "4": 0.02942,
       "6": 0.04109,
-      "8": 0.0578,
-      "12": 0.06951,
+      "8": 0.05899,
+      "12": 0.07378,
       "24": 0.0
     },
     "persistence_blend": {
       "2": 0.04671,
-      "4": 0.12188,
+      "4": 0.13613,
       "6": 0.24162,
-      "8": 0.3356,
-      "12": 0.28607,
+      "8": 0.34114,
+      "12": 0.29458,
       "24": 0.0
     },
     "damping": {
@@ -158,8 +158,8 @@
       "drop_intervals_used": 3,
       "fall_rate_m_h": 0.03,
       "fall_rate_cm_h": 3.0,
-      "rain_3h_mm": 0.48,
-      "rain_24h_mm": 1.683,
+      "rain_3h_mm": 0.754,
+      "rain_24h_mm": 1.957,
       "projections": {
         "2": 3.13,
         "4": 3.07,
@@ -171,6 +171,6 @@
     },
     "peak_uses_24h_prediction": false,
     "learned_delay_hours": 6.527,
-    "evaluated": 6671
+    "evaluated": 6674
   }
 }
