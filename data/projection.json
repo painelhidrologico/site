@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-09-28T10:01:23.081000+00:00",
+  "generated_at": "2026-09-28T10:03:45.328000+00:00",
   "river_timestamp": "2026-09-28T09:00:00+00:00",
   "current": 3.38,
   "pred": {
@@ -19,8 +19,8 @@
       "total_response_m": 0.0,
       "remaining_response_m": 0.0,
       "response_delay_hours": 2.362,
-      "effective_rate_m_h": 0.01903,
-      "acceleration_m_h2": -0.00769,
+      "effective_rate_m_h": 0.01867,
+      "acceleration_m_h2": -0.00754,
       "decelerating": true
     },
     "4": {
@@ -31,8 +31,8 @@
       "total_response_m": 0.0,
       "remaining_response_m": 0.0,
       "response_delay_hours": 2.362,
-      "effective_rate_m_h": 0.01903,
-      "acceleration_m_h2": -0.00769,
+      "effective_rate_m_h": 0.01867,
+      "acceleration_m_h2": -0.00754,
       "decelerating": true
     },
     "6": {
@@ -43,8 +43,8 @@
       "total_response_m": 0.0,
       "remaining_response_m": 0.0,
       "response_delay_hours": 2.362,
-      "effective_rate_m_h": 0.01903,
-      "acceleration_m_h2": -0.00769,
+      "effective_rate_m_h": 0.01867,
+      "acceleration_m_h2": -0.00754,
       "decelerating": true
     },
     "8": {
@@ -55,8 +55,8 @@
       "total_response_m": 0.0,
       "remaining_response_m": 0.0,
       "response_delay_hours": 2.362,
-      "effective_rate_m_h": 0.01903,
-      "acceleration_m_h2": -0.00769,
+      "effective_rate_m_h": 0.01867,
+      "acceleration_m_h2": -0.00754,
       "decelerating": true
     },
     "12": {
@@ -67,8 +67,8 @@
       "total_response_m": 0.0,
       "remaining_response_m": 0.0,
       "response_delay_hours": 2.362,
-      "effective_rate_m_h": 0.01903,
-      "acceleration_m_h2": -0.00769,
+      "effective_rate_m_h": 0.01867,
+      "acceleration_m_h2": -0.00754,
       "decelerating": true
     }
   },
@@ -149,7 +149,7 @@
       "4": 0.03614,
       "6": 0.05264,
       "8": 0.06494,
-      "12": 0.09674,
+      "12": 0.09856,
       "24": 0.0
     },
     "persistence_blend": {
@@ -157,7 +157,7 @@
       "4": 0.2245,
       "6": 0.31245,
       "8": 0.39342,
-      "12": 0.363,
+      "12": 0.36724,
       "24": 0.0
     },
     "damping": {
@@ -197,6 +197,6 @@
     },
     "peak_uses_24h_prediction": false,
     "learned_delay_hours": 6.527,
-    "evaluated": 6729
+    "evaluated": 6730
   }
 }
