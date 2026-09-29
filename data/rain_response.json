@@ -563,7 +563,7 @@
     "started_at": 1790581179630,
     "rain_started_at": 1790581179630,
     "rain_ended_at": null,
-    "last_rain_active_at": 1790710824696,
+    "last_rain_active_at": 1790711569629,
     "dry_gap_started_at": null,
     "baseline_level": 3.25,
     "max_level": 3.87,
@@ -572,12 +572,12 @@
     "max_rain_h006": 18.141190479411968,
     "max_rain_h012": 21.390047626516647,
     "max_rain_h024": 23.367500045434348,
-    "max_rain_h048": 43.64659524645124,
-    "max_rain_h096": 43.83466660635812,
+    "max_rain_h048": 43.71102382114955,
+    "max_rain_h096": 43.8953808920724,
     "rain_baseline_h048": 3.4190714211336206,
     "rain_baseline_h096": 3.5997380889242603,
-    "event_rain_mm_h048": 40.22752382531762,
-    "event_rain_mm_h096": 40.23492851743386,
+    "event_rain_mm_h048": 40.29195240001593,
+    "event_rain_mm_h096": 40.29564280314814,
     "response_detected_at": 1790589683081,
     "response_level": 3.38,
     "initial_rise_rate_cm_h": 5.222499999999998,
@@ -984,9 +984,9 @@
         },
         "Ascurra": {
           "h003": 12.46,
-          "h006": 14.77,
-          "h012": 14.77,
-          "h024": 15.7
+          "h006": 14.93,
+          "h012": 14.93,
+          "h024": 15.81
         },
         "Benedito Novo": {
           "h003": 12.86,
@@ -996,9 +996,9 @@
         },
         "Doutor Pedrinho": {
           "h003": 8.2,
-          "h006": 10.6,
-          "h012": 10.6,
-          "h024": 10.6
+          "h006": 11.0,
+          "h012": 11.0,
+          "h024": 11.0
         },
         "Indaial": {
           "h003": 13.4,
@@ -1008,15 +1008,15 @@
         },
         "Pomerode": {
           "h003": 10.8,
-          "h006": 11.8,
-          "h012": 11.8,
-          "h024": 12.0
+          "h006": 12.2,
+          "h012": 12.2,
+          "h024": 12.4
         },
         "Rio dos Cedros": {
           "h003": 12.57,
-          "h006": 15.325,
-          "h012": 15.335,
-          "h024": 15.76
+          "h006": 15.75,
+          "h012": 15.76,
+          "h024": 16.165
         },
         "Rodeio": {
           "h003": 13.4,
@@ -1047,7 +1047,7 @@
       },
       "station_count": 50
     },
-    "rain_duration_hours": 36.013,
+    "rain_duration_hours": 36.219,
     "last_meaningful_rise_at": 1790673056703,
     "response_delay_hours": 2.362069722222222,
     "response_max_level": 3.87
@@ -1311,7 +1311,7 @@
     "baseline_level": 2.55,
     "pattern": "10_30mm_3h_long"
   },
-  "updated_at": "2026-09-29T19:40:24.696899+00:00",
+  "updated_at": "2026-09-29T19:52:49.630072+00:00",
   "awaiting_rain_reset": false,
   "last_rain_episode": {
     "started_at": 1789813610146,
@@ -1631,7 +1631,7 @@
   "similarity_status": {
     "matches": [
       {
-        "score": 0.228,
+        "score": 0.223,
         "pattern": "10_30mm_3h_long",
         "peak_level": 6.62,
         "rise_cm": 407.0,
