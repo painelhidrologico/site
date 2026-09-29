@@ -563,21 +563,21 @@
     "started_at": 1790581179630,
     "rain_started_at": 1790581179630,
     "rain_ended_at": null,
-    "last_rain_active_at": 1790712377797,
+    "last_rain_active_at": 1790713627188,
     "dry_gap_started_at": null,
     "baseline_level": 3.25,
     "max_level": 3.87,
-    "last_observed_level": 3.19,
+    "last_observed_level": 3.17,
     "max_rain_h003": 12.119404803251935,
     "max_rain_h006": 18.141190479411968,
     "max_rain_h012": 21.390047626516647,
     "max_rain_h024": 23.367500045434348,
-    "max_rain_h048": 43.729452405657085,
-    "max_rain_h096": 43.91409497942243,
+    "max_rain_h048": 43.74466680799212,
+    "max_rain_h096": 43.92473795754569,
     "rain_baseline_h048": 3.4190714211336206,
     "rain_baseline_h096": 3.5997380889242603,
-    "event_rain_mm_h048": 40.31038098452346,
-    "event_rain_mm_h096": 40.31435689049817,
+    "event_rain_mm_h048": 40.325595386858495,
+    "event_rain_mm_h096": 40.324999868621425,
     "response_detected_at": 1790589683081,
     "response_level": 3.38,
     "initial_rise_rate_cm_h": 5.222499999999998,
@@ -996,9 +996,9 @@
         },
         "Doutor Pedrinho": {
           "h003": 8.2,
-          "h006": 11.2,
-          "h012": 11.2,
-          "h024": 11.2
+          "h006": 11.4,
+          "h012": 11.4,
+          "h024": 11.4
         },
         "Indaial": {
           "h003": 13.4,
@@ -1014,8 +1014,8 @@
         },
         "Rio dos Cedros": {
           "h003": 12.57,
-          "h006": 15.86,
-          "h012": 15.87,
+          "h006": 15.96,
+          "h012": 15.97,
           "h024": 16.23
         },
         "Rodeio": {
@@ -1047,7 +1047,7 @@
       },
       "station_count": 50
     },
-    "rain_duration_hours": 36.444,
+    "rain_duration_hours": 36.791,
     "last_meaningful_rise_at": 1790673056703,
     "response_delay_hours": 2.362069722222222,
     "response_max_level": 3.87
@@ -1311,7 +1311,7 @@
     "baseline_level": 2.55,
     "pattern": "10_30mm_3h_long"
   },
-  "updated_at": "2026-09-29T20:06:17.797823+00:00",
+  "updated_at": "2026-09-29T20:27:07.189145+00:00",
   "awaiting_rain_reset": false,
   "last_rain_episode": {
     "started_at": 1789813610146,
@@ -1631,7 +1631,7 @@
   "similarity_status": {
     "matches": [
       {
-        "score": 0.218,
+        "score": 0.21,
         "pattern": "10_30mm_3h_long",
         "peak_level": 6.62,
         "rise_cm": 407.0,
