@@ -1,75 +1,75 @@
 {
   "version": 2,
-  "generated_at": "2026-09-29T07:27:48.487000+00:00",
+  "generated_at": "2026-09-29T07:42:24.922000+00:00",
   "river_timestamp": "2026-09-29T07:00:00+00:00",
   "current": 3.81,
   "pred": {
-    "2": 3.8698,
-    "4": 3.9458,
-    "6": 4.0259,
-    "8": 4.0982,
-    "12": 4.1705
+    "2": 3.8515,
+    "4": 3.9225,
+    "6": 4.0063,
+    "8": 4.0866,
+    "12": 4.1706
   },
   "components": {
     "2": {
       "unified_curve": true,
-      "curve_value": 3.8698,
-      "rain_mm": 20.455,
+      "curve_value": 3.8515,
+      "rain_mm": 20.459,
       "cm_per_mm": 4.5,
-      "total_response_m": 0.9205,
-      "remaining_response_m": 0.3605,
+      "total_response_m": 0.9206,
+      "remaining_response_m": 0.3606,
       "response_delay_hours": 2.362,
-      "effective_rate_m_h": 0.0238,
-      "acceleration_m_h2": 0.00119,
-      "decelerating": false
+      "effective_rate_m_h": 0.01067,
+      "acceleration_m_h2": -0.00467,
+      "decelerating": true
     },
     "4": {
       "unified_curve": true,
-      "curve_value": 3.9458,
-      "rain_mm": 20.455,
+      "curve_value": 3.9225,
+      "rain_mm": 20.459,
       "cm_per_mm": 4.5,
-      "total_response_m": 0.9205,
-      "remaining_response_m": 0.3605,
+      "total_response_m": 0.9206,
+      "remaining_response_m": 0.3606,
       "response_delay_hours": 2.362,
-      "effective_rate_m_h": 0.0238,
-      "acceleration_m_h2": 0.00119,
-      "decelerating": false
+      "effective_rate_m_h": 0.01067,
+      "acceleration_m_h2": -0.00467,
+      "decelerating": true
     },
     "6": {
       "unified_curve": true,
-      "curve_value": 4.0259,
-      "rain_mm": 20.455,
+      "curve_value": 4.0063,
+      "rain_mm": 20.459,
       "cm_per_mm": 4.5,
-      "total_response_m": 0.9205,
-      "remaining_response_m": 0.3605,
+      "total_response_m": 0.9206,
+      "remaining_response_m": 0.3606,
       "response_delay_hours": 2.362,
-      "effective_rate_m_h": 0.0238,
-      "acceleration_m_h2": 0.00119,
-      "decelerating": false
+      "effective_rate_m_h": 0.01067,
+      "acceleration_m_h2": -0.00467,
+      "decelerating": true
     },
     "8": {
       "unified_curve": true,
-      "curve_value": 4.0982,
-      "rain_mm": 20.455,
+      "curve_value": 4.0866,
+      "rain_mm": 20.459,
       "cm_per_mm": 4.5,
-      "total_response_m": 0.9205,
-      "remaining_response_m": 0.3605,
+      "total_response_m": 0.9206,
+      "remaining_response_m": 0.3606,
       "response_delay_hours": 2.362,
-      "effective_rate_m_h": 0.0238,
-      "acceleration_m_h2": 0.00119,
-      "decelerating": false
+      "effective_rate_m_h": 0.01067,
+      "acceleration_m_h2": -0.00467,
+      "decelerating": true
     },
     "12": {
       "unified_curve": true,
-      "curve_value": 4.1705,
-      "rain_mm": 20.455,
+      "curve_value": 4.1706,
+      "rain_mm": 20.459,
       "cm_per_mm": 4.5,
-      "total_response_m": 0.9205,
-      "remaining_response_m": 0.3605,
+      "total_response_m": 0.9206,
+      "remaining_response_m": 0.3606,
       "response_delay_hours": 2.362,
-      "effective_rate_m_h": 0.0238,
-      "acceleration_m_h2": 0.00119,
-      "decelerating": false
+      "effective_rate_m_h": 0.01067,
+      "acceleration_m_h2": -0.00467,
+      "decelerating": true
     }
   },
   "peak_estimate": {
@@ -149,19 +149,19 @@
       "24": 1.0
     },
     "bias_correction": {
-      "2": 0.0086,
-      "4": -0.00685,
-      "6": -0.02671,
-      "8": -0.03674,
-      "12": 0.03828,
+      "2": 0.00864,
+      "4": -0.00694,
+      "6": -0.02717,
+      "8": -0.03762,
+      "12": 0.03298,
       "24": 0.0
     },
     "persistence_blend": {
-      "2": 0.00089,
-      "4": 0.00307,
-      "6": 0.00655,
-      "8": 0.01627,
-      "12": 0.10823,
+      "2": 0.0008,
+      "4": 0.00276,
+      "6": 0.0059,
+      "8": 0.01464,
+      "12": 0.09741,
       "24": 0.0
     },
     "damping": {
@@ -201,6 +201,6 @@
     },
     "peak_uses_24h_prediction": false,
     "learned_delay_hours": 6.527,
-    "evaluated": 7096
+    "evaluated": 7101
   }
 }
