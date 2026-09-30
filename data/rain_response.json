@@ -563,21 +563,21 @@
     "started_at": 1790581179630,
     "rain_started_at": 1790581179630,
     "rain_ended_at": null,
-    "last_rain_active_at": 1790748417469,
+    "last_rain_active_at": 1790749907511,
     "dry_gap_started_at": null,
     "baseline_level": 3.25,
     "max_level": 3.87,
-    "last_observed_level": 3.24,
+    "last_observed_level": 3.29,
     "max_rain_h003": 12.119404803251935,
     "max_rain_h006": 18.141190479411968,
     "max_rain_h012": 21.390047626516647,
     "max_rain_h024": 23.367500045434348,
-    "max_rain_h048": 45.11059526943025,
-    "max_rain_h096": 46.477642679214476,
+    "max_rain_h048": 45.1350240730104,
+    "max_rain_h096": 46.50292859077454,
     "rain_baseline_h048": 3.4190714211336206,
     "rain_baseline_h096": 3.5997380889242603,
-    "event_rain_mm_h048": 41.691523848296626,
-    "event_rain_mm_h096": 42.877904590290214,
+    "event_rain_mm_h048": 41.715952651876776,
+    "event_rain_mm_h096": 42.903190501850275,
     "response_detected_at": 1790589683081,
     "response_level": 3.38,
     "initial_rise_rate_cm_h": 5.222499999999998,
@@ -842,7 +842,7 @@
           "h003": 25.97,
           "h006": 33.895,
           "h012": 33.985,
-          "h024": 37.995
+          "h024": 38.105
         },
         "Braco do Trombudo": {
           "h003": 19.6,
@@ -890,7 +890,7 @@
           "h003": 18.0,
           "h006": 21.6,
           "h012": 22.6,
-          "h024": 33.4
+          "h024": 33.6
         },
         "Petrolandia": {
           "h003": 17.2,
@@ -902,7 +902,7 @@
           "h003": 20.6,
           "h006": 24.6,
           "h012": 24.8,
-          "h024": 35.8
+          "h024": 36.0
         },
         "Presidente Getulio": {
           "h003": 23.2,
@@ -1047,8 +1047,8 @@
       },
       "station_count": 50
     },
-    "rain_duration_hours": 46.455,
-    "last_meaningful_rise_at": 1790745997537,
+    "rain_duration_hours": 46.869,
+    "last_meaningful_rise_at": 1790749907511,
     "response_delay_hours": 2.362069722222222,
     "response_max_level": 3.87
   },
@@ -1311,7 +1311,7 @@
     "baseline_level": 2.55,
     "pattern": "10_30mm_3h_long"
   },
-  "updated_at": "2026-09-30T06:06:57.470657+00:00",
+  "updated_at": "2026-09-30T06:31:47.511791+00:00",
   "awaiting_rain_reset": false,
   "last_rain_episode": {
     "started_at": 1789813610146,
@@ -1631,7 +1631,7 @@
   "similarity_status": {
     "matches": [
       {
-        "score": 0.095,
+        "score": 0.093,
         "pattern": "10_30mm_3h_long",
         "peak_level": 6.62,
         "rise_cm": 407.0,
