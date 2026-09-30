@@ -1,74 +1,74 @@
 {
   "version": 2,
-  "generated_at": "2026-09-30T18:06:58.471000+00:00",
-  "river_timestamp": "2026-09-30T17:00:00+00:00",
-  "current": 3.44,
+  "generated_at": "2026-09-30T18:29:03.482000+00:00",
+  "river_timestamp": "2026-09-30T18:00:00+00:00",
+  "current": 3.38,
   "pred": {
-    "2": 3.5709,
-    "4": 3.8983,
-    "6": 4.3239,
-    "8": 4.7494,
-    "12": 5.2077
+    "2": 3.5154,
+    "4": 3.8541,
+    "6": 4.2943,
+    "8": 4.7345,
+    "12": 5.2085
   },
   "components": {
     "2": {
       "unified_curve": true,
-      "curve_value": 3.5709,
-      "rain_mm": 43.505,
+      "curve_value": 3.5154,
+      "rain_mm": 43.522,
       "cm_per_mm": 4.5,
-      "total_response_m": 1.9577,
-      "remaining_response_m": 1.7677,
+      "total_response_m": 1.9585,
+      "remaining_response_m": 1.8285,
       "response_delay_hours": 2.362,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.00782,
+      "acceleration_m_h2": 0.00074,
       "decelerating": false
     },
     "4": {
       "unified_curve": true,
-      "curve_value": 3.8983,
-      "rain_mm": 43.505,
+      "curve_value": 3.8541,
+      "rain_mm": 43.522,
       "cm_per_mm": 4.5,
-      "total_response_m": 1.9577,
-      "remaining_response_m": 1.7677,
+      "total_response_m": 1.9585,
+      "remaining_response_m": 1.8285,
       "response_delay_hours": 2.362,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.00782,
+      "acceleration_m_h2": 0.00074,
       "decelerating": false
     },
     "6": {
       "unified_curve": true,
-      "curve_value": 4.3239,
-      "rain_mm": 43.505,
+      "curve_value": 4.2943,
+      "rain_mm": 43.522,
       "cm_per_mm": 4.5,
-      "total_response_m": 1.9577,
-      "remaining_response_m": 1.7677,
+      "total_response_m": 1.9585,
+      "remaining_response_m": 1.8285,
       "response_delay_hours": 2.362,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.00782,
+      "acceleration_m_h2": 0.00074,
       "decelerating": false
     },
     "8": {
       "unified_curve": true,
-      "curve_value": 4.7494,
-      "rain_mm": 43.505,
+      "curve_value": 4.7345,
+      "rain_mm": 43.522,
       "cm_per_mm": 4.5,
-      "total_response_m": 1.9577,
-      "remaining_response_m": 1.7677,
+      "total_response_m": 1.9585,
+      "remaining_response_m": 1.8285,
       "response_delay_hours": 2.362,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.00782,
+      "acceleration_m_h2": 0.00074,
       "decelerating": false
     },
     "12": {
       "unified_curve": true,
-      "curve_value": 5.2077,
-      "rain_mm": 43.505,
+      "curve_value": 5.2085,
+      "rain_mm": 43.522,
       "cm_per_mm": 4.5,
-      "total_response_m": 1.9577,
-      "remaining_response_m": 1.7677,
+      "total_response_m": 1.9585,
+      "remaining_response_m": 1.8285,
       "response_delay_hours": 2.362,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.00782,
+      "acceleration_m_h2": 0.00074,
       "decelerating": false
     }
   },
@@ -77,7 +77,7 @@
     "event_id": "1790581179630",
     "status": "pico_atingido",
     "mode": "pico_atingido",
-    "current_level_m": 3.44,
+    "current_level_m": 3.38,
     "published_peak_m": 3.25,
     "raw_peak_m": 3.25,
     "temporal_peak_m": 3.25,
@@ -149,19 +149,19 @@
       "24": 1.0
     },
     "bias_correction": {
-      "2": -0.03277,
-      "4": -0.13366,
+      "2": -0.03491,
+      "4": -0.1357,
       "6": -0.2,
       "8": -0.25,
       "12": -0.3,
       "24": 0.0
     },
     "persistence_blend": {
-      "2": 0.02136,
-      "4": 0.32488,
-      "6": 0.40653,
-      "8": 0.43841,
-      "12": 0.43472,
+      "2": 0.0173,
+      "4": 0.31865,
+      "6": 0.40258,
+      "8": 0.43679,
+      "12": 0.43657,
       "24": 0.0
     },
     "damping": {
@@ -195,12 +195,12 @@
     ],
     "recession": {
       "active": false,
-      "reason": "rise_detected_after_peak",
-      "rise_count": 1,
-      "rise_total_m": 0.04
+      "reason": "insufficient_confirmed_recession",
+      "drop_intervals": 6,
+      "total_drop_m": 0.0
     },
     "peak_uses_24h_prediction": false,
     "learned_delay_hours": 6.527,
-    "evaluated": 7731
+    "evaluated": 7741
   }
 }
