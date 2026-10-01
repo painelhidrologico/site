@@ -1,74 +1,74 @@
 {
   "version": 2,
-  "generated_at": "2026-10-01T02:06:25.960000+00:00",
-  "river_timestamp": "2026-10-01T01:00:00+00:00",
-  "current": 3.31,
+  "generated_at": "2026-10-01T02:25:47.362000+00:00",
+  "river_timestamp": "2026-10-01T02:00:00+00:00",
+  "current": 3.36,
   "pred": {
-    "2": 3.4972,
-    "4": 3.9562,
-    "6": 4.5506,
-    "8": 5.144,
-    "12": 5.7823
+    "2": 3.5774,
+    "4": 4.0369,
+    "6": 4.6128,
+    "8": 5.1796,
+    "12": 5.7837
   },
   "components": {
     "2": {
       "unified_curve": true,
-      "curve_value": 3.4972,
-      "rain_mm": 56.274,
+      "curve_value": 3.5774,
+      "rain_mm": 56.305,
       "cm_per_mm": 4.5,
-      "total_response_m": 2.5323,
-      "remaining_response_m": 2.4723,
+      "total_response_m": 2.5337,
+      "remaining_response_m": 2.4237,
       "response_delay_hours": 2.362,
-      "effective_rate_m_h": 0.00293,
-      "acceleration_m_h2": 0.00044,
+      "effective_rate_m_h": 0.02729,
+      "acceleration_m_h2": 0.00613,
       "decelerating": false
     },
     "4": {
       "unified_curve": true,
-      "curve_value": 3.9562,
-      "rain_mm": 56.274,
+      "curve_value": 4.0369,
+      "rain_mm": 56.305,
       "cm_per_mm": 4.5,
-      "total_response_m": 2.5323,
-      "remaining_response_m": 2.4723,
+      "total_response_m": 2.5337,
+      "remaining_response_m": 2.4237,
       "response_delay_hours": 2.362,
-      "effective_rate_m_h": 0.00293,
-      "acceleration_m_h2": 0.00044,
+      "effective_rate_m_h": 0.02729,
+      "acceleration_m_h2": 0.00613,
       "decelerating": false
     },
     "6": {
       "unified_curve": true,
-      "curve_value": 4.5506,
-      "rain_mm": 56.274,
+      "curve_value": 4.6128,
+      "rain_mm": 56.305,
       "cm_per_mm": 4.5,
-      "total_response_m": 2.5323,
-      "remaining_response_m": 2.4723,
+      "total_response_m": 2.5337,
+      "remaining_response_m": 2.4237,
       "response_delay_hours": 2.362,
-      "effective_rate_m_h": 0.00293,
-      "acceleration_m_h2": 0.00044,
+      "effective_rate_m_h": 0.02729,
+      "acceleration_m_h2": 0.00613,
       "decelerating": false
     },
     "8": {
       "unified_curve": true,
-      "curve_value": 5.144,
-      "rain_mm": 56.274,
+      "curve_value": 5.1796,
+      "rain_mm": 56.305,
       "cm_per_mm": 4.5,
-      "total_response_m": 2.5323,
-      "remaining_response_m": 2.4723,
+      "total_response_m": 2.5337,
+      "remaining_response_m": 2.4237,
       "response_delay_hours": 2.362,
-      "effective_rate_m_h": 0.00293,
-      "acceleration_m_h2": 0.00044,
+      "effective_rate_m_h": 0.02729,
+      "acceleration_m_h2": 0.00613,
       "decelerating": false
     },
     "12": {
       "unified_curve": true,
-      "curve_value": 5.7823,
-      "rain_mm": 56.274,
+      "curve_value": 5.7837,
+      "rain_mm": 56.305,
       "cm_per_mm": 4.5,
-      "total_response_m": 2.5323,
-      "remaining_response_m": 2.4723,
+      "total_response_m": 2.5337,
+      "remaining_response_m": 2.4237,
       "response_delay_hours": 2.362,
-      "effective_rate_m_h": 0.00293,
-      "acceleration_m_h2": 0.00044,
+      "effective_rate_m_h": 0.02729,
+      "acceleration_m_h2": 0.00613,
       "decelerating": false
     }
   },
@@ -77,7 +77,7 @@
     "event_id": "1790581179630",
     "status": "pico_atingido",
     "mode": "pico_atingido",
-    "current_level_m": 3.31,
+    "current_level_m": 3.36,
     "published_peak_m": 3.25,
     "raw_peak_m": 3.25,
     "temporal_peak_m": 3.25,
@@ -105,8 +105,8 @@
     "actual_peak_m": 3.38,
     "actual_peak_at_ms": 1790589683081,
     "actual_peak_at": "2026-09-28T10:01:23.081000+00:00",
-    "fallen_m": 0.07,
-    "fallen_cm": 7.0,
+    "fallen_m": 0.02,
+    "fallen_cm": 2.0,
     "rain_3h_mm": 0.0,
     "new_rain_trigger": false,
     "message": "Pico atingido. Mantendo o pico real até o encerramento do evento.",
@@ -149,7 +149,7 @@
       "24": 1.0
     },
     "bias_correction": {
-      "2": -0.06736,
+      "2": -0.06696,
       "4": -0.15,
       "6": -0.2,
       "8": -0.25,
@@ -157,11 +157,11 @@
       "24": 0.0
     },
     "persistence_blend": {
-      "2": 0.27678,
-      "4": 0.36324,
-      "6": 0.39917,
-      "8": 0.42463,
-      "12": 0.45164,
+      "2": 0.28708,
+      "4": 0.37617,
+      "6": 0.4068,
+      "8": 0.4287,
+      "12": 0.45362,
       "24": 0.0
     },
     "damping": {
@@ -196,10 +196,10 @@
     "recession": {
       "active": false,
       "reason": "new_rain_trigger",
-      "rain_3h_mm": 9.625
+      "rain_3h_mm": 7.709
     },
     "peak_uses_24h_prediction": false,
     "learned_delay_hours": 6.527,
-    "evaluated": 7870
+    "evaluated": 7879
   }
 }
