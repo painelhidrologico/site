@@ -563,21 +563,21 @@
     "started_at": 1790581179630,
     "rain_started_at": 1790581179630,
     "rain_ended_at": null,
-    "last_rain_active_at": 1790827028437,
+    "last_rain_active_at": 1790827801791,
     "dry_gap_started_at": null,
     "baseline_level": 3.25,
     "max_level": 3.87,
-    "last_observed_level": 3.36,
+    "last_observed_level": 3.38,
     "max_rain_h003": 12.119404803251935,
     "max_rain_h006": 18.141190479411968,
     "max_rain_h012": 21.390047626516647,
     "max_rain_h024": 23.367500045434348,
     "max_rain_h048": 45.1350240730104,
-    "max_rain_h096": 60.70092825208391,
+    "max_rain_h096": 61.118190252213246,
     "rain_baseline_h048": 3.4190714211336206,
     "rain_baseline_h096": 3.5997380889242603,
     "event_rain_mm_h048": 41.715952651876776,
-    "event_rain_mm_h096": 57.10119016315965,
+    "event_rain_mm_h096": 57.518452163288984,
     "response_detected_at": 1790589683081,
     "response_level": 3.38,
     "initial_rise_rate_cm_h": 5.222499999999998,
@@ -852,15 +852,15 @@
         },
         "Dona Emma": {
           "h003": 25.24,
-          "h006": 28.4,
-          "h012": 29.48,
+          "h006": 29.33,
+          "h012": 29.85,
           "h024": 31.39
         },
         "Ibirama": {
           "h003": 25.8,
           "h006": 29.6,
           "h012": 30.2,
-          "h024": 30.6
+          "h024": 30.8
         },
         "Ituporanga": {
           "h003": 21.533,
@@ -870,9 +870,9 @@
         },
         "Jose Boiteux": {
           "h003": 21.8,
-          "h006": 26.4,
-          "h012": 26.4,
-          "h024": 27.0
+          "h006": 26.8,
+          "h012": 26.8,
+          "h024": 27.4
         },
         "Laurentino": {
           "h003": 23.8,
@@ -972,9 +972,9 @@
         },
         "Witmarsum": {
           "h003": 31.46,
-          "h006": 32.58,
-          "h012": 32.7,
-          "h024": 35.07
+          "h006": 33.29,
+          "h012": 33.41,
+          "h024": 35.54
         },
         "Apiuna": {
           "h003": 13.2,
@@ -1047,8 +1047,8 @@
       },
       "station_count": 50
     },
-    "rain_duration_hours": 68.291,
-    "last_meaningful_rise_at": 1790821547362,
+    "rain_duration_hours": 68.506,
+    "last_meaningful_rise_at": 1790827801791,
     "response_delay_hours": 2.362069722222222,
     "response_max_level": 3.87
   },
@@ -1311,7 +1311,7 @@
     "baseline_level": 2.55,
     "pattern": "10_30mm_3h_long"
   },
-  "updated_at": "2026-10-01T03:57:08.437983+00:00",
+  "updated_at": "2026-10-01T04:10:01.791941+00:00",
   "awaiting_rain_reset": false,
   "last_rain_episode": {
     "started_at": 1789813610146,
@@ -1631,7 +1631,7 @@
   "similarity_status": {
     "matches": [
       {
-        "score": 0.025,
+        "score": 0.024,
         "pattern": "10_30mm_3h_long",
         "peak_level": 6.62,
         "rise_cm": 407.0,
