@@ -563,7 +563,7 @@
     "started_at": 1790581179630,
     "rain_started_at": 1790581179630,
     "rain_ended_at": null,
-    "last_rain_active_at": 1790829874392,
+    "last_rain_active_at": 1790830679632,
     "dry_gap_started_at": null,
     "baseline_level": 3.25,
     "max_level": 3.87,
@@ -573,11 +573,11 @@
     "max_rain_h012": 21.390047626516647,
     "max_rain_h024": 23.367500045434348,
     "max_rain_h048": 45.1350240730104,
-    "max_rain_h096": 61.88440445945376,
+    "max_rain_h096": 62.3141907283238,
     "rain_baseline_h048": 3.4190714211336206,
     "rain_baseline_h096": 3.5997380889242603,
     "event_rain_mm_h048": 41.715952651876776,
-    "event_rain_mm_h096": 58.2846663705295,
+    "event_rain_mm_h096": 58.71445263939954,
     "response_detected_at": 1790589683081,
     "response_level": 3.38,
     "initial_rise_rate_cm_h": 5.222499999999998,
@@ -841,8 +841,8 @@
         "Aurora": {
           "h003": 31.055,
           "h006": 33.895,
-          "h012": 33.985,
-          "h024": 38.83
+          "h012": 34.285,
+          "h024": 39.54
         },
         "Braco do Trombudo": {
           "h003": 19.6,
@@ -852,15 +852,15 @@
         },
         "Dona Emma": {
           "h003": 25.24,
-          "h006": 30.68,
-          "h012": 32.11,
+          "h006": 30.83,
+          "h012": 32.37,
           "h024": 33.18
         },
         "Ibirama": {
           "h003": 25.8,
-          "h006": 34.4,
-          "h012": 34.6,
-          "h024": 35.6
+          "h006": 35.0,
+          "h012": 35.8,
+          "h024": 36.8
         },
         "Ituporanga": {
           "h003": 21.533,
@@ -870,9 +870,9 @@
         },
         "Jose Boiteux": {
           "h003": 21.8,
-          "h006": 28.2,
-          "h012": 28.2,
-          "h024": 28.8
+          "h006": 29.2,
+          "h012": 29.6,
+          "h024": 30.2
         },
         "Laurentino": {
           "h003": 23.8,
@@ -973,7 +973,7 @@
         "Witmarsum": {
           "h003": 31.46,
           "h006": 34.23,
-          "h012": 34.79,
+          "h012": 34.95,
           "h024": 36.72
         },
         "Apiuna": {
@@ -1047,7 +1047,7 @@
       },
       "station_count": 50
     },
-    "rain_duration_hours": 69.082,
+    "rain_duration_hours": 69.306,
     "last_meaningful_rise_at": 1790827801791,
     "response_delay_hours": 2.362069722222222,
     "response_max_level": 3.87
@@ -1311,7 +1311,7 @@
     "baseline_level": 2.55,
     "pattern": "10_30mm_3h_long"
   },
-  "updated_at": "2026-10-01T04:44:34.393108+00:00",
+  "updated_at": "2026-10-01T04:57:59.633602+00:00",
   "awaiting_rain_reset": false,
   "last_rain_episode": {
     "started_at": 1789813610146,
