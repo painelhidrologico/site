@@ -563,7 +563,7 @@
     "started_at": 1790581179630,
     "rain_started_at": 1790581179630,
     "rain_ended_at": null,
-    "last_rain_active_at": 1790823971695,
+    "last_rain_active_at": 1790825229331,
     "dry_gap_started_at": null,
     "baseline_level": 3.25,
     "max_level": 3.87,
@@ -573,11 +573,11 @@
     "max_rain_h012": 21.390047626516647,
     "max_rain_h024": 23.367500045434348,
     "max_rain_h048": 45.1350240730104,
-    "max_rain_h096": 60.1454281602587,
+    "max_rain_h096": 60.449785409654886,
     "rain_baseline_h048": 3.4190714211336206,
     "rain_baseline_h096": 3.5997380889242603,
     "event_rain_mm_h048": 41.715952651876776,
-    "event_rain_mm_h096": 56.54569007133444,
+    "event_rain_mm_h096": 56.850047320730624,
     "response_detected_at": 1790589683081,
     "response_level": 3.38,
     "initial_rise_rate_cm_h": 5.222499999999998,
@@ -870,9 +870,9 @@
         },
         "Jose Boiteux": {
           "h003": 21.8,
-          "h006": 22.8,
-          "h012": 23.0,
-          "h024": 23.4
+          "h006": 25.6,
+          "h012": 25.6,
+          "h024": 26.2
         },
         "Laurentino": {
           "h003": 23.8,
@@ -1047,7 +1047,7 @@
       },
       "station_count": 50
     },
-    "rain_duration_hours": 67.442,
+    "rain_duration_hours": 67.792,
     "last_meaningful_rise_at": 1790821547362,
     "response_delay_hours": 2.362069722222222,
     "response_max_level": 3.87
@@ -1311,7 +1311,7 @@
     "baseline_level": 2.55,
     "pattern": "10_30mm_3h_long"
   },
-  "updated_at": "2026-10-01T03:06:11.696278+00:00",
+  "updated_at": "2026-10-01T03:27:09.332379+00:00",
   "awaiting_rain_reset": false,
   "last_rain_episode": {
     "started_at": 1789813610146,
@@ -1631,7 +1631,7 @@
   "similarity_status": {
     "matches": [
       {
-        "score": 0.026,
+        "score": 0.025,
         "pattern": "10_30mm_3h_long",
         "peak_level": 6.62,
         "rise_cm": 407.0,
