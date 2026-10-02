@@ -1,59 +1,23 @@
 {
   "version": 2,
-  "evaluated_events": 1,
+  "evaluated_events": 2,
   "reference_cm_per_mm": 4.5,
-  "sum_abs_peak_error_m": 0.2523,
-  "mae_peak_m": 0.2523,
+  "sum_abs_peak_error_m": 1.5323,
+  "mae_peak_m": 0.76615,
   "recent_errors_m": [
-    0.2523
+    0.2523,
+    -1.28
   ],
-  "active": {
-    "active": true,
-    "event_id": "1790581179630",
-    "status": "pico_atingido",
-    "mode": "pico_atingido",
-    "current_level_m": 4.02,
-    "published_peak_m": 3.25,
-    "raw_peak_m": 3.25,
-    "temporal_peak_m": 3.25,
-    "published_peak_in_hours": 0.0,
-    "raw_peak_in_hours": 0.0,
-    "peak_in_hours": 0.0,
-    "projected_peak_at_ms": 1790581179630,
-    "projected_peak_at": "2026-09-28T07:39:39.630000+00:00",
-    "peak_window_hours": 1.0,
-    "confidence": 0.585,
-    "sample_count": 1,
-    "rain_mm": 0.0,
-    "cm_per_mm": 4.5,
-    "effective_rate_m_h": 0.0,
-    "acceleration_m_h2": 0.0,
-    "decelerating": false,
-    "response_delay_hours": 6.527,
-    "remaining_m": 0.0,
-    "total_response_m": 0.0,
-    "curve_source": "calculadora_unificada",
-    "curve_version": 3,
-    "last_update_at": 1790581179630,
-    "next_official_update_at": 1790584779630,
-    "update_interval_minutes": 60,
-    "actual_peak_m": 3.38,
+  "active": null,
+  "last_completed": {
+    "event_id": "1790982249436",
+    "actual_peak_m": 4.53,
     "actual_peak_at_ms": 1790589683081,
     "actual_peak_at": "2026-09-28T10:01:23.081000+00:00",
-    "fallen_m": 0.0,
-    "fallen_cm": 0.0,
-    "rain_3h_mm": 0.0,
-    "new_rain_trigger": false,
-    "message": "Pico atingido. Mantendo o pico real até o encerramento do evento.",
-    "reprojection_started_at_ms": null,
-    "reprojection_deadline_at_ms": null,
-    "reprojection_window_hours": 0.0,
-    "reprojection_confirmed_new_peak": false
+    "published_peak_m": 3.25,
+    "published_peak_in_hours": 0.0,
+    "projected_peak_at_ms": null,
+    "projected_peak_at": null
   },
-  "last_completed": {
-    "event_id": "1790116569370",
-    "actual_peak_m": 6.62,
-    "published_peak_m": 6.8723
-  },
-  "updated_at": "2026-10-02T12:56:55.685000+00:00"
+  "updated_at": "2026-10-02T23:04:09.436000+00:00"
 }
