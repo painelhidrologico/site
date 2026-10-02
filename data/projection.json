@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-02T10:40:59.475000+00:00",
+  "generated_at": "2026-10-02T10:54:19.662000+00:00",
   "river_timestamp": "2026-10-02T10:00:00+00:00",
   "current": 4.08,
   "pred": {
@@ -20,7 +20,7 @@
       "remaining_response_m": 2.076,
       "response_delay_hours": 2.362,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.0086,
+      "acceleration_m_h2": 0.00828,
       "decelerating": false
     },
     "4": {
@@ -32,7 +32,7 @@
       "remaining_response_m": 2.076,
       "response_delay_hours": 2.362,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.0086,
+      "acceleration_m_h2": 0.00828,
       "decelerating": false
     },
     "6": {
@@ -44,7 +44,7 @@
       "remaining_response_m": 2.076,
       "response_delay_hours": 2.362,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.0086,
+      "acceleration_m_h2": 0.00828,
       "decelerating": false
     },
     "8": {
@@ -56,7 +56,7 @@
       "remaining_response_m": 2.076,
       "response_delay_hours": 2.362,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.0086,
+      "acceleration_m_h2": 0.00828,
       "decelerating": false
     },
     "12": {
@@ -68,7 +68,7 @@
       "remaining_response_m": 2.076,
       "response_delay_hours": 2.362,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.0086,
+      "acceleration_m_h2": 0.00828,
       "decelerating": false
     }
   },
@@ -149,7 +149,7 @@
       "24": 1.0
     },
     "bias_correction": {
-      "2": -0.07197,
+      "2": -0.07255,
       "4": -0.15,
       "6": -0.2,
       "8": -0.25,
@@ -157,11 +157,11 @@
       "24": 0.0
     },
     "persistence_blend": {
-      "2": 0.27968,
-      "4": 0.37395,
-      "6": 0.40506,
-      "8": 0.41251,
-      "12": 0.37726,
+      "2": 0.28474,
+      "4": 0.37784,
+      "6": 0.40886,
+      "8": 0.41635,
+      "12": 0.38209,
       "24": 0.0
     },
     "damping": {
@@ -201,6 +201,6 @@
     },
     "peak_uses_24h_prediction": false,
     "learned_delay_hours": 6.527,
-    "evaluated": 8466
+    "evaluated": 8471
   }
 }
