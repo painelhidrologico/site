@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-02T04:57:32.612000+00:00",
+  "generated_at": "2026-10-02T05:06:04.578000+00:00",
   "river_timestamp": "2026-10-02T04:00:00+00:00",
   "current": 4.34,
   "pred": {
@@ -20,7 +20,7 @@
       "remaining_response_m": 1.816,
       "response_delay_hours": 2.362,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.00709,
+      "acceleration_m_h2": 0.00784,
       "decelerating": false
     },
     "4": {
@@ -32,7 +32,7 @@
       "remaining_response_m": 1.816,
       "response_delay_hours": 2.362,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.00709,
+      "acceleration_m_h2": 0.00784,
       "decelerating": false
     },
     "6": {
@@ -44,7 +44,7 @@
       "remaining_response_m": 1.816,
       "response_delay_hours": 2.362,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.00709,
+      "acceleration_m_h2": 0.00784,
       "decelerating": false
     },
     "8": {
@@ -56,7 +56,7 @@
       "remaining_response_m": 1.816,
       "response_delay_hours": 2.362,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.00709,
+      "acceleration_m_h2": 0.00784,
       "decelerating": false
     },
     "12": {
@@ -68,7 +68,7 @@
       "remaining_response_m": 1.816,
       "response_delay_hours": 2.362,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.00709,
+      "acceleration_m_h2": 0.00784,
       "decelerating": false
     }
   },
@@ -160,8 +160,8 @@
       "2": 0.03771,
       "4": 0.16093,
       "6": 0.26904,
-      "8": 0.29916,
-      "12": 0.27859,
+      "8": 0.30289,
+      "12": 0.28068,
       "24": 0.0
     },
     "damping": {
@@ -201,6 +201,6 @@
     },
     "peak_uses_24h_prediction": false,
     "learned_delay_hours": 6.527,
-    "evaluated": 8356
+    "evaluated": 8358
   }
 }
