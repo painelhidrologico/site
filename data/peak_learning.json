@@ -13,7 +13,7 @@
     "event_id": "1791110570940",
     "status": "pico_atingido",
     "mode": "pico_atingido",
-    "current_level_m": 3.52,
+    "current_level_m": 3.58,
     "published_peak_m": 3.52,
     "raw_peak_m": 3.52,
     "temporal_peak_m": 3.52,
@@ -42,7 +42,14 @@
     "reprojection_deadline_at_ms": null,
     "reprojection_window_hours": 0.0,
     "reprojection_confirmed_new_peak": false,
-    "message": "Pico em análise pela curva unificada da calculadora."
+    "message": "Pico atingido. Mantendo o pico real até o encerramento do evento.",
+    "actual_peak_m": 3.58,
+    "actual_peak_at_ms": 1791134118095,
+    "actual_peak_at": "2026-10-04T17:15:18.095000+00:00",
+    "fallen_m": 0.0,
+    "fallen_cm": 0.0,
+    "rain_3h_mm": 0.0,
+    "new_rain_trigger": false
   },
   "last_completed": {
     "event_id": "1790982249436",
@@ -54,5 +61,5 @@
     "projected_peak_at_ms": null,
     "projected_peak_at": null
   },
-  "updated_at": "2026-10-04T10:42:50.940000+00:00"
+  "updated_at": "2026-10-04T17:15:18.095000+00:00"
 }
