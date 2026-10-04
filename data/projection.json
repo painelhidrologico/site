@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-04T23:38:37.255000+00:00",
+  "generated_at": "2026-10-04T23:51:53.274000+00:00",
   "river_timestamp": "2026-10-04T23:00:00+00:00",
   "current": 3.63,
   "pred": {
@@ -20,7 +20,7 @@
       "remaining_response_m": 0.0,
       "response_delay_hours": 5.139,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": -0.00079,
+      "acceleration_m_h2": -0.00076,
       "decelerating": true
     },
     "4": {
@@ -32,7 +32,7 @@
       "remaining_response_m": 0.0,
       "response_delay_hours": 5.139,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": -0.00079,
+      "acceleration_m_h2": -0.00076,
       "decelerating": true
     },
     "6": {
@@ -44,7 +44,7 @@
       "remaining_response_m": 0.0,
       "response_delay_hours": 5.139,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": -0.00079,
+      "acceleration_m_h2": -0.00076,
       "decelerating": true
     },
     "8": {
@@ -56,7 +56,7 @@
       "remaining_response_m": 0.0,
       "response_delay_hours": 5.139,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": -0.00079,
+      "acceleration_m_h2": -0.00076,
       "decelerating": true
     },
     "12": {
@@ -68,7 +68,7 @@
       "remaining_response_m": 0.0,
       "response_delay_hours": 5.139,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": -0.00079,
+      "acceleration_m_h2": -0.00076,
       "decelerating": true
     }
   },
