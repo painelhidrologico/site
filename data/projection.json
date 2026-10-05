@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-05T01:54:08.780000+00:00",
+  "generated_at": "2026-10-05T02:05:51.905000+00:00",
   "river_timestamp": "2026-10-05T01:00:00+00:00",
   "current": 3.6,
   "pred": {
@@ -20,7 +20,7 @@
       "remaining_response_m": 0.0,
       "response_delay_hours": 5.139,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.00075,
+      "acceleration_m_h2": 0.00174,
       "decelerating": false
     },
     "4": {
@@ -32,7 +32,7 @@
       "remaining_response_m": 0.0,
       "response_delay_hours": 5.139,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.00075,
+      "acceleration_m_h2": 0.00174,
       "decelerating": false
     },
     "6": {
@@ -44,7 +44,7 @@
       "remaining_response_m": 0.0,
       "response_delay_hours": 5.139,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.00075,
+      "acceleration_m_h2": 0.00174,
       "decelerating": false
     },
     "8": {
@@ -56,7 +56,7 @@
       "remaining_response_m": 0.0,
       "response_delay_hours": 5.139,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.00075,
+      "acceleration_m_h2": 0.00174,
       "decelerating": false
     },
     "12": {
@@ -68,7 +68,7 @@
       "remaining_response_m": 0.0,
       "response_delay_hours": 5.139,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.00075,
+      "acceleration_m_h2": 0.00174,
       "decelerating": false
     }
   },
