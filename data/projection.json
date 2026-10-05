@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-05T16:47:24.098000+00:00",
+  "generated_at": "2026-10-05T17:06:09.045000+00:00",
   "river_timestamp": "2026-10-05T16:00:00+00:00",
   "current": 3.34,
   "pred": {
@@ -20,7 +20,7 @@
       "remaining_response_m": 0.1956,
       "response_delay_hours": 6.541,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.0023,
+      "acceleration_m_h2": 0.00131,
       "decelerating": false
     },
     "4": {
@@ -32,7 +32,7 @@
       "remaining_response_m": 0.1956,
       "response_delay_hours": 6.541,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.0023,
+      "acceleration_m_h2": 0.00131,
       "decelerating": false
     },
     "6": {
@@ -44,7 +44,7 @@
       "remaining_response_m": 0.1956,
       "response_delay_hours": 6.541,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.0023,
+      "acceleration_m_h2": 0.00131,
       "decelerating": false
     },
     "8": {
@@ -56,7 +56,7 @@
       "remaining_response_m": 0.1956,
       "response_delay_hours": 6.541,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.0023,
+      "acceleration_m_h2": 0.00131,
       "decelerating": false
     },
     "12": {
@@ -68,7 +68,7 @@
       "remaining_response_m": 0.1956,
       "response_delay_hours": 6.541,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.0023,
+      "acceleration_m_h2": 0.00131,
       "decelerating": false
     }
   },
@@ -149,17 +149,17 @@
       "24": 1.0
     },
     "bias_correction": {
-      "2": -0.01542,
-      "4": -0.02754,
-      "6": -0.03478,
+      "2": -0.01538,
+      "4": -0.02742,
+      "6": -0.03634,
       "8": -0.06101,
       "12": -0.23521,
       "24": 0.0
     },
     "persistence_blend": {
-      "2": 0.02233,
-      "4": 0.09145,
-      "6": 0.18129,
+      "2": 0.0201,
+      "4": 0.08231,
+      "6": 0.16316,
       "8": 0.34719,
       "12": 0.4314,
       "24": 0.0
@@ -201,6 +201,6 @@
     },
     "peak_uses_24h_prediction": false,
     "learned_delay_hours": 5.139,
-    "evaluated": 8900
+    "evaluated": 8903
   }
 }
