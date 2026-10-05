@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-05T07:55:35.309000+00:00",
+  "generated_at": "2026-10-05T08:08:09.424000+00:00",
   "river_timestamp": "2026-10-05T07:00:00+00:00",
   "current": 3.52,
   "pred": {
@@ -20,7 +20,7 @@
       "remaining_response_m": 0.0156,
       "response_delay_hours": 6.541,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.00262,
+      "acceleration_m_h2": 0.00346,
       "decelerating": false
     },
     "4": {
@@ -32,7 +32,7 @@
       "remaining_response_m": 0.0156,
       "response_delay_hours": 6.541,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.00262,
+      "acceleration_m_h2": 0.00346,
       "decelerating": false
     },
     "6": {
@@ -44,7 +44,7 @@
       "remaining_response_m": 0.0156,
       "response_delay_hours": 6.541,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.00262,
+      "acceleration_m_h2": 0.00346,
       "decelerating": false
     },
     "8": {
@@ -56,7 +56,7 @@
       "remaining_response_m": 0.0156,
       "response_delay_hours": 6.541,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.00262,
+      "acceleration_m_h2": 0.00346,
       "decelerating": false
     },
     "12": {
@@ -68,7 +68,7 @@
       "remaining_response_m": 0.0156,
       "response_delay_hours": 6.541,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.00262,
+      "acceleration_m_h2": 0.00346,
       "decelerating": false
     }
   },
@@ -149,18 +149,18 @@
       "24": 1.0
     },
     "bias_correction": {
-      "2": -0.02146,
-      "4": -0.07731,
+      "2": -0.02031,
+      "4": -0.07325,
       "6": -0.1924,
       "8": -0.25,
       "12": -0.3,
       "24": 0.0
     },
     "persistence_blend": {
-      "2": 0.24939,
-      "4": 0.39728,
+      "2": 0.23833,
+      "4": 0.39501,
       "6": 0.44046,
-      "8": 0.45708,
+      "8": 0.45712,
       "12": 0.45756,
       "24": 0.0
     },
@@ -201,6 +201,6 @@
     },
     "peak_uses_24h_prediction": false,
     "learned_delay_hours": 5.139,
-    "evaluated": 8774
+    "evaluated": 8777
   }
 }
