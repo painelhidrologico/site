@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-05T04:09:19.547000+00:00",
+  "generated_at": "2026-10-05T04:29:50.513000+00:00",
   "river_timestamp": "2026-10-05T04:00:00+00:00",
   "current": 3.59,
   "pred": {
@@ -20,7 +20,7 @@
       "remaining_response_m": 0.0,
       "response_delay_hours": 5.139,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": -0.0002,
+      "acceleration_m_h2": 0.00013,
       "decelerating": false
     },
     "4": {
@@ -32,7 +32,7 @@
       "remaining_response_m": 0.0,
       "response_delay_hours": 5.139,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": -0.0002,
+      "acceleration_m_h2": 0.00013,
       "decelerating": false
     },
     "6": {
@@ -44,7 +44,7 @@
       "remaining_response_m": 0.0,
       "response_delay_hours": 5.139,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": -0.0002,
+      "acceleration_m_h2": 0.00013,
       "decelerating": false
     },
     "8": {
@@ -56,7 +56,7 @@
       "remaining_response_m": 0.0,
       "response_delay_hours": 5.139,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": -0.0002,
+      "acceleration_m_h2": 0.00013,
       "decelerating": false
     },
     "12": {
@@ -68,7 +68,7 @@
       "remaining_response_m": 0.0,
       "response_delay_hours": 5.139,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": -0.0002,
+      "acceleration_m_h2": 0.00013,
       "decelerating": false
     }
   },
@@ -149,17 +149,17 @@
       "24": 1.0
     },
     "bias_correction": {
-      "2": -0.03701,
-      "4": -0.12977,
+      "2": -0.03523,
+      "4": -0.12507,
       "6": -0.2,
       "8": -0.25,
       "12": -0.3,
       "24": 0.0
     },
     "persistence_blend": {
-      "2": 0.31141,
-      "4": 0.40503,
-      "6": 0.43884,
+      "2": 0.31088,
+      "4": 0.40517,
+      "6": 0.43953,
       "8": 0.45414,
       "12": 0.4569,
       "24": 0.0
@@ -201,6 +201,6 @@
     },
     "peak_uses_24h_prediction": false,
     "learned_delay_hours": 5.139,
-    "evaluated": 8726
+    "evaluated": 8730
   }
 }
