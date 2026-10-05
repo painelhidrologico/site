@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-05T06:11:04.622000+00:00",
+  "generated_at": "2026-10-05T06:38:32.864000+00:00",
   "river_timestamp": "2026-10-05T06:00:00+00:00",
   "current": 3.55,
   "pred": {
@@ -20,7 +20,7 @@
       "remaining_response_m": 0.0,
       "response_delay_hours": 5.139,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": -0.00161,
+      "acceleration_m_h2": 0.00197,
       "decelerating": false
     },
     "4": {
@@ -32,7 +32,7 @@
       "remaining_response_m": 0.0,
       "response_delay_hours": 5.139,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": -0.00161,
+      "acceleration_m_h2": 0.00197,
       "decelerating": false
     },
     "6": {
@@ -44,7 +44,7 @@
       "remaining_response_m": 0.0,
       "response_delay_hours": 5.139,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": -0.00161,
+      "acceleration_m_h2": 0.00197,
       "decelerating": false
     },
     "8": {
@@ -56,7 +56,7 @@
       "remaining_response_m": 0.0,
       "response_delay_hours": 5.139,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": -0.00161,
+      "acceleration_m_h2": 0.00197,
       "decelerating": false
     },
     "12": {
@@ -68,7 +68,7 @@
       "remaining_response_m": 0.0,
       "response_delay_hours": 5.139,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": -0.00161,
+      "acceleration_m_h2": 0.00197,
       "decelerating": false
     }
   },
@@ -149,18 +149,18 @@
       "24": 1.0
     },
     "bias_correction": {
-      "2": -0.02635,
-      "4": -0.10317,
+      "2": -0.02515,
+      "4": -0.09892,
       "6": -0.2,
       "8": -0.25,
       "12": -0.3,
       "24": 0.0
     },
     "persistence_blend": {
-      "2": 0.28643,
-      "4": 0.40439,
-      "6": 0.4412,
-      "8": 0.45541,
+      "2": 0.27839,
+      "4": 0.40371,
+      "6": 0.44123,
+      "8": 0.45576,
       "12": 0.45756,
       "24": 0.0
     },
@@ -201,6 +201,6 @@
     },
     "peak_uses_24h_prediction": false,
     "learned_delay_hours": 5.139,
-    "evaluated": 8752
+    "evaluated": 8756
   }
 }
