@@ -1,10 +1,10 @@
 {
   "version": 12,
-  "updated_at": "2026-10-05T02:57:14.600462+00:00",
-  "evaluated": 8715,
+  "updated_at": "2026-10-05T03:10:13.694050+00:00",
+  "evaluated": 8716,
   "mae_m": {
     "2": 0.1088,
-    "4": 0.2291,
+    "4": 0.229,
     "6": 0.3697,
     "12": 0.6897,
     "24": 0.9259,
@@ -175,13 +175,12 @@
       ]
     },
     "4": {
-      "evaluated": 1691,
-      "sum_abs_error": 387.40070000000054,
-      "sum_error": 102.16270000000006,
-      "mae_m": 0.2291,
+      "evaluated": 1692,
+      "sum_abs_error": 387.4307000000005,
+      "sum_error": 102.19270000000006,
+      "mae_m": 0.229,
       "bias_m": 0.0604,
       "recent_abs_errors": [
-        0.7008,
         0.7008,
         0.7008,
         0.6712,
@@ -230,10 +229,10 @@
         0.05,
         0.05,
         0.04,
-        0.04
+        0.04,
+        0.03
       ],
       "recent_errors": [
-        0.7008,
         0.7008,
         0.7008,
         0.6712,
@@ -282,10 +281,10 @@
         0.05,
         0.05,
         0.04,
-        0.04
+        0.04,
+        0.03
       ],
       "recent_persistence_errors": [
-        0.23,
         0.23,
         0.23,
         0.19,
@@ -334,7 +333,8 @@
         0.05,
         0.05,
         0.04,
-        0.04
+        0.04,
+        0.03
       ]
     },
     "6": {
@@ -877,7 +877,7 @@
   },
   "bias_correction": {
     "2": -0.04348,
-    "4": -0.15,
+    "4": -0.148,
     "6": -0.2,
     "8": -0.25,
     "12": -0.3,
@@ -885,7 +885,7 @@
   },
   "persistence_blend": {
     "2": 0.31302,
-    "4": 0.40421,
+    "4": 0.40434,
     "6": 0.43816,
     "8": 0.45414,
     "12": 0.4569,
@@ -913,7 +913,7 @@
     "h012": {
       "stations": 48,
       "cities": 35,
-      "value": 0.011714285718543188
+      "value": 0.008857142978480883
     },
     "h024": {
       "stations": 48,
@@ -928,7 +928,7 @@
     "h096": {
       "stations": 48,
       "cities": 35,
-      "value": 18.892833294187273
+      "value": 18.748761851446968
     }
   },
   "spatial_rain": {
@@ -1080,7 +1080,7 @@
       "Vitor Meireles": {
         "h003": 0.0,
         "h006": 0.0,
-        "h012": 0.13,
+        "h012": 0.03,
         "h024": 14.97
       },
       "Witmarsum": {
@@ -1148,7 +1148,7 @@
       "alto": {
         "h003": 0.0,
         "h006": 0.0,
-        "h012": 0.016,
+        "h012": 0.012,
         "h024": 11.155
       },
       "medio": {
@@ -1988,7 +1988,7 @@
       "dry_gap_started_at": 1791134118095,
       "baseline_level": 3.52,
       "max_level": 3.64,
-      "last_observed_level": 3.59,
+      "last_observed_level": 3.6,
       "max_rain_h003": 3.0035952238809496,
       "max_rain_h006": 10.58616668667112,
       "max_rain_h012": 10.890238072190966,
@@ -2468,7 +2468,7 @@
         "station_count": 50
       },
       "rain_duration_hours": 0.0,
-      "last_meaningful_rise_at": 1791149837091,
+      "last_meaningful_rise_at": 1791169813529,
       "response_delay_hours": 6.540876388888889,
       "response_max_level": 3.64
     },
@@ -2731,7 +2731,7 @@
       "baseline_level": 3.25,
       "pattern": "10_30mm_3h_long"
     },
-    "updated_at": "2026-10-05T02:57:14.380504+00:00",
+    "updated_at": "2026-10-05T03:10:13.529713+00:00",
     "awaiting_rain_reset": false,
     "last_rain_episode": {
       "started_at": 1790581179630,
@@ -3101,7 +3101,7 @@
     "event_id": "1791110570940",
     "status": "pico_atingido",
     "mode": "pico_atingido",
-    "current_level_m": 3.59,
+    "current_level_m": 3.6,
     "published_peak_m": 3.52,
     "raw_peak_m": 3.52,
     "temporal_peak_m": 3.52,
@@ -3142,8 +3142,8 @@
   "recession": {
     "active": false,
     "reason": "rise_detected_after_peak",
-    "rise_count": 1,
-    "rise_total_m": 0.02
+    "rise_count": 2,
+    "rise_total_m": 0.03
   },
   "peak_learning": {
     "evaluated_events": 2,
