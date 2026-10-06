@@ -9978,5 +9978,43 @@
     "ended_at": 1790982249436,
     "duration_hours": 33.787,
     "peak_rise_m": 0.5
+  },
+  {
+    "id": "flood-20261006T232503Z",
+    "status": "active",
+    "started_at": 1791329103485,
+    "threshold_crossed_at": 1791329103485,
+    "initial_level": 4.01,
+    "peak_level": 4.01,
+    "peak_at": 1791329103485,
+    "max_rise_rate_m_per_h": 0.13149999999999998,
+    "samples": [
+      {
+        "t": 1791329103485,
+        "level": 4.01,
+        "rain": {
+          "h003": 2.734809520556813,
+          "h006": 9.810142831575304,
+          "h012": 22.478999962125506,
+          "h024": 35.09161900565738,
+          "h048": 36.56538086391631,
+          "h096": 47.641119071415496
+        },
+        "slope_m_per_h": 0.1315
+      }
+    ],
+    "dam_events": [
+      {
+        "t": 1791329103485,
+        "dams": {
+          "open_fraction": 0.6,
+          "spill_active": 0,
+          "open": 12,
+          "total": 20,
+          "event_opening": 0,
+          "recent_event_signal": 0.07466384540056077
+        }
+      }
+    ]
   }
 ]
