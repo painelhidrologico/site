@@ -9,7 +9,42 @@
     -1.28,
     -0.12
   ],
-  "active": null,
+  "active": {
+    "active": true,
+    "event_id": "1791275345588",
+    "status": "pico_atingido",
+    "mode": "pico_atingido",
+    "current_level_m": 3.2,
+    "published_peak_m": 3.2,
+    "raw_peak_m": 3.2,
+    "temporal_peak_m": 3.2,
+    "published_peak_in_hours": 0.0,
+    "raw_peak_in_hours": 0.0,
+    "peak_in_hours": 0.0,
+    "projected_peak_at_ms": 1791275345588,
+    "projected_peak_at": "2026-10-06T08:29:05.588000+00:00",
+    "peak_window_hours": 1.0,
+    "confidence": 0.585,
+    "sample_count": 1,
+    "rain_mm": 0.0,
+    "cm_per_mm": 4.5,
+    "effective_rate_m_h": 0.0,
+    "acceleration_m_h2": 0.0,
+    "decelerating": false,
+    "response_delay_hours": 5.489,
+    "remaining_m": 0.0,
+    "total_response_m": 0.0,
+    "curve_source": "calculadora_unificada",
+    "curve_version": 3,
+    "last_update_at": 1791275345588,
+    "next_official_update_at": 1791278945588,
+    "update_interval_minutes": 60,
+    "reprojection_started_at_ms": null,
+    "reprojection_deadline_at_ms": null,
+    "reprojection_window_hours": 0.0,
+    "reprojection_confirmed_new_peak": false,
+    "message": "Pico em análise pela curva unificada da calculadora."
+  },
   "last_completed": {
     "event_id": "1791237989884",
     "actual_peak_m": 3.64,
@@ -20,5 +55,5 @@
     "projected_peak_at_ms": null,
     "projected_peak_at": null
   },
-  "updated_at": "2026-10-06T00:07:58.491000+00:00"
+  "updated_at": "2026-10-06T08:29:05.588000+00:00"
 }
