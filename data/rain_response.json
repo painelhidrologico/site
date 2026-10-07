@@ -1113,7 +1113,7 @@
     "started_at": 1791275345588,
     "rain_started_at": 1791275345588,
     "rain_ended_at": null,
-    "last_rain_active_at": 1791340983888,
+    "last_rain_active_at": 1791341804695,
     "dry_gap_started_at": null,
     "baseline_level": 3.2,
     "max_level": 4.43,
@@ -1122,12 +1122,12 @@
     "max_rain_h006": 14.628261956714448,
     "max_rain_h012": 22.851976051784696,
     "max_rain_h024": 35.53057130631946,
-    "max_rain_h048": 38.019499892280216,
-    "max_rain_h096": 49.08380952108474,
+    "max_rain_h048": 38.04364256631761,
+    "max_rain_h096": 49.107952467600505,
     "rain_baseline_h048": 13.697237982068742,
     "rain_baseline_h096": 21.912571418853034,
-    "event_rain_mm_h048": 24.322261910211473,
-    "event_rain_mm_h096": 27.171238102231705,
+    "event_rain_mm_h048": 24.346404584248866,
+    "event_rain_mm_h096": 27.19538104874747,
     "response_detected_at": 1791307533116,
     "response_level": 3.29,
     "initial_rise_rate_cm_h": 3.199999999999999,
@@ -1559,7 +1559,7 @@
           "h003": 14.4,
           "h006": 24.4,
           "h012": 42.6,
-          "h024": 67.4
+          "h024": 67.8
         },
         "Rio dos Cedros": {
           "h003": 21.37,
@@ -1596,7 +1596,7 @@
       },
       "station_count": 50
     },
-    "rain_duration_hours": 18.233,
+    "rain_duration_hours": 18.461,
     "last_meaningful_rise_at": 1791340030042,
     "response_delay_hours": 8.94098,
     "response_max_level": 4.43
@@ -1860,7 +1860,7 @@
     "baseline_level": 3.52,
     "pattern": "0_10mm_3h_short"
   },
-  "updated_at": "2026-10-07T02:43:03.889945+00:00",
+  "updated_at": "2026-10-07T02:56:44.696121+00:00",
   "awaiting_rain_reset": false,
   "last_rain_episode": {
     "started_at": 1791110570940,
@@ -2483,14 +2483,14 @@
   "similarity_status": {
     "matches": [
       {
-        "score": 0.098,
+        "score": 0.101,
         "pattern": "10_30mm_3h_long",
         "peak_level": 6.62,
         "rise_cm": 407.0,
         "delay_hours": 3.747
       },
       {
-        "score": 0.003,
+        "score": 0.002,
         "pattern": "0_10mm_3h_short",
         "peak_level": 3.64,
         "rise_cm": 12.0,
