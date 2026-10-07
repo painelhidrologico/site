@@ -1113,7 +1113,7 @@
     "started_at": 1791275345588,
     "rain_started_at": 1791275345588,
     "rain_ended_at": null,
-    "last_rain_active_at": 1791337374079,
+    "last_rain_active_at": 1791338169289,
     "dry_gap_started_at": null,
     "baseline_level": 3.2,
     "max_level": 4.3,
@@ -1122,12 +1122,12 @@
     "max_rain_h006": 14.628261956714448,
     "max_rain_h012": 22.851976051784696,
     "max_rain_h024": 35.53057130631946,
-    "max_rain_h048": 37.739238107772096,
-    "max_rain_h096": 48.80926192601522,
+    "max_rain_h048": 37.84823809578305,
+    "max_rain_h096": 48.91826172329131,
     "rain_baseline_h048": 13.697237982068742,
     "rain_baseline_h096": 21.912571418853034,
-    "event_rain_mm_h048": 24.042000125703353,
-    "event_rain_mm_h096": 26.896690507162184,
+    "event_rain_mm_h048": 24.15100011371431,
+    "event_rain_mm_h096": 27.005690304438275,
     "response_detected_at": 1791307533116,
     "response_level": 3.29,
     "initial_rise_rate_cm_h": 3.199999999999999,
@@ -1390,8 +1390,8 @@
         "Aurora": {
           "h003": 7.45,
           "h006": 12.46,
-          "h012": 14.285,
-          "h024": 27.245
+          "h012": 14.535,
+          "h024": 27.525
         },
         "Braco do Trombudo": {
           "h003": 4.6,
@@ -1541,7 +1541,7 @@
           "h003": 20.72,
           "h006": 35.08,
           "h012": 56.63,
-          "h024": 86.71
+          "h024": 87.26
         },
         "Doutor Pedrinho": {
           "h003": 16.2,
@@ -1559,13 +1559,13 @@
           "h003": 14.4,
           "h006": 24.4,
           "h012": 42.6,
-          "h024": 66.2
+          "h024": 66.8
         },
         "Rio dos Cedros": {
           "h003": 21.37,
           "h006": 38.435,
           "h012": 66.465,
-          "h024": 92.69
+          "h024": 92.745
         },
         "Rodeio": {
           "h003": 10.2,
@@ -1577,7 +1577,7 @@
           "h003": 15.045,
           "h006": 25.705,
           "h012": 42.95,
-          "h024": 61.43
+          "h024": 61.94
         }
       },
       "regions": {
@@ -1591,12 +1591,12 @@
           "h003": 11.927,
           "h006": 20.826,
           "h012": 35.343,
-          "h024": 53.874
+          "h024": 53.954
         }
       },
       "station_count": 50
     },
-    "rain_duration_hours": 17.23,
+    "rain_duration_hours": 17.451,
     "last_meaningful_rise_at": 1791336428318,
     "response_delay_hours": 8.94098,
     "response_max_level": 4.3
@@ -1860,7 +1860,7 @@
     "baseline_level": 3.52,
     "pattern": "0_10mm_3h_short"
   },
-  "updated_at": "2026-10-07T01:42:54.080174+00:00",
+  "updated_at": "2026-10-07T01:56:09.290117+00:00",
   "awaiting_rain_reset": false,
   "last_rain_episode": {
     "started_at": 1791110570940,
@@ -2483,14 +2483,14 @@
   "similarity_status": {
     "matches": [
       {
-        "score": 0.085,
+        "score": 0.088,
         "pattern": "10_30mm_3h_long",
         "peak_level": 6.62,
         "rise_cm": 407.0,
         "delay_hours": 3.747
       },
       {
-        "score": 0.009,
+        "score": 0.008,
         "pattern": "0_10mm_3h_short",
         "peak_level": 3.64,
         "rise_cm": 12.0,
