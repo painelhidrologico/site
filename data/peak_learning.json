@@ -14,7 +14,7 @@
     "event_id": "1791275345588",
     "status": "pico_atingido",
     "mode": "pico_atingido",
-    "current_level_m": 4.75,
+    "current_level_m": 4.7,
     "published_peak_m": 3.2,
     "raw_peak_m": 3.2,
     "temporal_peak_m": 3.2,
@@ -62,5 +62,5 @@
     "projected_peak_at_ms": null,
     "projected_peak_at": null
   },
-  "updated_at": "2026-10-08T01:01:30.313000+00:00"
+  "updated_at": "2026-10-08T01:27:38.183000+00:00"
 }
