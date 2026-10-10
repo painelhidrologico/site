@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-10T08:54:56.904000+00:00",
+  "generated_at": "2026-10-10T09:05:23.350000+00:00",
   "river_timestamp": "2026-10-10T08:00:00+00:00",
   "current": 3.57,
   "pred": {
@@ -112,10 +112,10 @@
     },
     "bias_correction": {
       "2": 0.00677,
-      "4": 0.01145,
-      "6": 0.01364,
+      "4": 0.01187,
+      "6": 0.01434,
       "8": 0.01469,
-      "12": -0.00288,
+      "12": -1e-05,
       "24": 0.0
     },
     "persistence_blend": {
@@ -163,6 +163,6 @@
     },
     "peak_uses_24h_prediction": false,
     "learned_delay_hours": 6.18,
-    "evaluated": 10088
+    "evaluated": 10091
   }
 }
