@@ -1,64 +1,64 @@
 {
   "version": 2,
-  "generated_at": "2026-10-10T10:05:23.617000+00:00",
-  "river_timestamp": "2026-10-10T09:00:00+00:00",
-  "current": 3.53,
+  "generated_at": "2026-10-10T10:25:20.170000+00:00",
+  "river_timestamp": "2026-10-10T10:00:00+00:00",
+  "current": 3.48,
   "pred": {
-    "2": 3.49,
-    "4": 3.45,
-    "6": 3.41,
-    "8": 3.37,
-    "12": 3.29
+    "2": 3.39,
+    "4": 3.3,
+    "6": 3.21,
+    "8": 3.12,
+    "12": 2.94
   },
   "components": {
     "2": {
       "recession": true,
-      "curve_value": 3.49,
-      "fall_rate_m_h": 0.02,
-      "fall_rate_cm_h": 2.0,
+      "curve_value": 3.39,
+      "fall_rate_m_h": 0.045,
+      "fall_rate_cm_h": 4.5,
       "readings_used": 3,
-      "drop_intervals_used": 1,
-      "rain_3h_mm": 0.085,
+      "drop_intervals_used": 2,
+      "rain_3h_mm": 0.083,
       "rain_24h_mm": 1.215
     },
     "4": {
       "recession": true,
-      "curve_value": 3.45,
-      "fall_rate_m_h": 0.02,
-      "fall_rate_cm_h": 2.0,
+      "curve_value": 3.3,
+      "fall_rate_m_h": 0.045,
+      "fall_rate_cm_h": 4.5,
       "readings_used": 3,
-      "drop_intervals_used": 1,
-      "rain_3h_mm": 0.085,
+      "drop_intervals_used": 2,
+      "rain_3h_mm": 0.083,
       "rain_24h_mm": 1.215
     },
     "6": {
       "recession": true,
-      "curve_value": 3.41,
-      "fall_rate_m_h": 0.02,
-      "fall_rate_cm_h": 2.0,
+      "curve_value": 3.21,
+      "fall_rate_m_h": 0.045,
+      "fall_rate_cm_h": 4.5,
       "readings_used": 3,
-      "drop_intervals_used": 1,
-      "rain_3h_mm": 0.085,
+      "drop_intervals_used": 2,
+      "rain_3h_mm": 0.083,
       "rain_24h_mm": 1.215
     },
     "8": {
       "recession": true,
-      "curve_value": 3.37,
-      "fall_rate_m_h": 0.02,
-      "fall_rate_cm_h": 2.0,
+      "curve_value": 3.12,
+      "fall_rate_m_h": 0.045,
+      "fall_rate_cm_h": 4.5,
       "readings_used": 3,
-      "drop_intervals_used": 1,
-      "rain_3h_mm": 0.085,
+      "drop_intervals_used": 2,
+      "rain_3h_mm": 0.083,
       "rain_24h_mm": 1.215
     },
     "12": {
       "recession": true,
-      "curve_value": 3.29,
-      "fall_rate_m_h": 0.02,
-      "fall_rate_cm_h": 2.0,
+      "curve_value": 2.94,
+      "fall_rate_m_h": 0.045,
+      "fall_rate_cm_h": 4.5,
       "readings_used": 3,
-      "drop_intervals_used": 1,
-      "rain_3h_mm": 0.085,
+      "drop_intervals_used": 2,
+      "rain_3h_mm": 0.083,
       "rain_24h_mm": 1.215
     }
   },
@@ -101,11 +101,11 @@
       "24": 1.0
     },
     "bias_correction": {
-      "2": 0.00495,
-      "4": 0.01278,
-      "6": 0.01679,
-      "8": 0.02178,
-      "12": 0.00797,
+      "2": 0.00303,
+      "4": 0.01353,
+      "6": 0.01714,
+      "8": 0.02318,
+      "12": 0.01266,
       "24": 0.0
     },
     "persistence_blend": {
@@ -149,28 +149,28 @@
       "active": true,
       "mode": "recessao_inicial",
       "status": "rio_em_recessao",
-      "current_level_m": 3.53,
+      "current_level_m": 3.48,
       "peak_level_m": 3.57,
-      "peak_at_ms": 1791615600000,
+      "peak_at_ms": 1791619200000,
       "peak_source": "observed_recent_trend",
-      "latest_reading_at_ms": 1791622800000,
+      "latest_reading_at_ms": 1791626400000,
       "readings_used": 3,
-      "drop_intervals_used": 1,
-      "fall_rate_m_h": 0.02,
-      "fall_rate_cm_h": 2.0,
-      "rain_3h_mm": 0.085,
+      "drop_intervals_used": 2,
+      "fall_rate_m_h": 0.045,
+      "fall_rate_cm_h": 4.5,
+      "rain_3h_mm": 0.083,
       "rain_24h_mm": 1.215,
       "projections": {
-        "2": 3.49,
-        "4": 3.45,
-        "6": 3.41,
-        "8": 3.37,
-        "12": 3.29
+        "2": 3.39,
+        "4": 3.3,
+        "6": 3.21,
+        "8": 3.12,
+        "12": 2.94
       },
       "message": "Recessão inicial projetada pelas três últimas leituras. Não reativa nem altera o módulo de pico; se uma nova chuva atingir 5 mm em 3h, esta projeção é cancelada."
     },
     "peak_uses_24h_prediction": false,
     "learned_delay_hours": 6.18,
-    "evaluated": 10110
+    "evaluated": 10120
   }
 }
