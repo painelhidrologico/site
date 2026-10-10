@@ -1,65 +1,65 @@
 {
   "version": 2,
-  "generated_at": "2026-10-10T11:05:03.170000+00:00",
-  "river_timestamp": "2026-10-10T10:00:00+00:00",
-  "current": 3.48,
+  "generated_at": "2026-10-10T11:24:51.867000+00:00",
+  "river_timestamp": "2026-10-10T11:00:00+00:00",
+  "current": 3.43,
   "pred": {
-    "2": 3.39,
-    "4": 3.3,
-    "6": 3.21,
-    "8": 3.12,
-    "12": 2.94
+    "2": 3.33,
+    "4": 3.23,
+    "6": 3.13,
+    "8": 3.03,
+    "12": 2.83
   },
   "components": {
     "2": {
       "recession": true,
-      "curve_value": 3.39,
-      "fall_rate_m_h": 0.045,
-      "fall_rate_cm_h": 4.5,
+      "curve_value": 3.33,
+      "fall_rate_m_h": 0.05,
+      "fall_rate_cm_h": 5.0,
       "readings_used": 3,
       "drop_intervals_used": 2,
-      "rain_3h_mm": 0.073,
-      "rain_24h_mm": 1.211
+      "rain_3h_mm": 0.08,
+      "rain_24h_mm": 1.219
     },
     "4": {
       "recession": true,
-      "curve_value": 3.3,
-      "fall_rate_m_h": 0.045,
-      "fall_rate_cm_h": 4.5,
+      "curve_value": 3.23,
+      "fall_rate_m_h": 0.05,
+      "fall_rate_cm_h": 5.0,
       "readings_used": 3,
       "drop_intervals_used": 2,
-      "rain_3h_mm": 0.073,
-      "rain_24h_mm": 1.211
+      "rain_3h_mm": 0.08,
+      "rain_24h_mm": 1.219
     },
     "6": {
       "recession": true,
-      "curve_value": 3.21,
-      "fall_rate_m_h": 0.045,
-      "fall_rate_cm_h": 4.5,
+      "curve_value": 3.13,
+      "fall_rate_m_h": 0.05,
+      "fall_rate_cm_h": 5.0,
       "readings_used": 3,
       "drop_intervals_used": 2,
-      "rain_3h_mm": 0.073,
-      "rain_24h_mm": 1.211
+      "rain_3h_mm": 0.08,
+      "rain_24h_mm": 1.219
     },
     "8": {
       "recession": true,
-      "curve_value": 3.12,
-      "fall_rate_m_h": 0.045,
-      "fall_rate_cm_h": 4.5,
+      "curve_value": 3.03,
+      "fall_rate_m_h": 0.05,
+      "fall_rate_cm_h": 5.0,
       "readings_used": 3,
       "drop_intervals_used": 2,
-      "rain_3h_mm": 0.073,
-      "rain_24h_mm": 1.211
+      "rain_3h_mm": 0.08,
+      "rain_24h_mm": 1.219
     },
     "12": {
       "recession": true,
-      "curve_value": 2.94,
-      "fall_rate_m_h": 0.045,
-      "fall_rate_cm_h": 4.5,
+      "curve_value": 2.83,
+      "fall_rate_m_h": 0.05,
+      "fall_rate_cm_h": 5.0,
       "readings_used": 3,
       "drop_intervals_used": 2,
-      "rain_3h_mm": 0.073,
-      "rain_24h_mm": 1.211
+      "rain_3h_mm": 0.08,
+      "rain_24h_mm": 1.219
     }
   },
   "peak_estimate": {
@@ -101,11 +101,11 @@
       "24": 1.0
     },
     "bias_correction": {
-      "2": 0.00129,
-      "4": 0.0129,
-      "6": 0.01672,
-      "8": 0.02304,
-      "12": 0.01896,
+      "2": -0.0007,
+      "4": 0.01178,
+      "6": 0.01616,
+      "8": 0.0222,
+      "12": 0.02092,
       "24": 0.0
     },
     "persistence_blend": {
@@ -149,28 +149,28 @@
       "active": true,
       "mode": "recessao_inicial",
       "status": "rio_em_recessao",
-      "current_level_m": 3.48,
-      "peak_level_m": 3.57,
-      "peak_at_ms": 1791619200000,
+      "current_level_m": 3.43,
+      "peak_level_m": 3.53,
+      "peak_at_ms": 1791622800000,
       "peak_source": "observed_recent_trend",
-      "latest_reading_at_ms": 1791626400000,
+      "latest_reading_at_ms": 1791630000000,
       "readings_used": 3,
       "drop_intervals_used": 2,
-      "fall_rate_m_h": 0.045,
-      "fall_rate_cm_h": 4.5,
-      "rain_3h_mm": 0.073,
-      "rain_24h_mm": 1.211,
+      "fall_rate_m_h": 0.05,
+      "fall_rate_cm_h": 5.0,
+      "rain_3h_mm": 0.08,
+      "rain_24h_mm": 1.219,
       "projections": {
-        "2": 3.39,
-        "4": 3.3,
-        "6": 3.21,
-        "8": 3.12,
-        "12": 2.94
+        "2": 3.33,
+        "4": 3.23,
+        "6": 3.13,
+        "8": 3.03,
+        "12": 2.83
       },
       "message": "Recessão inicial projetada pelas três últimas leituras. Não reativa nem altera o módulo de pico; se uma nova chuva atingir 5 mm em 3h, esta projeção é cancelada."
     },
     "peak_uses_24h_prediction": false,
     "learned_delay_hours": 6.18,
-    "evaluated": 10129
+    "evaluated": 10137
   }
 }
