@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-11T13:12:41.860000+00:00",
+  "generated_at": "2026-10-11T13:29:42.123000+00:00",
   "river_timestamp": "2026-10-11T13:00:00+00:00",
   "current": 2.95,
   "pred": {
@@ -20,7 +20,7 @@
       "remaining_response_m": 0.3338,
       "response_delay_hours": 6.18,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": -0.00273,
+      "acceleration_m_h2": -0.00057,
       "decelerating": false
     },
     "4": {
@@ -32,7 +32,7 @@
       "remaining_response_m": 0.3338,
       "response_delay_hours": 6.18,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": -0.00273,
+      "acceleration_m_h2": -0.00057,
       "decelerating": false
     },
     "6": {
@@ -44,7 +44,7 @@
       "remaining_response_m": 0.3338,
       "response_delay_hours": 6.18,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": -0.00273,
+      "acceleration_m_h2": -0.00057,
       "decelerating": false
     },
     "8": {
@@ -56,7 +56,7 @@
       "remaining_response_m": 0.3338,
       "response_delay_hours": 6.18,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": -0.00273,
+      "acceleration_m_h2": -0.00057,
       "decelerating": false
     },
     "12": {
@@ -68,7 +68,7 @@
       "remaining_response_m": 0.3338,
       "response_delay_hours": 6.18,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": -0.00273,
+      "acceleration_m_h2": -0.00057,
       "decelerating": false
     }
   },
@@ -149,19 +149,19 @@
       "24": 1.0
     },
     "bias_correction": {
-      "2": -0.01919,
-      "4": -0.0291,
-      "6": -0.01934,
-      "8": -0.01262,
-      "12": 0.04077,
+      "2": -0.02017,
+      "4": -0.03078,
+      "6": -0.02676,
+      "8": -0.01614,
+      "12": 0.03634,
       "24": 0.0
     },
     "persistence_blend": {
       "2": 5e-05,
-      "4": 0.05134,
-      "6": 0.21119,
-      "8": 0.24896,
-      "12": 0.19096,
+      "4": 0.04621,
+      "6": 0.19487,
+      "8": 0.24653,
+      "12": 0.19474,
       "24": 0.0
     },
     "damping": {
@@ -201,6 +201,6 @@
     },
     "peak_uses_24h_prediction": false,
     "learned_delay_hours": 6.18,
-    "evaluated": 10609
+    "evaluated": 10615
   }
 }
