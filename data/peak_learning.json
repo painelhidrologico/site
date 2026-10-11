@@ -15,7 +15,7 @@
     "event_id": "1791660274540",
     "status": "pico_atingido",
     "mode": "pico_atingido",
-    "current_level_m": 3.18,
+    "current_level_m": 3.22,
     "published_peak_m": 3.28,
     "raw_peak_m": 3.28,
     "temporal_peak_m": 3.28,
@@ -48,8 +48,8 @@
     "actual_peak_m": 3.28,
     "actual_peak_at_ms": 1791661103491,
     "actual_peak_at": "2026-10-10T19:38:23.491000+00:00",
-    "fallen_m": 0.1,
-    "fallen_cm": 10.0,
+    "fallen_m": 0.06,
+    "fallen_cm": 6.0,
     "rain_3h_mm": 0.0,
     "new_rain_trigger": false
   },
@@ -63,5 +63,5 @@
     "projected_peak_at_ms": null,
     "projected_peak_at": null
   },
-  "updated_at": "2026-10-11T06:58:51.758000+00:00"
+  "updated_at": "2026-10-11T07:13:04.110000+00:00"
 }
