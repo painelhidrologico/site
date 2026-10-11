@@ -1408,7 +1408,7 @@
     "dry_gap_started_at": 1791671995736,
     "baseline_level": 3.28,
     "max_level": 3.32,
-    "last_observed_level": 3.17,
+    "last_observed_level": 3.15,
     "max_rain_h003": 1.9891421554573612,
     "max_rain_h006": 2.376323552181323,
     "max_rain_h012": 2.5007352979452,
@@ -2132,7 +2132,7 @@
     "baseline_level": 3.2,
     "pattern": "0_10mm_3h_long"
   },
-  "updated_at": "2026-10-11T03:08:02.216767+00:00",
+  "updated_at": "2026-10-11T03:27:56.623112+00:00",
   "awaiting_rain_reset": false,
   "last_rain_episode": {
     "started_at": 1791275345588,
