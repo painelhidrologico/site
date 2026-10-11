@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-11T01:26:12.929000+00:00",
+  "generated_at": "2026-10-11T01:41:31.794000+00:00",
   "river_timestamp": "2026-10-11T01:00:00+00:00",
   "current": 3.17,
   "pred": {
@@ -20,7 +20,7 @@
       "remaining_response_m": 0.1138,
       "response_delay_hours": 6.18,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.00149,
+      "acceleration_m_h2": 0.00586,
       "decelerating": false
     },
     "4": {
@@ -32,7 +32,7 @@
       "remaining_response_m": 0.1138,
       "response_delay_hours": 6.18,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.00149,
+      "acceleration_m_h2": 0.00586,
       "decelerating": false
     },
     "6": {
@@ -44,7 +44,7 @@
       "remaining_response_m": 0.1138,
       "response_delay_hours": 6.18,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.00149,
+      "acceleration_m_h2": 0.00586,
       "decelerating": false
     },
     "8": {
@@ -56,7 +56,7 @@
       "remaining_response_m": 0.1138,
       "response_delay_hours": 6.18,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.00149,
+      "acceleration_m_h2": 0.00586,
       "decelerating": false
     },
     "12": {
@@ -68,7 +68,7 @@
       "remaining_response_m": 0.1138,
       "response_delay_hours": 6.18,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.00149,
+      "acceleration_m_h2": 0.00586,
       "decelerating": false
     }
   },
@@ -149,18 +149,18 @@
       "24": 1.0
     },
     "bias_correction": {
-      "2": -0.00158,
-      "4": 0.00413,
-      "6": 0.01449,
-      "8": 0.02046,
+      "2": -0.00139,
+      "4": 0.00441,
+      "6": 0.01302,
+      "8": 0.02067,
       "12": 0.02905,
       "24": 0.0
     },
     "persistence_blend": {
       "2": 5e-05,
       "4": 5e-05,
-      "6": 0.08663,
-      "8": 0.07219,
+      "6": 0.09013,
+      "8": 0.07666,
       "12": 5e-05,
       "24": 0.0
     },
@@ -201,6 +201,6 @@
     },
     "peak_uses_24h_prediction": false,
     "learned_delay_hours": 6.18,
-    "evaluated": 10400
+    "evaluated": 10404
   }
 }
