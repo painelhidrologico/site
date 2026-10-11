@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-11T11:39:44.003000+00:00",
+  "generated_at": "2026-10-11T11:53:56.343000+00:00",
   "river_timestamp": "2026-10-11T11:00:00+00:00",
   "current": 3.08,
   "pred": {
@@ -20,7 +20,7 @@
       "remaining_response_m": 0.2038,
       "response_delay_hours": 6.18,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.00392,
+      "acceleration_m_h2": 0.00377,
       "decelerating": false
     },
     "4": {
@@ -32,7 +32,7 @@
       "remaining_response_m": 0.2038,
       "response_delay_hours": 6.18,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.00392,
+      "acceleration_m_h2": 0.00377,
       "decelerating": false
     },
     "6": {
@@ -44,7 +44,7 @@
       "remaining_response_m": 0.2038,
       "response_delay_hours": 6.18,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.00392,
+      "acceleration_m_h2": 0.00377,
       "decelerating": false
     },
     "8": {
@@ -56,7 +56,7 @@
       "remaining_response_m": 0.2038,
       "response_delay_hours": 6.18,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.00392,
+      "acceleration_m_h2": 0.00377,
       "decelerating": false
     },
     "12": {
@@ -68,7 +68,7 @@
       "remaining_response_m": 0.2038,
       "response_delay_hours": 6.18,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.00392,
+      "acceleration_m_h2": 0.00377,
       "decelerating": false
     }
   },
@@ -149,19 +149,19 @@
       "24": 1.0
     },
     "bias_correction": {
-      "2": -0.01288,
-      "4": -0.01153,
-      "6": -0.00524,
-      "8": 0.00664,
-      "12": 0.05432,
+      "2": -0.01403,
+      "4": -0.01415,
+      "6": -0.00791,
+      "8": 0.0035,
+      "12": 0.05296,
       "24": 0.0
     },
     "persistence_blend": {
       "2": 5e-05,
-      "4": 0.09662,
-      "6": 0.2359,
-      "8": 0.25272,
-      "12": 0.17158,
+      "4": 0.08696,
+      "6": 0.23277,
+      "8": 0.25362,
+      "12": 0.17743,
       "24": 0.0
     },
     "damping": {
@@ -201,6 +201,6 @@
     },
     "peak_uses_24h_prediction": false,
     "learned_delay_hours": 6.18,
-    "evaluated": 10581
+    "evaluated": 10586
   }
 }
