@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-12T22:43:27.939000+00:00",
+  "generated_at": "2026-10-12T22:58:05.793000+00:00",
   "river_timestamp": "2026-10-12T22:00:00+00:00",
   "current": 2.56,
   "pred": {
@@ -73,9 +73,40 @@
     }
   },
   "peak_estimate": {
-    "active": false,
-    "status": "no_event",
-    "update_interval_minutes": 60
+    "active": true,
+    "event_id": "1791845885793",
+    "status": "pico_atingido",
+    "mode": "pico_atingido",
+    "current_level_m": 2.56,
+    "published_peak_m": 2.56,
+    "raw_peak_m": 2.56,
+    "temporal_peak_m": 2.56,
+    "published_peak_in_hours": 0.0,
+    "raw_peak_in_hours": 0.0,
+    "peak_in_hours": 0.0,
+    "projected_peak_at_ms": 1791845885793,
+    "projected_peak_at": "2026-10-12T22:58:05.793000+00:00",
+    "peak_window_hours": 1.0,
+    "confidence": 0.585,
+    "sample_count": 1,
+    "rain_mm": 0.0,
+    "cm_per_mm": 4.7,
+    "effective_rate_m_h": 0.0,
+    "acceleration_m_h2": 0.0,
+    "decelerating": false,
+    "response_delay_hours": 6.18,
+    "remaining_m": 0.0,
+    "total_response_m": 0.0,
+    "curve_source": "calculadora_unificada",
+    "curve_version": 3,
+    "last_update_at": 1791845885793,
+    "next_official_update_at": 1791849485793,
+    "update_interval_minutes": 60,
+    "reprojection_started_at_ms": null,
+    "reprojection_deadline_at_ms": null,
+    "reprojection_window_hours": 0.0,
+    "reprojection_confirmed_new_peak": false,
+    "message": "Pico em análise pela curva unificada da calculadora."
   },
   "model": {
     "trend_gain": {
@@ -112,16 +143,16 @@
     },
     "bias_correction": {
       "2": 0.01569,
-      "4": 0.0323,
-      "6": 0.03328,
+      "4": 0.03342,
+      "6": 0.03776,
       "8": 0.0157,
       "12": -0.0383,
       "24": 0.0
     },
     "persistence_blend": {
       "2": 5e-05,
-      "4": 0.16301,
-      "6": 0.27018,
+      "4": 0.16477,
+      "6": 0.26918,
       "8": 0.34149,
       "12": 0.40368,
       "24": 0.0
@@ -161,6 +192,6 @@
     },
     "peak_uses_24h_prediction": false,
     "learned_delay_hours": 6.18,
-    "evaluated": 11151
+    "evaluated": 11154
   }
 }
