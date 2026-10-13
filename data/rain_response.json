@@ -1404,7 +1404,7 @@
     "started_at": 1791845885793,
     "rain_started_at": 1791845885793,
     "rain_ended_at": null,
-    "last_rain_active_at": 1791873651649,
+    "last_rain_active_at": 1791875260259,
     "dry_gap_started_at": null,
     "baseline_level": 2.56,
     "max_level": 2.61,
@@ -1413,16 +1413,16 @@
     "max_rain_h006": 12.43264709033218,
     "max_rain_h012": 12.67794113182554,
     "max_rain_h024": 12.82198532772999,
-    "max_rain_h048": 14.485196052813063,
+    "max_rain_h048": 14.488137240503349,
     "max_rain_h096": 18.150490132032658,
     "rain_baseline_h048": 3.9728186194803197,
     "rain_baseline_h096": 7.749485304542617,
-    "event_rain_mm_h048": 10.512377433332743,
+    "event_rain_mm_h048": 10.51531862102303,
     "event_rain_mm_h096": 10.401004827490041,
     "response_detected_at": null,
     "response_level": null,
     "initial_rise_rate_cm_h": null,
-    "max_rise_rate_cm_h": 3.839999999999995,
+    "max_rise_rate_cm_h": 4.425299999999994,
     "response_checkpoints_cm": {},
     "spatial_start": {
       "cities": {
@@ -1772,8 +1772,8 @@
         "Santa Terezinha": {
           "h003": 19.6,
           "h006": 23.9,
-          "h012": 24.1,
-          "h024": 24.1
+          "h012": 24.2,
+          "h024": 24.2
         },
         "Taio": {
           "h003": 8.872,
@@ -1858,7 +1858,7 @@
         "alto": {
           "h003": 8.306,
           "h006": 11.011,
-          "h012": 11.041,
+          "h012": 11.043,
           "h024": 11.201
         },
         "medio": {
@@ -1870,7 +1870,7 @@
       },
       "station_count": 50
     },
-    "rain_duration_hours": 7.713,
+    "rain_duration_hours": 8.16,
     "last_meaningful_rise_at": 1791871991761
   },
   "last_event": {
@@ -2132,7 +2132,7 @@
     "baseline_level": 3.2,
     "pattern": "0_10mm_3h_long"
   },
-  "updated_at": "2026-10-13T06:40:51.651028+00:00",
+  "updated_at": "2026-10-13T07:07:40.261046+00:00",
   "awaiting_rain_reset": false,
   "last_rain_episode": {
     "started_at": 1791660274540,
@@ -3058,21 +3058,21 @@
   "similarity_status": {
     "matches": [
       {
-        "score": 0.184,
+        "score": 0.174,
         "pattern": "0_10mm_3h_short",
         "peak_level": 3.64,
         "rise_cm": 12.0,
         "delay_hours": 6.541
       },
       {
-        "score": 0.132,
+        "score": 0.137,
         "pattern": "0_10mm_3h_long",
         "peak_level": 5.04,
         "rise_cm": 184.0,
         "delay_hours": 8.941
       },
       {
-        "score": 0.024,
+        "score": 0.026,
         "pattern": "10_30mm_3h_long",
         "peak_level": 6.62,
         "rise_cm": 407.0,
