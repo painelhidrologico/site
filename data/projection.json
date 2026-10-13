@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generated_at": "2026-10-13T15:00:56.823000+00:00",
-  "river_timestamp": "2026-10-13T14:00:00+00:00",
+  "generated_at": "2026-10-13T15:31:25.723000+00:00",
+  "river_timestamp": "2026-10-13T15:00:00+00:00",
   "current": 2.77,
   "pred": {
     "2": 2.7911,
@@ -20,7 +20,7 @@
       "remaining_response_m": 0.2849,
       "response_delay_hours": 8.6,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.00354,
+      "acceleration_m_h2": 0.00322,
       "decelerating": false
     },
     "4": {
@@ -32,7 +32,7 @@
       "remaining_response_m": 0.2849,
       "response_delay_hours": 8.6,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.00354,
+      "acceleration_m_h2": 0.00322,
       "decelerating": false
     },
     "6": {
@@ -44,7 +44,7 @@
       "remaining_response_m": 0.2849,
       "response_delay_hours": 8.6,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.00354,
+      "acceleration_m_h2": 0.00322,
       "decelerating": false
     },
     "8": {
@@ -56,7 +56,7 @@
       "remaining_response_m": 0.2849,
       "response_delay_hours": 8.6,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.00354,
+      "acceleration_m_h2": 0.00322,
       "decelerating": false
     },
     "12": {
@@ -68,7 +68,7 @@
       "remaining_response_m": 0.2849,
       "response_delay_hours": 8.6,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.00354,
+      "acceleration_m_h2": 0.00322,
       "decelerating": false
     }
   },
@@ -149,19 +149,19 @@
       "24": 1.0
     },
     "bias_correction": {
-      "2": -0.00376,
-      "4": -0.00389,
-      "6": 0.00551,
-      "8": 0.01915,
-      "12": 0.09179,
+      "2": -0.00439,
+      "4": -0.00854,
+      "6": -0.00016,
+      "8": 0.01523,
+      "12": 0.09084,
       "24": 0.0
     },
     "persistence_blend": {
       "2": 5e-05,
-      "4": 0.00682,
-      "6": 0.03251,
-      "8": 0.08435,
-      "12": 0.2313,
+      "4": 0.00553,
+      "6": 0.02633,
+      "8": 0.07591,
+      "12": 0.22145,
       "24": 0.0
     },
     "damping": {
@@ -196,11 +196,11 @@
     "recession": {
       "active": false,
       "reason": "rise_detected_after_peak",
-      "rise_count": 3,
-      "rise_total_m": 0.17
+      "rise_count": 2,
+      "rise_total_m": 0.08
     },
     "peak_uses_24h_prediction": false,
     "learned_delay_hours": 6.18,
-    "evaluated": 11395
+    "evaluated": 11403
   }
 }
