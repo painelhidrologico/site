@@ -1404,25 +1404,25 @@
     "started_at": 1791845885793,
     "rain_started_at": 1791845885793,
     "rain_ended_at": null,
-    "last_rain_active_at": 1791871003326,
+    "last_rain_active_at": 1791871991761,
     "dry_gap_started_at": null,
     "baseline_level": 2.56,
-    "max_level": 2.57,
-    "last_observed_level": 2.57,
+    "max_level": 2.61,
+    "last_observed_level": 2.61,
     "max_rain_h003": 8.807892179956625,
     "max_rain_h006": 12.43264709033218,
-    "max_rain_h012": 12.676176455675387,
+    "max_rain_h012": 12.67794113182554,
     "max_rain_h024": 12.82198532772999,
-    "max_rain_h048": 14.47931367743249,
-    "max_rain_h096": 18.14583325619791,
+    "max_rain_h048": 14.485196052813063,
+    "max_rain_h096": 18.150490132032658,
     "rain_baseline_h048": 3.9728186194803197,
     "rain_baseline_h096": 7.749485304542617,
-    "event_rain_mm_h048": 10.50649505795217,
-    "event_rain_mm_h096": 10.396347951655294,
+    "event_rain_mm_h048": 10.512377433332743,
+    "event_rain_mm_h096": 10.401004827490041,
     "response_detected_at": null,
     "response_level": null,
     "initial_rise_rate_cm_h": null,
-    "max_rise_rate_cm_h": 2.2899999999999996,
+    "max_rise_rate_cm_h": 3.839999999999995,
     "response_checkpoints_cm": {},
     "spatial_start": {
       "cities": {
@@ -1742,7 +1742,7 @@
         "Presidente Nereu": {
           "h003": 7.8,
           "h006": 9.8,
-          "h012": 9.8,
+          "h012": 10.0,
           "h024": 10.0
         },
         "Rio do Campo": {
@@ -1858,7 +1858,7 @@
         "alto": {
           "h003": 8.306,
           "h006": 11.011,
-          "h012": 11.035,
+          "h012": 11.041,
           "h024": 11.201
         },
         "medio": {
@@ -1870,8 +1870,8 @@
       },
       "station_count": 50
     },
-    "rain_duration_hours": 6.977,
-    "last_meaningful_rise_at": 1791868453597
+    "rain_duration_hours": 7.252,
+    "last_meaningful_rise_at": 1791871991761
   },
   "last_event": {
     "rain_started_at": 1791275345588,
@@ -2132,7 +2132,7 @@
     "baseline_level": 3.2,
     "pattern": "0_10mm_3h_long"
   },
-  "updated_at": "2026-10-13T05:56:43.327179+00:00",
+  "updated_at": "2026-10-13T06:13:11.762710+00:00",
   "awaiting_rain_reset": false,
   "last_rain_episode": {
     "started_at": 1791660274540,
@@ -3058,21 +3058,21 @@
   "similarity_status": {
     "matches": [
       {
-        "score": 0.203,
+        "score": 0.195,
         "pattern": "0_10mm_3h_short",
         "peak_level": 3.64,
         "rise_cm": 12.0,
         "delay_hours": 6.541
       },
       {
-        "score": 0.125,
+        "score": 0.127,
         "pattern": "0_10mm_3h_long",
         "peak_level": 5.04,
         "rise_cm": 184.0,
         "delay_hours": 8.941
       },
       {
-        "score": 0.02,
+        "score": 0.022,
         "pattern": "10_30mm_3h_long",
         "peak_level": 6.62,
         "rise_cm": 407.0,
