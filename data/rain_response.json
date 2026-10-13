@@ -1404,21 +1404,21 @@
     "started_at": 1791845885793,
     "rain_started_at": 1791845885793,
     "rain_ended_at": null,
-    "last_rain_active_at": 1791864557171,
+    "last_rain_active_at": 1791865872897,
     "dry_gap_started_at": null,
     "baseline_level": 2.56,
     "max_level": 2.56,
     "last_observed_level": 2.53,
     "max_rain_h003": 8.807892179956625,
     "max_rain_h006": 12.43264709033218,
-    "max_rain_h012": 12.670735266863131,
+    "max_rain_h012": 12.675441172777438,
     "max_rain_h024": 12.82198532772999,
-    "max_rain_h048": 14.47387246057099,
-    "max_rain_h096": 18.14112737833285,
+    "max_rain_h048": 14.478578338436051,
+    "max_rain_h096": 18.14583325619791,
     "rain_baseline_h048": 3.9728186194803197,
     "rain_baseline_h096": 7.749485304542617,
-    "event_rain_mm_h048": 10.50105384109067,
-    "event_rain_mm_h096": 10.391642073790234,
+    "event_rain_mm_h048": 10.505759718955732,
+    "event_rain_mm_h096": 10.396347951655294,
     "response_detected_at": null,
     "response_level": null,
     "initial_rise_rate_cm_h": null,
@@ -1772,8 +1772,8 @@
         "Santa Terezinha": {
           "h003": 19.6,
           "h006": 23.9,
-          "h012": 24.0,
-          "h024": 24.0
+          "h012": 24.1,
+          "h024": 24.1
         },
         "Taio": {
           "h003": 8.872,
@@ -1838,8 +1838,8 @@
         "Rio dos Cedros": {
           "h003": 20.48,
           "h006": 28.58,
-          "h012": 28.955,
-          "h024": 28.965
+          "h012": 29.015,
+          "h024": 29.025
         },
         "Rodeio": {
           "h003": 7.8,
@@ -1858,19 +1858,19 @@
         "alto": {
           "h003": 8.306,
           "h006": 11.011,
-          "h012": 11.031,
+          "h012": 11.035,
           "h024": 11.201
         },
         "medio": {
           "h003": 12.109,
           "h006": 17.69,
-          "h012": 18.0,
-          "h024": 18.139
+          "h012": 18.008,
+          "h024": 18.146
         }
       },
       "station_count": 50
     },
-    "rain_duration_hours": 5.186,
+    "rain_duration_hours": 5.552,
     "last_meaningful_rise_at": 1791864557171
   },
   "last_event": {
@@ -2132,7 +2132,7 @@
     "baseline_level": 3.2,
     "pattern": "0_10mm_3h_long"
   },
-  "updated_at": "2026-10-13T04:09:17.173095+00:00",
+  "updated_at": "2026-10-13T04:31:12.897847+00:00",
   "awaiting_rain_reset": false,
   "last_rain_episode": {
     "started_at": 1791660274540,
@@ -3058,21 +3058,21 @@
   "similarity_status": {
     "matches": [
       {
-        "score": 0.261,
+        "score": 0.247,
         "pattern": "0_10mm_3h_short",
         "peak_level": 3.64,
         "rise_cm": 12.0,
         "delay_hours": 6.541
       },
       {
-        "score": 0.108,
+        "score": 0.111,
         "pattern": "0_10mm_3h_long",
         "peak_level": 5.04,
         "rise_cm": 184.0,
         "delay_hours": 8.941
       },
       {
-        "score": 0.013,
+        "score": 0.015,
         "pattern": "10_30mm_3h_long",
         "peak_level": 6.62,
         "rise_cm": 407.0,
