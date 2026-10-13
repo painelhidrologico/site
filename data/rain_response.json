@@ -1404,11 +1404,11 @@
     "started_at": 1791845885793,
     "rain_started_at": 1791845885793,
     "rain_ended_at": null,
-    "last_rain_active_at": 1791867519014,
+    "last_rain_active_at": 1791868453597,
     "dry_gap_started_at": null,
     "baseline_level": 2.56,
-    "max_level": 2.56,
-    "last_observed_level": 2.53,
+    "max_level": 2.57,
+    "last_observed_level": 2.57,
     "max_rain_h003": 8.807892179956625,
     "max_rain_h006": 12.43264709033218,
     "max_rain_h012": 12.676176455675387,
@@ -1870,8 +1870,8 @@
       },
       "station_count": 50
     },
-    "rain_duration_hours": 6.009,
-    "last_meaningful_rise_at": 1791864557171
+    "rain_duration_hours": 6.269,
+    "last_meaningful_rise_at": 1791868453597
   },
   "last_event": {
     "rain_started_at": 1791275345588,
@@ -2132,7 +2132,7 @@
     "baseline_level": 3.2,
     "pattern": "0_10mm_3h_long"
   },
-  "updated_at": "2026-10-13T04:58:39.015931+00:00",
+  "updated_at": "2026-10-13T05:14:13.598363+00:00",
   "awaiting_rain_reset": false,
   "last_rain_episode": {
     "started_at": 1791660274540,
@@ -3058,21 +3058,21 @@
   "similarity_status": {
     "matches": [
       {
-        "score": 0.232,
+        "score": 0.223,
         "pattern": "0_10mm_3h_short",
         "peak_level": 3.64,
         "rise_cm": 12.0,
         "delay_hours": 6.541
       },
       {
-        "score": 0.115,
+        "score": 0.118,
         "pattern": "0_10mm_3h_long",
         "peak_level": 5.04,
         "rise_cm": 184.0,
         "delay_hours": 8.941
       },
       {
-        "score": 0.016,
+        "score": 0.017,
         "pattern": "10_30mm_3h_long",
         "peak_level": 6.62,
         "rise_cm": 407.0,
