@@ -27,16 +27,16 @@
     "confidence": 0.9,
     "update_interval_minutes": 60,
     "peak_at_ms": 1791925200000,
-    "peak_age_hours": 16.44,
+    "peak_age_hours": 17.01,
     "fallen_m": 0.3,
     "fallen_cm": 30.0,
-    "remaining_post_peak_hours": 7.56,
+    "remaining_post_peak_hours": 6.99,
     "rain_24h_mm": 0.0,
     "rain_since_peak_mm": 0.0,
     "rain_3h_mm": 0.0,
-    "rain_since_peak_last_at": 1791984381069,
+    "rain_since_peak_last_at": 1791986428131,
     "rain_since_peak_last_h003": 0.0,
-    "rain_since_peak_started_at": 1791984381069,
+    "rain_since_peak_started_at": 1791986428131,
     "new_rain_detected": false,
     "new_rise_detected": false,
     "message": "Pico confirmado. Mantido até o encerramento do evento sem gatilho de 5 mm em 3h.",
@@ -54,5 +54,5 @@
     "projected_peak_at_ms": null,
     "projected_peak_at": null
   },
-  "updated_at": "2026-10-14T13:26:21.069000+00:00"
+  "updated_at": "2026-10-14T14:00:28.131000+00:00"
 }
