@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-14T14:29:09.738000+00:00",
+  "generated_at": "2026-10-14T15:01:52.897000+00:00",
   "river_timestamp": "2026-10-14T14:00:00+00:00",
   "current": 2.51,
   "pred": {
@@ -88,16 +88,16 @@
     "confidence": 0.9,
     "update_interval_minutes": 60,
     "peak_at_ms": 1791925200000,
-    "peak_age_hours": 17.49,
+    "peak_age_hours": 18.03,
     "fallen_m": 0.34,
     "fallen_cm": 34.0,
-    "remaining_post_peak_hours": 6.51,
+    "remaining_post_peak_hours": 5.97,
     "rain_24h_mm": 0.0,
     "rain_since_peak_mm": 0.0,
     "rain_3h_mm": 0.0,
-    "rain_since_peak_last_at": 1791988149738,
+    "rain_since_peak_last_at": 1791990112897,
     "rain_since_peak_last_h003": 0.0,
-    "rain_since_peak_started_at": 1791988149738,
+    "rain_since_peak_started_at": 1791990112897,
     "new_rain_detected": false,
     "new_rise_detected": false,
     "message": "Pico confirmado. Mantido até o encerramento do evento sem gatilho de 5 mm em 3h.",
@@ -140,18 +140,18 @@
     },
     "bias_correction": {
       "2": -0.01843,
-      "4": -0.04506,
-      "6": -0.07669,
-      "8": -0.10731,
-      "12": -0.13451,
+      "4": -0.04566,
+      "6": -0.07767,
+      "8": -0.10841,
+      "12": -0.1362,
       "24": 0.0
     },
     "persistence_blend": {
       "2": 5e-05,
-      "4": 0.24864,
-      "6": 0.30421,
-      "8": 0.32575,
-      "12": 0.30712,
+      "4": 0.25475,
+      "6": 0.31303,
+      "8": 0.33422,
+      "12": 0.31411,
       "24": 0.0
     },
     "damping": {
@@ -191,6 +191,6 @@
     },
     "peak_uses_24h_prediction": false,
     "learned_delay_hours": 6.583,
-    "evaluated": 11655
+    "evaluated": 11659
   }
 }
