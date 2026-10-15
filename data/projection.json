@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generated_at": "2026-10-15T10:58:20.824000+00:00",
-  "river_timestamp": "2026-10-15T10:00:00+00:00",
+  "generated_at": "2026-10-15T11:23:10.447000+00:00",
+  "river_timestamp": "2026-10-15T11:00:00+00:00",
   "current": 2.38,
   "pred": {
     "2": 2.38,
@@ -79,7 +79,7 @@
     "status": "rio_em_recessao",
     "current_level_m": 2.38,
     "peak_level_m": 2.85,
-    "peak_at": "2026-10-14T11:00:00+00:00",
+    "peak_at": "2026-10-14T12:00:00+00:00",
     "published_peak_m": 2.56,
     "published_peak_in_hours": 0.0,
     "projected_peak_at_ms": null,
@@ -87,17 +87,17 @@
     "peak_window_hours": 0.0,
     "confidence": 0.9,
     "update_interval_minutes": 60,
-    "peak_at_ms": 1791975600000,
-    "peak_age_hours": 23.97,
+    "peak_at_ms": 1791979200000,
+    "peak_age_hours": 23.39,
     "fallen_m": 0.47,
     "fallen_cm": 47.0,
-    "remaining_post_peak_hours": 0.03,
+    "remaining_post_peak_hours": 0.61,
     "rain_24h_mm": 0.0,
     "rain_since_peak_mm": 0.0,
     "rain_3h_mm": 0.0,
-    "rain_since_peak_last_at": 1792061900824,
+    "rain_since_peak_last_at": 1792063390447,
     "rain_since_peak_last_h003": 0.0,
-    "rain_since_peak_started_at": 1792061900824,
+    "rain_since_peak_started_at": 1792063390447,
     "new_rain_detected": false,
     "new_rise_detected": false,
     "message": "Pico confirmado. Mantido até o encerramento do evento sem gatilho de 5 mm em 3h.",
@@ -139,11 +139,11 @@
       "24": 1.0
     },
     "bias_correction": {
-      "2": -0.01597,
+      "2": -0.01523,
       "4": -0.03797,
       "6": -0.06674,
       "8": -0.09916,
-      "12": -0.15173,
+      "12": -0.14876,
       "24": 0.0
     },
     "persistence_blend": {
@@ -151,7 +151,7 @@
       "4": 0.26471,
       "6": 0.34026,
       "8": 0.37625,
-      "12": 0.37665,
+      "12": 0.37692,
       "24": 0.0
     },
     "damping": {
@@ -191,6 +191,6 @@
     },
     "peak_uses_24h_prediction": false,
     "learned_delay_hours": 6.583,
-    "evaluated": 11786
+    "evaluated": 11788
   }
 }
