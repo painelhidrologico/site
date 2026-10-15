@@ -1,25 +1,23 @@
 {
   "version": 12,
-  "updated_at": "2026-10-15T13:12:20.189518+00:00",
-  "evaluated": 11802,
+  "updated_at": "2026-10-15T13:50:20.194078+00:00",
+  "evaluated": 11807,
   "mae_m": {
-    "2": 0.0993,
+    "2": 0.0992,
     "4": 0.2036,
     "6": 0.3217,
-    "12": 0.6006,
+    "12": 0.6004,
     "24": 0.9259,
-    "8": 0.4643
+    "8": 0.464
   },
   "metrics_by_horizon": {
     "2": {
-      "evaluated": 2322,
-      "sum_abs_error": 230.49860000000044,
-      "sum_error": 20.43160000000001,
-      "mae_m": 0.0993,
-      "bias_m": 0.0088,
+      "evaluated": 2324,
+      "sum_abs_error": 230.63860000000042,
+      "sum_error": 20.57160000000001,
+      "mae_m": 0.0992,
+      "bias_m": 0.0089,
       "recent_abs_errors": [
-        0.1326,
-        0.1148,
         0.0778,
         0.0978,
         0.0607,
@@ -67,11 +65,11 @@
         0.02,
         0.01,
         0.01,
-        0.02
+        0.02,
+        0.07,
+        0.07
       ],
       "recent_errors": [
-        0.1326,
-        0.1148,
         0.0778,
         0.0978,
         0.0607,
@@ -119,11 +117,11 @@
         -0.02,
         -0.01,
         0.01,
-        0.02
+        0.02,
+        0.07,
+        0.07
       ],
       "recent_persistence_errors": [
-        0.11,
-        0.09,
         0.05,
         0.07,
         0.03,
@@ -171,17 +169,18 @@
         0.02,
         0.01,
         0.01,
-        0.02
+        0.02,
+        0.07,
+        0.07
       ]
     },
     "4": {
-      "evaluated": 2309,
-      "sum_abs_error": 470.1566000000005,
-      "sum_error": 112.42620000000001,
+      "evaluated": 2310,
+      "sum_abs_error": 470.2166000000005,
+      "sum_error": 112.48620000000001,
       "mae_m": 0.2036,
       "bias_m": 0.0487,
       "recent_abs_errors": [
-        0.2075,
         0.2139,
         0.199,
         0.219,
@@ -230,10 +229,10 @@
         0.02,
         0.02,
         0.0,
-        0.05
+        0.05,
+        0.06
       ],
       "recent_errors": [
-        0.2075,
         0.2139,
         0.199,
         0.219,
@@ -282,10 +281,10 @@
         -0.02,
         -0.02,
         0.0,
-        0.05
+        0.05,
+        0.06
       ],
       "recent_persistence_errors": [
-        0.13,
         0.14,
         0.12,
         0.14,
@@ -334,7 +333,8 @@
         0.02,
         0.02,
         0.0,
-        0.05
+        0.05,
+        0.06
       ]
     },
     "6": {
@@ -501,13 +501,12 @@
       ]
     },
     "8": {
-      "evaluated": 1304,
-      "sum_abs_error": 605.4280000000007,
-      "sum_error": 389.11999999999983,
-      "mae_m": 0.4643,
-      "bias_m": 0.2984,
+      "evaluated": 1305,
+      "sum_abs_error": 605.4680000000006,
+      "sum_error": 389.15999999999985,
+      "mae_m": 0.464,
+      "bias_m": 0.2982,
       "recent_abs_errors": [
-        0.3704,
         0.3967,
         0.3887,
         0.3876,
@@ -556,10 +555,10 @@
         0.02,
         0.02,
         0.0,
-        0.05
+        0.05,
+        0.04
       ],
       "recent_errors": [
-        0.3704,
         0.3967,
         0.3887,
         0.3876,
@@ -608,10 +607,10 @@
         0.02,
         0.02,
         0.0,
-        0.05
+        0.05,
+        0.04
       ],
       "recent_persistence_errors": [
-        0.15,
         0.18,
         0.18,
         0.18,
@@ -660,17 +659,17 @@
         0.02,
         0.02,
         0.0,
-        0.05
+        0.05,
+        0.04
       ]
     },
     "12": {
-      "evaluated": 2290,
-      "sum_abs_error": 1375.4678999999912,
-      "sum_error": 516.5681000000006,
-      "mae_m": 0.6006,
-      "bias_m": 0.2256,
+      "evaluated": 2291,
+      "sum_abs_error": 1375.5978999999913,
+      "sum_error": 516.6981000000006,
+      "mae_m": 0.6004,
+      "bias_m": 0.2255,
       "recent_abs_errors": [
-        0.4549,
         0.4549,
         0.4549,
         0.4549,
@@ -719,10 +718,10 @@
         0.02,
         0.07,
         0.09,
+        0.13,
         0.13
       ],
       "recent_errors": [
-        0.4549,
         0.4549,
         0.4549,
         0.4549,
@@ -771,10 +770,10 @@
         0.02,
         0.07,
         0.09,
+        0.13,
         0.13
       ],
       "recent_persistence_errors": [
-        0.15,
         0.15,
         0.15,
         0.14,
@@ -823,6 +822,7 @@
         0.02,
         0.07,
         0.09,
+        0.13,
         0.13
       ]
     },
@@ -876,19 +876,19 @@
     "24": 1.0
   },
   "bias_correction": {
-    "2": -0.01315,
-    "4": -0.03551,
+    "2": -0.01239,
+    "4": -0.03448,
     "6": -0.06219,
-    "8": -0.09011,
-    "12": -0.14137,
+    "8": -0.08779,
+    "12": -0.1391,
     "24": 0.0
   },
   "persistence_blend": {
     "2": 5e-05,
-    "4": 0.26106,
+    "4": 0.25937,
     "6": 0.33632,
-    "8": 0.37108,
-    "12": 0.37706,
+    "8": 0.36997,
+    "12": 0.37675,
     "24": 0.0
   },
   "damping": {
@@ -903,32 +903,32 @@
     "h003": {
       "stations": 47,
       "cities": 34,
-      "value": 0.030416666991168666
+      "value": 0.03563725541108379
     },
     "h006": {
       "stations": 47,
       "cities": 34,
-      "value": 0.3072794139083913
+      "value": 0.23169117698938968
     },
     "h012": {
       "stations": 47,
       "cities": 34,
-      "value": 0.9660294112594178
+      "value": 0.9729411787143453
     },
     "h024": {
       "stations": 47,
       "cities": 34,
-      "value": 1.1866911844277352
+      "value": 1.1997794231545984
     },
     "h048": {
       "stations": 47,
       "cities": 34,
-      "value": 1.4944853012760482
+      "value": 1.5061029365432321
     },
     "h096": {
       "stations": 47,
       "cities": 34,
-      "value": 15.9236519056208
+      "value": 15.898210749906653
     }
   },
   "spatial_rain": {
@@ -959,7 +959,7 @@
       },
       "Braco do Trombudo": {
         "h003": 0.0,
-        "h006": 2.2,
+        "h006": 1.0,
         "h012": 3.8,
         "h024": 3.8
       },
@@ -1001,12 +1001,12 @@
       },
       "Mirim Doce": {
         "h003": 0.0,
-        "h006": 2.0,
+        "h006": 0.2,
         "h012": 3.0,
         "h024": 3.0
       },
       "Petrolandia": {
-        "h003": 0.2,
+        "h003": 0.0,
         "h006": 1.0,
         "h012": 1.4,
         "h024": 1.4
@@ -1026,14 +1026,14 @@
       "Presidente Nereu": {
         "h003": 0.0,
         "h006": 0.0,
-        "h012": 0.2,
+        "h012": 0.0,
         "h024": 0.4
       },
       "Rio do Campo": {
-        "h003": 0.44,
-        "h006": 0.55,
-        "h012": 6.645,
-        "h024": 8.445
+        "h003": 0.825,
+        "h006": 0.945,
+        "h012": 7.045,
+        "h024": 8.845
       },
       "Rio do Oeste": {
         "h003": 0.0,
@@ -1042,10 +1042,10 @@
         "h024": 0.0
       },
       "Rio do Sul": {
-        "h003": 0.06,
-        "h006": 0.06,
-        "h012": 0.07,
-        "h024": 0.32
+        "h003": 0.1,
+        "h006": 0.1,
+        "h012": 0.1,
+        "h024": 0.36
       },
       "Salete": {
         "h003": 0.0,
@@ -1060,14 +1060,14 @@
         "h024": 1.6
       },
       "Taio": {
-        "h003": 0.06,
+        "h003": 0.01,
         "h006": 0.06,
         "h012": 1.703,
         "h024": 1.703
       },
       "Trombudo Central": {
         "h003": 0.005,
-        "h006": 0.965,
+        "h006": 0.955,
         "h012": 1.77,
         "h024": 1.77
       },
@@ -1120,10 +1120,10 @@
         "h024": 0.0
       },
       "Rio dos Cedros": {
-        "h003": 0.0,
-        "h006": 0.0,
-        "h012": 0.0,
-        "h024": 0.005
+        "h003": 0.005,
+        "h006": 0.005,
+        "h012": 0.005,
+        "h024": 0.01
       },
       "Rodeio": {
         "h003": 0.0,
@@ -1132,7 +1132,7 @@
         "h024": 0.0
       },
       "Timbo": {
-        "h003": 0.002,
+        "h003": 0.0,
         "h006": 0.002,
         "h012": 2.953,
         "h024": 3.135
@@ -1140,15 +1140,15 @@
     },
     "regions": {
       "alto": {
-        "h003": 0.04,
-        "h006": 0.402,
-        "h012": 1.15,
-        "h024": 1.4
+        "h003": 0.046,
+        "h006": 0.303,
+        "h012": 1.159,
+        "h024": 1.417
       },
       "medio": {
-        "h003": 0.0,
-        "h006": 0.0,
-        "h012": 0.369,
+        "h003": 0.001,
+        "h006": 0.001,
+        "h012": 0.37,
         "h024": 0.494
       }
     },
@@ -3063,7 +3063,7 @@
       "baseline_level": 2.56,
       "pattern": "0_10mm_3h_long"
     },
-    "updated_at": "2026-10-15T13:12:20.024389+00:00",
+    "updated_at": "2026-10-15T13:50:19.954604+00:00",
     "awaiting_rain_reset": false,
     "last_rain_episode": {
       "started_at": 1791845885793,
@@ -4054,43 +4054,33 @@
     }
   },
   "peak_estimate": {
-    "active": true,
-    "event_id": "1791984381069",
-    "mode": "recessao",
-    "status": "rio_em_recessao",
-    "current_level_m": 2.31,
-    "peak_level_m": 2.85,
-    "peak_at": "2026-10-14T13:26:21.069000+00:00",
-    "published_peak_m": 2.56,
-    "published_peak_in_hours": 0.0,
-    "projected_peak_at_ms": null,
-    "projected_peak_at": null,
-    "peak_window_hours": 0.0,
-    "confidence": 0.9,
-    "update_interval_minutes": 60,
-    "peak_at_ms": 1791984381069,
-    "peak_age_hours": 23.77,
-    "fallen_m": 0.54,
-    "fallen_cm": 54.0,
-    "remaining_post_peak_hours": 0.23,
-    "rain_24h_mm": 0.0,
-    "rain_since_peak_mm": 0.0,
-    "rain_3h_mm": 0.0,
-    "rain_since_peak_last_at": 1792069940023,
-    "rain_since_peak_last_h003": 0.0,
-    "rain_since_peak_started_at": 1792069940023,
-    "new_rain_detected": false,
-    "new_rise_detected": false,
-    "message": "Pico confirmado. Mantido até o encerramento do evento sem gatilho de 5 mm em 3h.",
-    "actual_peak_m": 2.85,
-    "actual_peak_at_ms": 1791846672226,
-    "actual_peak_at": "2026-10-12T23:11:12.226000+00:00"
+    "active": false,
+    "status": "no_event",
+    "update_interval_minutes": 60
   },
   "recession": {
-    "active": false,
-    "reason": "rise_detected_after_peak",
-    "rise_count": 4,
-    "rise_total_m": 0.04
+    "active": true,
+    "mode": "recessao_inicial",
+    "status": "rio_em_recessao",
+    "current_level_m": 2.31,
+    "peak_level_m": 2.38,
+    "peak_at_ms": 1792062000000,
+    "peak_source": "observed_recent_trend",
+    "latest_reading_at_ms": 1792069200000,
+    "readings_used": 3,
+    "drop_intervals_used": 2,
+    "fall_rate_m_h": 0.035,
+    "fall_rate_cm_h": 3.5,
+    "rain_3h_mm": 0.036,
+    "rain_24h_mm": 1.2,
+    "projections": {
+      "2": 2.24,
+      "4": 2.17,
+      "6": 2.1,
+      "8": 2.03,
+      "12": 1.89
+    },
+    "message": "Recessão inicial projetada pelas três últimas leituras. Não reativa nem altera o módulo de pico; se uma nova chuva atingir 5 mm em 3h, esta projeção é cancelada."
   },
   "peak_learning": {
     "evaluated_events": 5,
