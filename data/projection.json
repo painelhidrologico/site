@@ -1,74 +1,74 @@
 {
   "version": 2,
-  "generated_at": "2026-10-16T04:39:15.361000+00:00",
-  "river_timestamp": "2026-10-16T04:00:00+00:00",
-  "current": 2.16,
+  "generated_at": "2026-10-16T05:09:33.690000+00:00",
+  "river_timestamp": "2026-10-16T05:00:00+00:00",
+  "current": 2.17,
   "pred": {
-    "2": 2.1961,
-    "4": 2.2862,
-    "6": 2.4034,
-    "8": 2.5206,
-    "12": 2.6468
+    "2": 2.211,
+    "4": 2.3036,
+    "6": 2.4214,
+    "8": 2.5381,
+    "12": 2.6631
   },
   "components": {
     "2": {
       "unified_curve": true,
-      "curve_value": 2.1961,
-      "rain_mm": 9.932,
+      "curve_value": 2.211,
+      "rain_mm": 10.278,
       "cm_per_mm": 4.7,
-      "total_response_m": 0.4668,
-      "remaining_response_m": 0.4868,
+      "total_response_m": 0.4831,
+      "remaining_response_m": 0.4931,
       "response_delay_hours": 6.583,
-      "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.00167,
+      "effective_rate_m_h": 0.00325,
+      "acceleration_m_h2": 0.00262,
       "decelerating": false
     },
     "4": {
       "unified_curve": true,
-      "curve_value": 2.2862,
-      "rain_mm": 9.932,
+      "curve_value": 2.3036,
+      "rain_mm": 10.278,
       "cm_per_mm": 4.7,
-      "total_response_m": 0.4668,
-      "remaining_response_m": 0.4868,
+      "total_response_m": 0.4831,
+      "remaining_response_m": 0.4931,
       "response_delay_hours": 6.583,
-      "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.00167,
+      "effective_rate_m_h": 0.00325,
+      "acceleration_m_h2": 0.00262,
       "decelerating": false
     },
     "6": {
       "unified_curve": true,
-      "curve_value": 2.4034,
-      "rain_mm": 9.932,
+      "curve_value": 2.4214,
+      "rain_mm": 10.278,
       "cm_per_mm": 4.7,
-      "total_response_m": 0.4668,
-      "remaining_response_m": 0.4868,
+      "total_response_m": 0.4831,
+      "remaining_response_m": 0.4931,
       "response_delay_hours": 6.583,
-      "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.00167,
+      "effective_rate_m_h": 0.00325,
+      "acceleration_m_h2": 0.00262,
       "decelerating": false
     },
     "8": {
       "unified_curve": true,
-      "curve_value": 2.5206,
-      "rain_mm": 9.932,
+      "curve_value": 2.5381,
+      "rain_mm": 10.278,
       "cm_per_mm": 4.7,
-      "total_response_m": 0.4668,
-      "remaining_response_m": 0.4868,
+      "total_response_m": 0.4831,
+      "remaining_response_m": 0.4931,
       "response_delay_hours": 6.583,
-      "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.00167,
+      "effective_rate_m_h": 0.00325,
+      "acceleration_m_h2": 0.00262,
       "decelerating": false
     },
     "12": {
       "unified_curve": true,
-      "curve_value": 2.6468,
-      "rain_mm": 9.932,
+      "curve_value": 2.6631,
+      "rain_mm": 10.278,
       "cm_per_mm": 4.7,
-      "total_response_m": 0.4668,
-      "remaining_response_m": 0.4868,
+      "total_response_m": 0.4831,
+      "remaining_response_m": 0.4931,
       "response_delay_hours": 6.583,
-      "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.00167,
+      "effective_rate_m_h": 0.00325,
+      "acceleration_m_h2": 0.00262,
       "decelerating": false
     }
   },
@@ -77,7 +77,7 @@
     "event_id": "1792114641135",
     "status": "pico_atingido",
     "mode": "pico_atingido",
-    "current_level_m": 2.16,
+    "current_level_m": 2.17,
     "published_peak_m": 2.18,
     "raw_peak_m": 2.18,
     "temporal_peak_m": 2.18,
@@ -110,8 +110,8 @@
     "actual_peak_m": 2.18,
     "actual_peak_at_ms": 1792116519932,
     "actual_peak_at": "2026-10-16T02:08:39.932000+00:00",
-    "fallen_m": 0.02,
-    "fallen_cm": 2.0,
+    "fallen_m": 0.01,
+    "fallen_cm": 1.0,
     "rain_3h_mm": 0.0,
     "new_rain_trigger": false
   },
@@ -149,19 +149,19 @@
       "24": 1.0
     },
     "bias_correction": {
-      "2": -0.00066,
+      "2": -0.00151,
       "4": -0.00092,
-      "6": -0.00511,
+      "6": -0.00251,
       "8": -0.01989,
-      "12": -0.06758,
+      "12": -0.06236,
       "24": 0.0
     },
     "persistence_blend": {
       "2": 5e-05,
       "4": 0.08539,
-      "6": 0.21179,
+      "6": 0.20196,
       "8": 0.27367,
-      "12": 0.31839,
+      "12": 0.31462,
       "24": 0.0
     },
     "damping": {
@@ -196,10 +196,10 @@
     "recession": {
       "active": false,
       "reason": "new_rain_trigger",
-      "rain_3h_mm": 9.937
+      "rain_3h_mm": 8.085
     },
     "peak_uses_24h_prediction": false,
     "learned_delay_hours": 6.583,
-    "evaluated": 11936
+    "evaluated": 11939
   }
 }
