@@ -1658,10 +1658,10 @@
     "rain_started_at": 1792114641135,
     "rain_ended_at": null,
     "last_rain_active_at": 1792143669264,
-    "dry_gap_started_at": null,
+    "dry_gap_started_at": 1792145505565,
     "baseline_level": 2.18,
-    "max_level": 2.33,
-    "last_observed_level": 2.33,
+    "max_level": 2.38,
+    "last_observed_level": 2.38,
     "max_rain_h003": 11.306691175874542,
     "max_rain_h006": 16.313333280786285,
     "max_rain_h012": 17.359460775174348,
@@ -1675,8 +1675,10 @@
     "response_detected_at": 1792140073321,
     "response_level": 2.27,
     "initial_rise_rate_cm_h": 2.420000000000001,
-    "max_rise_rate_cm_h": 3.7899999999999996,
-    "response_checkpoints_cm": {},
+    "max_rise_rate_cm_h": 4.469999999999998,
+    "response_checkpoints_cm": {
+      "1": 11.0
+    },
     "spatial_start": {
       "cities": {
         "Agrolandia": {
@@ -2124,9 +2126,9 @@
       "station_count": 50
     },
     "rain_duration_hours": 8.063,
-    "last_meaningful_rise_at": 1792141941063,
+    "last_meaningful_rise_at": 1792145505565,
     "response_delay_hours": 7.0644961111111115,
-    "response_max_level": 2.33
+    "response_max_level": 2.38
   },
   "last_event": {
     "rain_started_at": 1791845885793,
@@ -2381,7 +2383,7 @@
     "baseline_level": 2.56,
     "pattern": "0_10mm_3h_long"
   },
-  "updated_at": "2026-10-16T09:41:09.265540+00:00",
+  "updated_at": "2026-10-16T10:11:45.566741+00:00",
   "awaiting_rain_reset": false,
   "last_rain_episode": {
     "started_at": 1791845885793,
