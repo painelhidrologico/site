@@ -1657,25 +1657,25 @@
     "started_at": 1792114641135,
     "rain_started_at": 1792114641135,
     "rain_ended_at": null,
-    "last_rain_active_at": 1792133260509,
+    "last_rain_active_at": 1792135670861,
     "dry_gap_started_at": null,
     "baseline_level": 2.18,
-    "max_level": 2.19,
-    "last_observed_level": 2.19,
+    "max_level": 2.22,
+    "last_observed_level": 2.22,
     "max_rain_h003": 11.306691175874542,
     "max_rain_h006": 16.313333280786285,
-    "max_rain_h012": 17.304460794317958,
+    "max_rain_h012": 17.359313779601866,
     "max_rain_h024": 17.78424025516884,
-    "max_rain_h048": 18.741960755750245,
-    "max_rain_h096": 31.769902023614623,
+    "max_rain_h048": 18.796813781354942,
+    "max_rain_h096": 31.821519674039358,
     "rain_baseline_h048": 8.10997546318115,
     "rain_baseline_h096": 21.19512232845905,
-    "event_rain_mm_h048": 10.631985292569095,
-    "event_rain_mm_h096": 10.574779695155573,
+    "event_rain_mm_h048": 10.686838318173791,
+    "event_rain_mm_h096": 10.626397345580308,
     "response_detected_at": null,
     "response_level": null,
     "initial_rise_rate_cm_h": null,
-    "max_rise_rate_cm_h": 0.3799999999999959,
+    "max_rise_rate_cm_h": 1.130000000000003,
     "response_checkpoints_cm": {},
     "spatial_start": {
       "cities": {
@@ -1923,8 +1923,8 @@
         "Aurora": {
           "h003": 52.905,
           "h006": 56.655,
-          "h012": 57.105,
-          "h024": 57.105
+          "h012": 57.11,
+          "h024": 57.11
         },
         "Braco do Trombudo": {
           "h003": 11.8,
@@ -1958,15 +1958,15 @@
         },
         "Laurentino": {
           "h003": 19.4,
-          "h006": 19.4,
-          "h012": 19.4,
-          "h024": 19.4
+          "h006": 19.6,
+          "h012": 19.6,
+          "h024": 19.6
         },
         "Lontras": {
           "h003": 21.0,
-          "h006": 22.2,
-          "h012": 22.4,
-          "h024": 22.4
+          "h006": 22.8,
+          "h012": 23.0,
+          "h024": 23.0
         },
         "Mirim Doce": {
           "h003": 7.8,
@@ -1977,8 +1977,8 @@
         "Petrolandia": {
           "h003": 9.0,
           "h006": 9.4,
-          "h012": 9.6,
-          "h024": 10.8
+          "h012": 10.4,
+          "h024": 11.4
         },
         "Pouso Redondo": {
           "h003": 19.6,
@@ -2067,8 +2067,8 @@
         "Ascurra": {
           "h003": 1.2,
           "h006": 1.4,
-          "h012": 1.4,
-          "h024": 1.4
+          "h012": 1.6,
+          "h024": 1.6
         },
         "Benedito Novo": {
           "h003": 8.65,
@@ -2103,7 +2103,7 @@
         "Timbo": {
           "h003": 3.035,
           "h006": 5.59,
-          "h012": 6.255,
+          "h012": 6.305,
           "h024": 8.543
         }
       },
@@ -2111,20 +2111,20 @@
         "alto": {
           "h003": 14.381,
           "h006": 18.112,
-          "h012": 19.216,
+          "h012": 19.278,
           "h024": 19.843
         },
         "medio": {
           "h003": 8.913,
           "h006": 10.679,
-          "h012": 11.091,
-          "h024": 11.092
+          "h012": 11.123,
+          "h024": 11.123
         }
       },
       "station_count": 50
     },
-    "rain_duration_hours": 5.172,
-    "last_meaningful_rise_at": 1792133260509
+    "rain_duration_hours": 5.842,
+    "last_meaningful_rise_at": 1792135670861
   },
   "last_event": {
     "rain_started_at": 1791845885793,
@@ -2379,7 +2379,7 @@
     "baseline_level": 2.56,
     "pattern": "0_10mm_3h_long"
   },
-  "updated_at": "2026-10-16T06:47:40.510451+00:00",
+  "updated_at": "2026-10-16T07:27:50.861960+00:00",
   "awaiting_rain_reset": false,
   "last_rain_episode": {
     "started_at": 1791845885793,
@@ -3305,28 +3305,28 @@
   "similarity_status": {
     "matches": [
       {
-        "score": 0.254,
+        "score": 0.292,
         "pattern": "0_10mm_3h_long",
         "peak_level": 2.85,
         "rise_cm": 29.0,
         "delay_hours": 8.6
       },
       {
-        "score": 0.22,
+        "score": 0.201,
         "pattern": "0_10mm_3h_short",
         "peak_level": 3.64,
         "rise_cm": 12.0,
         "delay_hours": 6.541
       },
       {
-        "score": 0.02,
+        "score": 0.023,
         "pattern": "10_30mm_3h_long",
         "peak_level": 6.62,
         "rise_cm": 407.0,
         "delay_hours": 3.747
       },
       {
-        "score": 0.003,
+        "score": 0.008,
         "pattern": "0_10mm_3h_long",
         "peak_level": 5.04,
         "rise_cm": 184.0,
