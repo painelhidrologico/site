@@ -1,25 +1,23 @@
 {
   "version": 12,
-  "updated_at": "2026-10-18T03:05:59.584484+00:00",
-  "evaluated": 12284,
+  "updated_at": "2026-10-18T05:06:21.048055+00:00",
+  "evaluated": 12287,
   "mae_m": {
     "2": 0.0977,
     "4": 0.1995,
-    "6": 0.3141,
+    "6": 0.314,
     "12": 0.5853,
     "24": 0.9259,
     "8": 0.4438
   },
   "metrics_by_horizon": {
     "2": {
-      "evaluated": 2413,
+      "evaluated": 2415,
       "sum_abs_error": 235.84430000000046,
       "sum_error": 17.501100000000005,
       "mae_m": 0.0977,
-      "bias_m": 0.0073,
+      "bias_m": 0.0072,
       "recent_abs_errors": [
-        0.0955,
-        0.0158,
         0.0874,
         0.0083,
         0.0695,
@@ -67,11 +65,11 @@
         0.0,
         0.01,
         0.01,
-        0.032
+        0.032,
+        0.0,
+        0.0
       ],
       "recent_errors": [
-        -0.0955,
-        -0.0158,
         -0.0874,
         0.0083,
         -0.0695,
@@ -119,11 +117,11 @@
         0.0,
         0.01,
         0.01,
-        0.032
+        0.032,
+        0.0,
+        0.0
       ],
       "recent_persistence_errors": [
-        0.15,
-        0.1,
         0.14,
         0.08,
         0.12,
@@ -171,7 +169,9 @@
         0.0,
         0.01,
         0.01,
-        0.1
+        0.1,
+        0.06,
+        0.04
       ]
     },
     "4": {
@@ -338,13 +338,12 @@
       ]
     },
     "6": {
-      "evaluated": 2394,
-      "sum_abs_error": 752.0734999999963,
-      "sum_error": 231.61850000000013,
-      "mae_m": 0.3141,
+      "evaluated": 2395,
+      "sum_abs_error": 752.1174999999963,
+      "sum_error": 231.5745000000001,
+      "mae_m": 0.314,
       "bias_m": 0.0967,
       "recent_abs_errors": [
-        0.0234,
         0.1624,
         0.1012,
         0.2354,
@@ -393,10 +392,10 @@
         0.11,
         0.11,
         0.16,
-        0.16
+        0.16,
+        0.044
       ],
       "recent_errors": [
-        -0.0234,
         -0.1624,
         -0.1012,
         -0.2354,
@@ -445,10 +444,10 @@
         0.11,
         0.11,
         0.16,
-        0.16
+        0.16,
+        -0.044
       ],
       "recent_persistence_errors": [
-        0.27,
         0.37,
         0.32,
         0.42,
@@ -496,6 +495,7 @@
         0.08,
         0.11,
         0.11,
+        0.16,
         0.16,
         0.16
       ]
@@ -876,9 +876,9 @@
     "24": 1.0
   },
   "bias_correction": {
-    "2": 0.01696,
+    "2": 0.01618,
     "4": 0.02504,
-    "6": 0.02962,
+    "6": 0.02977,
     "8": 0.02968,
     "12": 0.0179,
     "24": 0.0
@@ -886,7 +886,7 @@
   "persistence_blend": {
     "2": 5e-05,
     "4": 0.0001,
-    "6": 0.00027,
+    "6": 0.00024,
     "8": 0.0004,
     "12": 0.00061,
     "24": 0.0
@@ -903,17 +903,17 @@
     "h003": {
       "stations": 47,
       "cities": 34,
-      "value": 0.0013235294643570395
+      "value": 0.0
     },
     "h006": {
       "stations": 47,
       "cities": 34,
-      "value": 0.0075000000788885005
+      "value": 0.0013235294643570395
     },
     "h012": {
       "stations": 47,
       "cities": 34,
-      "value": 0.016470588688902995
+      "value": 0.012352941174279241
     },
     "h024": {
       "stations": 47,
@@ -923,12 +923,12 @@
     "h048": {
       "stations": 47,
       "cities": 34,
-      "value": 7.726274416252387
+      "value": 2.4563480525268426
     },
     "h096": {
       "stations": 47,
       "cities": 34,
-      "value": 20.84571084438586
+      "value": 20.84409320938821
     }
   },
   "spatial_rain": {
@@ -1031,8 +1031,8 @@
       },
       "Rio do Campo": {
         "h003": 0.0,
-        "h006": 0.2,
-        "h012": 0.32,
+        "h006": 0.0,
+        "h012": 0.22,
         "h024": 0.325
       },
       "Rio do Oeste": {
@@ -1066,9 +1066,9 @@
         "h024": 0.0
       },
       "Trombudo Central": {
-        "h003": 0.045,
-        "h006": 0.055,
-        "h012": 0.23,
+        "h003": 0.0,
+        "h006": 0.045,
+        "h012": 0.19,
         "h024": 0.24
       },
       "Vidal Ramos": {
@@ -1140,9 +1140,9 @@
     },
     "regions": {
       "alto": {
-        "h003": 0.002,
-        "h006": 0.01,
-        "h012": 0.022,
+        "h003": 0.0,
+        "h006": 0.002,
+        "h012": 0.016,
         "h024": 0.031
       },
       "medio": {
@@ -3316,7 +3316,7 @@
       "baseline_level": 2.18,
       "pattern": "10_30mm_3h_long"
     },
-    "updated_at": "2026-10-18T03:05:59.329434+00:00",
+    "updated_at": "2026-10-18T05:06:20.788434+00:00",
     "awaiting_rain_reset": false,
     "last_rain_episode": {
       "started_at": 1792114641135,
@@ -4320,27 +4320,27 @@
   },
   "recession": {
     "active": true,
-    "mode": "recessao_inicial",
+    "mode": "recessao",
     "status": "rio_em_recessao",
     "current_level_m": 2.64,
-    "peak_level_m": 2.68,
-    "peak_at_ms": 1792285200000,
-    "peak_source": "observed_recent_trend",
-    "latest_reading_at_ms": 1792292400000,
-    "readings_used": 3,
-    "drop_intervals_used": 2,
-    "fall_rate_m_h": 0.02,
-    "fall_rate_cm_h": 2.0,
-    "rain_3h_mm": 0.001,
+    "peak_level_m": 2.8,
+    "peak_at_ms": 1792270800000,
+    "peak_source": "observed_post_peak",
+    "latest_reading_at_ms": 1792296000000,
+    "readings_used": 8,
+    "drop_intervals_used": 6,
+    "fall_rate_m_h": 0.02667,
+    "fall_rate_cm_h": 2.67,
+    "rain_3h_mm": 0.0,
     "rain_24h_mm": 0.024,
     "projections": {
-      "2": 2.6,
-      "4": 2.56,
-      "6": 2.52,
-      "8": 2.48,
-      "12": 2.4
+      "2": 2.5867,
+      "4": 2.5333,
+      "6": 2.48,
+      "8": 2.4267,
+      "12": 2.32
     },
-    "message": "Recessão inicial projetada pelas três últimas leituras. Não reativa nem altera o módulo de pico; se uma nova chuva atingir 5 mm em 3h, esta projeção é cancelada."
+    "message": "Recessão projetada pelas leituras observadas. O encerramento do estado de pico não reativa o pico; apenas permite a projeção pós-pico enquanto a queda permanece confirmada."
   },
   "peak_learning": {
     "evaluated_events": 6,
