@@ -1,27 +1,17 @@
 {
   "version": 2,
-  "generated_at": "2026-10-18T02:06:58.140000+00:00",
-  "river_timestamp": "2026-10-18T01:00:00+00:00",
-  "current": 2.68,
+  "generated_at": "2026-10-18T03:05:59.328000+00:00",
+  "river_timestamp": "2026-10-18T03:00:00+00:00",
+  "current": 2.64,
   "pred": {
-    "2": 2.64,
-    "4": 2.6,
-    "6": 2.56,
-    "8": 2.52,
-    "12": 2.44
+    "2": 2.6,
+    "4": 2.56,
+    "6": 2.52,
+    "8": 2.48,
+    "12": 2.4
   },
   "components": {
     "2": {
-      "recession": true,
-      "curve_value": 2.64,
-      "fall_rate_m_h": 0.02,
-      "fall_rate_cm_h": 2.0,
-      "readings_used": 3,
-      "drop_intervals_used": 2,
-      "rain_3h_mm": 0.001,
-      "rain_24h_mm": 0.033
-    },
-    "4": {
       "recession": true,
       "curve_value": 2.6,
       "fall_rate_m_h": 0.02,
@@ -29,9 +19,9 @@
       "readings_used": 3,
       "drop_intervals_used": 2,
       "rain_3h_mm": 0.001,
-      "rain_24h_mm": 0.033
+      "rain_24h_mm": 0.024
     },
-    "6": {
+    "4": {
       "recession": true,
       "curve_value": 2.56,
       "fall_rate_m_h": 0.02,
@@ -39,9 +29,9 @@
       "readings_used": 3,
       "drop_intervals_used": 2,
       "rain_3h_mm": 0.001,
-      "rain_24h_mm": 0.033
+      "rain_24h_mm": 0.024
     },
-    "8": {
+    "6": {
       "recession": true,
       "curve_value": 2.52,
       "fall_rate_m_h": 0.02,
@@ -49,17 +39,27 @@
       "readings_used": 3,
       "drop_intervals_used": 2,
       "rain_3h_mm": 0.001,
-      "rain_24h_mm": 0.033
+      "rain_24h_mm": 0.024
     },
-    "12": {
+    "8": {
       "recession": true,
-      "curve_value": 2.44,
+      "curve_value": 2.48,
       "fall_rate_m_h": 0.02,
       "fall_rate_cm_h": 2.0,
       "readings_used": 3,
       "drop_intervals_used": 2,
       "rain_3h_mm": 0.001,
-      "rain_24h_mm": 0.033
+      "rain_24h_mm": 0.024
+    },
+    "12": {
+      "recession": true,
+      "curve_value": 2.4,
+      "fall_rate_m_h": 0.02,
+      "fall_rate_cm_h": 2.0,
+      "readings_used": 3,
+      "drop_intervals_used": 2,
+      "rain_3h_mm": 0.001,
+      "rain_24h_mm": 0.024
     }
   },
   "peak_estimate": {
@@ -102,7 +102,7 @@
     },
     "bias_correction": {
       "2": 0.01696,
-      "4": 0.02518,
+      "4": 0.02504,
       "6": 0.02962,
       "8": 0.02968,
       "12": 0.0179,
@@ -110,7 +110,7 @@
     },
     "persistence_blend": {
       "2": 5e-05,
-      "4": 0.00011,
+      "4": 0.0001,
       "6": 0.00027,
       "8": 0.0004,
       "12": 0.00061,
@@ -149,28 +149,28 @@
       "active": true,
       "mode": "recessao_inicial",
       "status": "rio_em_recessao",
-      "current_level_m": 2.68,
-      "peak_level_m": 2.72,
-      "peak_at_ms": 1792278000000,
+      "current_level_m": 2.64,
+      "peak_level_m": 2.68,
+      "peak_at_ms": 1792285200000,
       "peak_source": "observed_recent_trend",
-      "latest_reading_at_ms": 1792285200000,
+      "latest_reading_at_ms": 1792292400000,
       "readings_used": 3,
       "drop_intervals_used": 2,
       "fall_rate_m_h": 0.02,
       "fall_rate_cm_h": 2.0,
       "rain_3h_mm": 0.001,
-      "rain_24h_mm": 0.033,
+      "rain_24h_mm": 0.024,
       "projections": {
-        "2": 2.64,
-        "4": 2.6,
-        "6": 2.56,
-        "8": 2.52,
-        "12": 2.44
+        "2": 2.6,
+        "4": 2.56,
+        "6": 2.52,
+        "8": 2.48,
+        "12": 2.4
       },
       "message": "Recessão inicial projetada pelas três últimas leituras. Não reativa nem altera o módulo de pico; se uma nova chuva atingir 5 mm em 3h, esta projeção é cancelada."
     },
     "peak_uses_24h_prediction": false,
     "learned_delay_hours": 6.652,
-    "evaluated": 12283
+    "evaluated": 12284
   }
 }
