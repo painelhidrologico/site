@@ -1,6 +1,6 @@
 {
   "version": 12,
-  "updated_at": "2026-10-18T01:06:52.105367+00:00",
+  "updated_at": "2026-10-18T02:06:58.388456+00:00",
   "evaluated": 12283,
   "mae_m": {
     "2": 0.0977,
@@ -903,32 +903,32 @@
     "h003": {
       "stations": 47,
       "cities": 34,
-      "value": 0.0005882352809695637
+      "value": 0.0013235294643570395
     },
     "h006": {
       "stations": 47,
       "cities": 34,
-      "value": 0.010000000050400986
+      "value": 0.008088235469425427
     },
     "h012": {
       "stations": 47,
       "cities": 34,
-      "value": 0.016323529841268763
+      "value": 0.016764706055469373
     },
     "h024": {
       "stations": 47,
       "cities": 34,
-      "value": 0.03220588322181035
+      "value": 0.03294117707649574
     },
     "h048": {
       "stations": 47,
       "cities": 34,
-      "value": 14.990343205740347
+      "value": 10.540882298941998
     },
     "h096": {
       "stations": 47,
       "cities": 34,
-      "value": 20.84791672112895
+      "value": 20.84571084438586
     }
   },
   "spatial_rain": {
@@ -965,7 +965,7 @@
       },
       "Dona Emma": {
         "h003": 0.0,
-        "h006": 0.01,
+        "h006": 0.0,
         "h012": 0.01,
         "h024": 0.02
       },
@@ -1031,7 +1031,7 @@
       },
       "Rio do Campo": {
         "h003": 0.0,
-        "h006": 0.22,
+        "h006": 0.2,
         "h012": 0.32,
         "h024": 0.625
       },
@@ -1044,7 +1044,7 @@
       "Rio do Sul": {
         "h003": 0.0,
         "h006": 0.0,
-        "h012": 0.01,
+        "h012": 0.0,
         "h024": 0.02
       },
       "Salete": {
@@ -1066,10 +1066,10 @@
         "h024": 0.0
       },
       "Trombudo Central": {
-        "h003": 0.02,
-        "h006": 0.11,
-        "h012": 0.215,
-        "h024": 0.215
+        "h003": 0.045,
+        "h006": 0.075,
+        "h012": 0.24,
+        "h024": 0.24
       },
       "Vidal Ramos": {
         "h003": 0.0,
@@ -1140,9 +1140,9 @@
     },
     "regions": {
       "alto": {
-        "h003": 0.001,
-        "h006": 0.013,
-        "h012": 0.021,
+        "h003": 0.002,
+        "h006": 0.011,
+        "h012": 0.022,
         "h024": 0.042
       },
       "medio": {
@@ -3316,7 +3316,7 @@
       "baseline_level": 2.18,
       "pattern": "10_30mm_3h_long"
     },
-    "updated_at": "2026-10-18T01:06:51.845792+00:00",
+    "updated_at": "2026-10-18T02:06:58.141261+00:00",
     "awaiting_rain_reset": false,
     "last_rain_episode": {
       "started_at": 1792114641135,
@@ -4322,23 +4322,23 @@
     "active": true,
     "mode": "recessao_inicial",
     "status": "rio_em_recessao",
-    "current_level_m": 2.7,
-    "peak_level_m": 2.76,
-    "peak_at_ms": 1792274400000,
+    "current_level_m": 2.68,
+    "peak_level_m": 2.72,
+    "peak_at_ms": 1792278000000,
     "peak_source": "observed_recent_trend",
-    "latest_reading_at_ms": 1792281600000,
+    "latest_reading_at_ms": 1792285200000,
     "readings_used": 3,
     "drop_intervals_used": 2,
-    "fall_rate_m_h": 0.03,
-    "fall_rate_cm_h": 3.0,
+    "fall_rate_m_h": 0.02,
+    "fall_rate_cm_h": 2.0,
     "rain_3h_mm": 0.001,
-    "rain_24h_mm": 0.032,
+    "rain_24h_mm": 0.033,
     "projections": {
       "2": 2.64,
-      "4": 2.58,
-      "6": 2.52,
-      "8": 2.46,
-      "12": 2.34
+      "4": 2.6,
+      "6": 2.56,
+      "8": 2.52,
+      "12": 2.44
     },
     "message": "Recessão inicial projetada pelas três últimas leituras. Não reativa nem altera o módulo de pico; se uma nova chuva atingir 5 mm em 3h, esta projeção é cancelada."
   },
