@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-19T02:26:40.672000+00:00",
+  "generated_at": "2026-10-19T02:58:20.671000+00:00",
   "river_timestamp": "2026-10-19T02:00:00+00:00",
   "current": 2.15,
   "pred": {
@@ -102,7 +102,7 @@
     },
     "bias_correction": {
       "2": -0.00153,
-      "4": 0.00289,
+      "4": 0.00107,
       "6": -0.0005,
       "8": -0.00945,
       "12": -0.01764,
@@ -171,6 +171,6 @@
     },
     "peak_uses_24h_prediction": false,
     "learned_delay_hours": 6.652,
-    "evaluated": 12356
+    "evaluated": 12357
   }
 }
