@@ -1,24 +1,23 @@
 {
   "version": 12,
-  "updated_at": "2026-10-19T18:47:01.757452+00:00",
-  "evaluated": 12478,
+  "updated_at": "2026-10-19T19:25:15.416667+00:00",
+  "evaluated": 12482,
   "mae_m": {
     "2": 0.0966,
     "4": 0.1973,
-    "6": 0.3107,
+    "6": 0.3106,
     "12": 0.5789,
     "24": 0.9259,
-    "8": 0.4352
+    "8": 0.4351
   },
   "metrics_by_horizon": {
     "2": {
-      "evaluated": 2458,
-      "sum_abs_error": 237.4410000000004,
-      "sum_error": 17.397800000000014,
+      "evaluated": 2459,
+      "sum_abs_error": 237.5210000000004,
+      "sum_error": 17.477800000000013,
       "mae_m": 0.0966,
       "bias_m": 0.0071,
       "recent_abs_errors": [
-        0.0,
         0.0,
         0.01,
         0.01,
@@ -67,10 +66,10 @@
         0.0,
         0.01,
         0.03,
-        0.01
+        0.01,
+        0.08
       ],
       "recent_errors": [
-        0.0,
         0.0,
         0.01,
         0.01,
@@ -119,10 +118,10 @@
         0.0,
         0.01,
         0.03,
-        0.01
+        0.01,
+        0.08
       ],
       "recent_persistence_errors": [
-        0.0,
         0.0,
         0.01,
         0.01,
@@ -171,17 +170,17 @@
         0.0,
         0.01,
         0.03,
-        0.01
+        0.01,
+        0.08
       ]
     },
     "4": {
-      "evaluated": 2445,
-      "sum_abs_error": 482.40500000000026,
-      "sum_error": 107.13300000000002,
+      "evaluated": 2446,
+      "sum_abs_error": 482.48500000000024,
+      "sum_error": 107.21300000000002,
       "mae_m": 0.1973,
       "bias_m": 0.0438,
       "recent_abs_errors": [
-        0.01,
         0.02,
         0.01,
         0.04,
@@ -230,10 +229,10 @@
         0.17,
         0.16,
         0.02,
-        0.01
+        0.01,
+        0.08
       ],
       "recent_errors": [
-        0.01,
         0.02,
         0.01,
         0.04,
@@ -282,10 +281,10 @@
         -0.17,
         -0.16,
         0.02,
-        0.01
+        0.01,
+        0.08
       ],
       "recent_persistence_errors": [
-        0.01,
         0.02,
         0.01,
         0.04,
@@ -334,17 +333,17 @@
         0.01,
         0.0,
         0.02,
-        0.01
+        0.01,
+        0.08
       ]
     },
     "6": {
-      "evaluated": 2434,
-      "sum_abs_error": 756.1974999999965,
-      "sum_error": 230.53450000000024,
-      "mae_m": 0.3107,
-      "bias_m": 0.0947,
+      "evaluated": 2435,
+      "sum_abs_error": 756.3674999999964,
+      "sum_error": 230.36450000000025,
+      "mae_m": 0.3106,
+      "bias_m": 0.0946,
       "recent_abs_errors": [
-        0.04,
         0.04,
         0.06,
         0.05,
@@ -393,10 +392,10 @@
         0.25,
         0.22,
         0.22,
-        0.24
+        0.24,
+        0.17
       ],
       "recent_errors": [
-        0.04,
         0.04,
         0.06,
         0.05,
@@ -445,10 +444,10 @@
         -0.25,
         -0.22,
         -0.22,
-        -0.24
+        -0.24,
+        -0.17
       ],
       "recent_persistence_errors": [
-        0.04,
         0.04,
         0.06,
         0.05,
@@ -497,17 +496,17 @@
         0.02,
         0.01,
         0.01,
-        0.0
+        0.0,
+        0.07
       ]
     },
     "8": {
-      "evaluated": 1437,
-      "sum_abs_error": 625.3701000000007,
-      "sum_error": 381.7526999999999,
-      "mae_m": 0.4352,
-      "bias_m": 0.2657,
+      "evaluated": 1438,
+      "sum_abs_error": 625.6401000000006,
+      "sum_error": 381.4826999999999,
+      "mae_m": 0.4351,
+      "bias_m": 0.2653,
       "recent_abs_errors": [
-        0.07,
         0.05,
         0.08,
         0.08,
@@ -556,10 +555,10 @@
         0.3,
         0.29,
         0.34,
-        0.34
+        0.34,
+        0.27
       ],
       "recent_errors": [
-        0.07,
         0.05,
         0.08,
         0.08,
@@ -608,10 +607,10 @@
         -0.3,
         -0.29,
         -0.34,
-        -0.34
+        -0.34,
+        -0.27
       ],
       "recent_persistence_errors": [
-        0.07,
         0.05,
         0.08,
         0.08,
@@ -660,7 +659,8 @@
         0.1,
         0.11,
         0.06,
-        0.06
+        0.06,
+        0.09
       ]
     },
     "12": {
@@ -876,10 +876,10 @@
     "24": 1.0
   },
   "bias_correction": {
-    "2": 0.00036,
-    "4": 0.00324,
-    "6": 0.00129,
-    "8": -0.01004,
+    "2": -0.0002,
+    "4": 0.00275,
+    "6": 0.00276,
+    "8": -0.00766,
     "12": -0.03263,
     "24": 0.0
   },
@@ -903,7 +903,7 @@
     "h003": {
       "stations": 47,
       "cities": 34,
-      "value": 0.09529411485966514
+      "value": 0.09382352671202492
     },
     "h006": {
       "stations": 47,
@@ -918,12 +918,12 @@
     "h024": {
       "stations": 47,
       "cities": 34,
-      "value": 0.17249999710303895
+      "value": 0.17205882061491995
     },
     "h048": {
       "stations": 47,
       "cities": 34,
-      "value": 0.2799999934949857
+      "value": 0.27838234743103385
     },
     "h096": {
       "stations": 47,
@@ -1042,7 +1042,7 @@
         "h024": 0.0
       },
       "Rio do Sul": {
-        "h003": 0.14,
+        "h003": 0.09,
         "h006": 0.21,
         "h012": 0.35,
         "h024": 0.35
@@ -1069,7 +1069,7 @@
         "h003": 0.0,
         "h006": 0.0,
         "h012": 0.0,
-        "h024": 0.085
+        "h024": 0.07
       },
       "Vidal Ramos": {
         "h003": 0.0,
@@ -1140,7 +1140,7 @@
     },
     "regions": {
       "alto": {
-        "h003": 0.125,
+        "h003": 0.123,
         "h006": 0.178,
         "h012": 0.221,
         "h024": 0.225
@@ -3316,7 +3316,7 @@
       "baseline_level": 2.18,
       "pattern": "10_30mm_3h_long"
     },
-    "updated_at": "2026-10-19T18:47:01.559354+00:00",
+    "updated_at": "2026-10-19T19:25:15.278636+00:00",
     "awaiting_rain_reset": false,
     "last_rain_episode": {
       "started_at": 1792114641135,
@@ -4320,27 +4320,27 @@
   },
   "recession": {
     "active": true,
-    "mode": "recessao",
+    "mode": "recessao_inicial",
     "status": "rio_em_recessao",
-    "current_level_m": 1.9,
-    "peak_level_m": 1.93,
-    "peak_at_ms": 1792422000000,
-    "peak_source": "observed_post_peak",
-    "latest_reading_at_ms": 1792432800000,
-    "readings_used": 4,
-    "drop_intervals_used": 2,
-    "fall_rate_m_h": 0.015,
-    "fall_rate_cm_h": 1.5,
-    "rain_3h_mm": 0.095,
+    "current_level_m": 1.83,
+    "peak_level_m": 1.9,
+    "peak_at_ms": 1792429200000,
+    "peak_source": "observed_recent_trend",
+    "latest_reading_at_ms": 1792436400000,
+    "readings_used": 3,
+    "drop_intervals_used": 1,
+    "fall_rate_m_h": 0.035,
+    "fall_rate_cm_h": 3.5,
+    "rain_3h_mm": 0.094,
     "rain_24h_mm": 0.172,
     "projections": {
-      "2": 1.87,
-      "4": 1.84,
-      "6": 1.81,
-      "8": 1.78,
-      "12": 1.72
+      "2": 1.76,
+      "4": 1.69,
+      "6": 1.62,
+      "8": 1.55,
+      "12": 1.41
     },
-    "message": "Recessão projetada pelas leituras observadas. O encerramento do estado de pico não reativa o pico; apenas permite a projeção pós-pico enquanto a queda permanece confirmada."
+    "message": "Recessão inicial projetada pelas três últimas leituras. Não reativa nem altera o módulo de pico; se uma nova chuva atingir 5 mm em 3h, esta projeção é cancelada."
   },
   "peak_learning": {
     "evaluated_events": 6,
