@@ -1,12 +1,12 @@
 {
   "version": 12,
-  "updated_at": "2026-10-20T09:58:04.756107+00:00",
-  "evaluated": 12617,
+  "updated_at": "2026-10-20T10:21:48.232449+00:00",
+  "evaluated": 12618,
   "mae_m": {
     "2": 0.0961,
     "4": 0.1962,
     "6": 0.3088,
-    "12": 0.5756,
+    "12": 0.5755,
     "24": 0.9259,
     "8": 0.4308
   },
@@ -664,13 +664,12 @@
       ]
     },
     "12": {
-      "evaluated": 2451,
-      "sum_abs_error": 1410.914199999992,
-      "sum_error": 501.36180000000076,
-      "mae_m": 0.5756,
-      "bias_m": 0.2046,
+      "evaluated": 2452,
+      "sum_abs_error": 1411.114199999992,
+      "sum_error": 501.16180000000077,
+      "mae_m": 0.5755,
+      "bias_m": 0.2044,
       "recent_abs_errors": [
-        0.27,
         0.13,
         0.07,
         0.13,
@@ -719,10 +718,10 @@
         0.4,
         0.47,
         0.43,
-        0.22
+        0.22,
+        0.2
       ],
       "recent_errors": [
-        -0.27,
         -0.13,
         0.07,
         0.13,
@@ -771,10 +770,10 @@
         -0.4,
         -0.47,
         -0.43,
-        -0.22
+        -0.22,
+        -0.2
       ],
       "recent_persistence_errors": [
-        0.21,
         0.23,
         0.25,
         0.25,
@@ -823,7 +822,8 @@
         0.02,
         0.01,
         0.05,
-        0.02
+        0.02,
+        0.04
       ]
     },
     "24": {
@@ -880,7 +880,7 @@
     "4": 0.01075,
     "6": 0.02124,
     "8": 0.03186,
-    "12": 0.03724,
+    "12": 0.03675,
     "24": 0.0
   },
   "persistence_blend": {
@@ -903,32 +903,32 @@
     "h003": {
       "stations": 47,
       "cities": 34,
-      "value": 0.00014705882024239092
+      "value": 0.009558823863592218
     },
     "h006": {
       "stations": 47,
       "cities": 34,
-      "value": 0.00014705882024239092
+      "value": 0.009558823863592218
     },
     "h012": {
       "stations": 47,
       "cities": 34,
-      "value": 0.007647058871739051
+      "value": 0.017058823915088877
     },
     "h024": {
       "stations": 47,
       "cities": 34,
-      "value": 0.22014705961405792
+      "value": 0.22867647639256627
     },
     "h048": {
       "stations": 47,
       "cities": 34,
-      "value": 0.32360294257181094
+      "value": 0.3297794068314354
     },
     "h096": {
       "stations": 47,
       "cities": 34,
-      "value": 2.3263970591018306
+      "value": 2.3299265043152606
     }
   },
   "spatial_rain": {
@@ -1030,10 +1030,10 @@
         "h024": 0.0
       },
       "Rio do Campo": {
-        "h003": 0.005,
-        "h006": 0.005,
-        "h012": 0.005,
-        "h024": 6.01
+        "h003": 0.305,
+        "h006": 0.305,
+        "h012": 0.305,
+        "h024": 6.31
       },
       "Rio do Oeste": {
         "h003": 0.0,
@@ -1042,10 +1042,10 @@
         "h024": 0.0
       },
       "Rio do Sul": {
-        "h003": 0.0,
-        "h006": 0.0,
-        "h012": 0.01,
-        "h024": 0.33
+        "h003": 0.02,
+        "h006": 0.02,
+        "h012": 0.03,
+        "h024": 0.32
       },
       "Salete": {
         "h003": 0.0,
@@ -1140,10 +1140,10 @@
     },
     "regions": {
       "alto": {
-        "h003": 0.0,
-        "h006": 0.0,
-        "h012": 0.01,
-        "h024": 0.287
+        "h003": 0.013,
+        "h006": 0.013,
+        "h012": 0.022,
+        "h024": 0.299
       },
       "medio": {
         "h003": 0.0,
@@ -3316,7 +3316,7 @@
       "baseline_level": 2.18,
       "pattern": "10_30mm_3h_long"
     },
-    "updated_at": "2026-10-20T09:58:04.618069+00:00",
+    "updated_at": "2026-10-20T10:21:48.084782+00:00",
     "awaiting_rain_reset": false,
     "last_rain_episode": {
       "started_at": 1792114641135,
@@ -4322,23 +4322,23 @@
     "active": true,
     "mode": "recessao_inicial",
     "status": "rio_em_recessao",
-    "current_level_m": 1.77,
-    "peak_level_m": 1.85,
-    "peak_at_ms": 1792479600000,
+    "current_level_m": 1.75,
+    "peak_level_m": 1.81,
+    "peak_at_ms": 1792483200000,
     "peak_source": "observed_recent_trend",
-    "latest_reading_at_ms": 1792486800000,
+    "latest_reading_at_ms": 1792490400000,
     "readings_used": 3,
     "drop_intervals_used": 2,
-    "fall_rate_m_h": 0.04,
-    "fall_rate_cm_h": 4.0,
-    "rain_3h_mm": 0.0,
-    "rain_24h_mm": 0.22,
+    "fall_rate_m_h": 0.03,
+    "fall_rate_cm_h": 3.0,
+    "rain_3h_mm": 0.01,
+    "rain_24h_mm": 0.229,
     "projections": {
       "2": 1.69,
-      "4": 1.61,
-      "6": 1.53,
-      "8": 1.45,
-      "12": 1.29
+      "4": 1.63,
+      "6": 1.57,
+      "8": 1.51,
+      "12": 1.39
     },
     "message": "Recessão inicial projetada pelas três últimas leituras. Não reativa nem altera o módulo de pico; se uma nova chuva atingir 5 mm em 3h, esta projeção é cancelada."
   },
