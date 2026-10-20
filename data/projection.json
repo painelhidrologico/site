@@ -1,19 +1,19 @@
 {
   "version": 2,
-  "generated_at": "2026-10-20T15:01:30.954000+00:00",
-  "river_timestamp": "2026-10-20T14:00:00+00:00",
-  "current": 1.81,
+  "generated_at": "2026-10-20T15:39:54.253000+00:00",
+  "river_timestamp": "2026-10-20T15:00:00+00:00",
+  "current": 1.86,
   "pred": {
-    "2": 1.81,
-    "4": 1.81,
-    "6": 1.81,
-    "8": 1.81,
-    "12": 1.81
+    "2": 1.86,
+    "4": 1.86,
+    "6": 1.86,
+    "8": 1.86,
+    "12": 1.86
   },
   "components": {
     "2": {
       "unified_curve": true,
-      "curve_value": 1.81,
+      "curve_value": 1.86,
       "rain_mm": 0.0,
       "cm_per_mm": 4.7,
       "total_response_m": 0.0,
@@ -25,7 +25,7 @@
     },
     "4": {
       "unified_curve": true,
-      "curve_value": 1.81,
+      "curve_value": 1.86,
       "rain_mm": 0.0,
       "cm_per_mm": 4.7,
       "total_response_m": 0.0,
@@ -37,7 +37,7 @@
     },
     "6": {
       "unified_curve": true,
-      "curve_value": 1.81,
+      "curve_value": 1.86,
       "rain_mm": 0.0,
       "cm_per_mm": 4.7,
       "total_response_m": 0.0,
@@ -49,7 +49,7 @@
     },
     "8": {
       "unified_curve": true,
-      "curve_value": 1.81,
+      "curve_value": 1.86,
       "rain_mm": 0.0,
       "cm_per_mm": 4.7,
       "total_response_m": 0.0,
@@ -61,7 +61,7 @@
     },
     "12": {
       "unified_curve": true,
-      "curve_value": 1.81,
+      "curve_value": 1.86,
       "rain_mm": 0.0,
       "cm_per_mm": 4.7,
       "total_response_m": 0.0,
@@ -111,19 +111,19 @@
       "24": 1.0
     },
     "bias_correction": {
-      "2": 0.00899,
-      "4": 0.01642,
-      "6": 0.01739,
+      "2": 0.00955,
+      "4": 0.02062,
+      "6": 0.02383,
       "8": 0.02542,
       "12": 0.05207,
       "24": 0.0
     },
     "persistence_blend": {
       "2": 5e-05,
-      "4": 0.05581,
-      "6": 0.12172,
+      "4": 0.08071,
+      "6": 0.14067,
       "8": 0.12329,
-      "12": 0.06297,
+      "12": 0.07655,
       "24": 0.0
     },
     "damping": {
@@ -157,12 +157,10 @@
     ],
     "recession": {
       "active": false,
-      "reason": "rise_detected_after_peak",
-      "rise_count": 2,
-      "rise_total_m": 0.08
+      "reason": "no_recent_post_peak"
     },
     "peak_uses_24h_prediction": false,
     "learned_delay_hours": 6.652,
-    "evaluated": 12662
+    "evaluated": 12668
   }
 }
