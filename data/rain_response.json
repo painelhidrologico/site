@@ -1914,16 +1914,16 @@
     "dry_gap_started_at": 1792757952911,
     "baseline_level": 1.71,
     "max_level": 1.71,
-    "last_observed_level": 1.4,
+    "last_observed_level": 1.55,
     "max_rain_h003": 1.7188095277264006,
     "max_rain_h006": 2.2770714366719838,
     "max_rain_h012": 2.860928559161368,
     "max_rain_h024": 3.6932143107766193,
-    "max_rain_h048": 3.9120714220262705,
+    "max_rain_h048": 3.915285735328992,
     "max_rain_h096": 4.231142898826372,
     "rain_baseline_h048": 3.353142855706669,
     "rain_baseline_h096": 3.672642859248888,
-    "event_rain_mm_h048": 0.5589285663196013,
+    "event_rain_mm_h048": 0.5621428796223227,
     "event_rain_mm_h096": 0.558500039577484,
     "response_detected_at": null,
     "response_level": null,
@@ -2195,7 +2195,7 @@
           "h003": 2.07,
           "h006": 2.99,
           "h012": 3.55,
-          "h024": 3.9
+          "h024": 3.98
         },
         "Ibirama": {
           "h003": 0.8,
@@ -2273,7 +2273,7 @@
           "h003": 2.16,
           "h006": 2.39,
           "h012": 2.44,
-          "h024": 2.46
+          "h024": 2.51
         },
         "Salete": {
           "h003": 4.0,
@@ -2315,7 +2315,7 @@
           "h003": 3.21,
           "h006": 4.18,
           "h012": 6.57,
-          "h024": 7.0
+          "h024": 7.04
         },
         "Apiuna": {
           "h003": 1.0,
@@ -2369,7 +2369,7 @@
           "h003": 3.075,
           "h006": 5.875,
           "h012": 6.075,
-          "h024": 6.18
+          "h024": 6.205
         }
       },
       "regions": {
@@ -2388,7 +2388,8 @@
       },
       "station_count": 50
     },
-    "rain_duration_hours": 0.0
+    "rain_duration_hours": 0.0,
+    "last_meaningful_rise_at": 1792776031029
   },
   "last_event": {
     "rain_started_at": 1792114641135,
@@ -2643,7 +2644,7 @@
     "baseline_level": 2.18,
     "pattern": "10_30mm_3h_long"
   },
-  "updated_at": "2026-10-23T12:19:12.912784+00:00",
+  "updated_at": "2026-10-23T17:20:31.030608+00:00",
   "awaiting_rain_reset": false,
   "last_rain_episode": {
     "started_at": 1792114641135,
