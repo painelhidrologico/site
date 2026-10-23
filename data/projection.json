@@ -1,74 +1,74 @@
 {
   "version": 2,
-  "generated_at": "2026-10-23T06:55:26.145000+00:00",
-  "river_timestamp": "2026-10-23T06:00:00+00:00",
-  "current": 1.71,
+  "generated_at": "2026-10-23T12:19:12.911000+00:00",
+  "river_timestamp": "2026-10-23T12:00:00+00:00",
+  "current": 1.4,
   "pred": {
-    "2": 1.71,
-    "4": 1.71,
-    "6": 1.71,
-    "8": 1.71,
-    "12": 1.71
+    "2": 1.4249,
+    "4": 1.4872,
+    "6": 1.5681,
+    "8": 1.6491,
+    "12": 1.7363
   },
   "components": {
     "2": {
       "unified_curve": true,
-      "curve_value": 1.71,
-      "rain_mm": 0.0,
+      "curve_value": 1.4249,
+      "rain_mm": 0.559,
       "cm_per_mm": 4.7,
-      "total_response_m": 0.0,
-      "remaining_response_m": 0.0,
+      "total_response_m": 0.0263,
+      "remaining_response_m": 0.3363,
       "response_delay_hours": 6.652,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.0,
+      "acceleration_m_h2": 0.00749,
       "decelerating": false
     },
     "4": {
       "unified_curve": true,
-      "curve_value": 1.71,
-      "rain_mm": 0.0,
+      "curve_value": 1.4872,
+      "rain_mm": 0.559,
       "cm_per_mm": 4.7,
-      "total_response_m": 0.0,
-      "remaining_response_m": 0.0,
+      "total_response_m": 0.0263,
+      "remaining_response_m": 0.3363,
       "response_delay_hours": 6.652,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.0,
+      "acceleration_m_h2": 0.00749,
       "decelerating": false
     },
     "6": {
       "unified_curve": true,
-      "curve_value": 1.71,
-      "rain_mm": 0.0,
+      "curve_value": 1.5681,
+      "rain_mm": 0.559,
       "cm_per_mm": 4.7,
-      "total_response_m": 0.0,
-      "remaining_response_m": 0.0,
+      "total_response_m": 0.0263,
+      "remaining_response_m": 0.3363,
       "response_delay_hours": 6.652,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.0,
+      "acceleration_m_h2": 0.00749,
       "decelerating": false
     },
     "8": {
       "unified_curve": true,
-      "curve_value": 1.71,
-      "rain_mm": 0.0,
+      "curve_value": 1.6491,
+      "rain_mm": 0.559,
       "cm_per_mm": 4.7,
-      "total_response_m": 0.0,
-      "remaining_response_m": 0.0,
+      "total_response_m": 0.0263,
+      "remaining_response_m": 0.3363,
       "response_delay_hours": 6.652,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.0,
+      "acceleration_m_h2": 0.00749,
       "decelerating": false
     },
     "12": {
       "unified_curve": true,
-      "curve_value": 1.71,
-      "rain_mm": 0.0,
+      "curve_value": 1.7363,
+      "rain_mm": 0.559,
       "cm_per_mm": 4.7,
-      "total_response_m": 0.0,
-      "remaining_response_m": 0.0,
+      "total_response_m": 0.0263,
+      "remaining_response_m": 0.3363,
       "response_delay_hours": 6.652,
       "effective_rate_m_h": 0.0,
-      "acceleration_m_h2": 0.0,
+      "acceleration_m_h2": 0.00749,
       "decelerating": false
     }
   },
@@ -77,7 +77,7 @@
     "event_id": "1792738526145",
     "status": "pico_atingido",
     "mode": "pico_atingido",
-    "current_level_m": 1.71,
+    "current_level_m": 1.4,
     "published_peak_m": 1.71,
     "raw_peak_m": 1.71,
     "temporal_peak_m": 1.71,
@@ -106,7 +106,14 @@
     "reprojection_deadline_at_ms": null,
     "reprojection_window_hours": 0.0,
     "reprojection_confirmed_new_peak": false,
-    "message": "Pico em análise pela curva unificada da calculadora."
+    "message": "Pico atingido. Mantendo o pico real até o encerramento do evento.",
+    "actual_peak_m": 1.4,
+    "actual_peak_at_ms": 1792757952911,
+    "actual_peak_at": "2026-10-23T12:19:12.911000+00:00",
+    "fallen_m": 0.0,
+    "fallen_cm": 0.0,
+    "rain_3h_mm": 0.0,
+    "new_rain_trigger": false
   },
   "model": {
     "trend_gain": {
@@ -142,19 +149,19 @@
       "24": 1.0
     },
     "bias_correction": {
-      "2": 0.0089,
-      "4": 0.02263,
-      "6": 0.03272,
-      "8": 0.04232,
-      "12": 0.05529,
+      "2": 0.0075,
+      "4": 0.01955,
+      "6": 0.03489,
+      "8": 0.04589,
+      "12": 0.06222,
       "24": 0.0
     },
     "persistence_blend": {
       "2": 5e-05,
-      "4": 0.12069,
-      "6": 0.22136,
-      "8": 0.28835,
-      "12": 0.31021,
+      "4": 0.12156,
+      "6": 0.22209,
+      "8": 0.28971,
+      "12": 0.31447,
       "24": 0.0
     },
     "damping": {
@@ -188,10 +195,12 @@
     ],
     "recession": {
       "active": false,
-      "reason": "no_recent_post_peak"
+      "reason": "insufficient_confirmed_recession",
+      "drop_intervals": 6,
+      "total_drop_m": 0.0
     },
     "peak_uses_24h_prediction": false,
     "learned_delay_hours": 6.652,
-    "evaluated": 13041
+    "evaluated": 13048
   }
 }
