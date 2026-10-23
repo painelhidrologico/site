@@ -1914,16 +1914,16 @@
     "dry_gap_started_at": 1792757952911,
     "baseline_level": 1.71,
     "max_level": 1.71,
-    "last_observed_level": 1.55,
+    "last_observed_level": 1.54,
     "max_rain_h003": 1.7188095277264006,
     "max_rain_h006": 2.2770714366719838,
     "max_rain_h012": 2.860928559161368,
     "max_rain_h024": 3.6932143107766193,
-    "max_rain_h048": 3.915285735328992,
+    "max_rain_h048": 3.9169286083607444,
     "max_rain_h096": 4.231142898826372,
     "rain_baseline_h048": 3.353142855706669,
     "rain_baseline_h096": 3.672642859248888,
-    "event_rain_mm_h048": 0.5621428796223227,
+    "event_rain_mm_h048": 0.5637857526540753,
     "event_rain_mm_h096": 0.558500039577484,
     "response_detected_at": null,
     "response_level": null,
@@ -2186,10 +2186,10 @@
           "h024": 2.18
         },
         "Braco do Trombudo": {
-          "h003": 0.0,
+          "h003": 0.2,
           "h006": 0.2,
           "h012": 0.2,
-          "h024": 0.2
+          "h024": 0.4
         },
         "Dona Emma": {
           "h003": 2.07,
@@ -2273,7 +2273,7 @@
           "h003": 2.16,
           "h006": 2.39,
           "h012": 2.44,
-          "h024": 2.51
+          "h024": 2.56
         },
         "Salete": {
           "h003": 4.0,
@@ -2369,7 +2369,7 @@
           "h003": 3.075,
           "h006": 5.875,
           "h012": 6.075,
-          "h024": 6.205
+          "h024": 6.275
         }
       },
       "regions": {
@@ -2644,7 +2644,7 @@
     "baseline_level": 2.18,
     "pattern": "10_30mm_3h_long"
   },
-  "updated_at": "2026-10-23T17:20:31.030608+00:00",
+  "updated_at": "2026-10-23T20:33:19.758512+00:00",
   "awaiting_rain_reset": false,
   "last_rain_episode": {
     "started_at": 1792114641135,
