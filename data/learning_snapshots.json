@@ -1,372 +1,5 @@
 [
   {
-    "t": 1790369361773,
-    "current": 3.55,
-    "rain": {
-      "h003": 0.034285715115921836,
-      "h006": 0.09128571527877025,
-      "h012": 0.13957142989550317,
-      "h024": 0.15614285777722087,
-      "h048": 0.29795238424447323,
-      "h096": 40.275404745908006
-    },
-    "rain_quality": {
-      "h003": {
-        "stations": 48,
-        "cities": 35,
-        "value": 0.034285715115921836
-      },
-      "h006": {
-        "stations": 48,
-        "cities": 35,
-        "value": 0.09128571527877025
-      },
-      "h012": {
-        "stations": 48,
-        "cities": 35,
-        "value": 0.13957142989550317
-      },
-      "h024": {
-        "stations": 48,
-        "cities": 35,
-        "value": 0.15614285777722087
-      },
-      "h048": {
-        "stations": 48,
-        "cities": 35,
-        "value": 0.29795238424447323
-      },
-      "h096": {
-        "stations": 48,
-        "cities": 35,
-        "value": 40.275404745908006
-      }
-    },
-    "spatial_rain": {
-      "cities": {
-        "Agrolandia": {
-          "h003": 0.0,
-          "h006": 0.0,
-          "h012": 0.0,
-          "h024": 0.0
-        },
-        "Agronomica": {
-          "h003": 0.6,
-          "h006": 1.0,
-          "h012": 1.2,
-          "h024": 1.2
-        },
-        "Atalanta": {
-          "h003": 0.0,
-          "h006": 0.0,
-          "h012": 0.0,
-          "h024": 0.0
-        },
-        "Aurora": {
-          "h003": 0.0,
-          "h006": 0.0,
-          "h012": 0.0,
-          "h024": 0.0
-        },
-        "Braco do Trombudo": {
-          "h003": 0.0,
-          "h006": 0.0,
-          "h012": 0.0,
-          "h024": 0.0
-        },
-        "Dona Emma": {
-          "h003": 0.0,
-          "h006": 0.0,
-          "h012": 0.04,
-          "h024": 0.04
-        },
-        "Ibirama": {
-          "h003": 0.0,
-          "h006": 0.0,
-          "h012": 0.0,
-          "h024": 0.0
-        },
-        "Ituporanga": {
-          "h003": 0.0,
-          "h006": 0.0,
-          "h012": 0.0,
-          "h024": 0.0
-        },
-        "Jose Boiteux": {
-          "h003": 0.0,
-          "h006": 0.8,
-          "h012": 0.8,
-          "h024": 1.0
-        },
-        "Laurentino": {
-          "h003": 0.0,
-          "h006": 0.0,
-          "h012": 0.0,
-          "h024": 0.0
-        },
-        "Lontras": {
-          "h003": 0.0,
-          "h006": 0.0,
-          "h012": 0.0,
-          "h024": 0.0
-        },
-        "Mirim Doce": {
-          "h003": 0.0,
-          "h006": 0.0,
-          "h012": 0.0,
-          "h024": 0.0
-        },
-        "Petrolandia": {
-          "h003": 0.0,
-          "h006": 0.0,
-          "h012": 0.0,
-          "h024": 0.0
-        },
-        "Pouso Redondo": {
-          "h003": 0.0,
-          "h006": 0.0,
-          "h012": 0.0,
-          "h024": 0.0
-        },
-        "Presidente Getulio": {
-          "h003": 0.0,
-          "h006": 0.4,
-          "h012": 0.4,
-          "h024": 0.4
-        },
-        "Presidente Nereu": {
-          "h003": 0.0,
-          "h006": 0.0,
-          "h012": 0.0,
-          "h024": 0.0
-        },
-        "Rio do Campo": {
-          "h003": 0.0,
-          "h006": 0.0,
-          "h012": 0.865,
-          "h024": 0.865
-        },
-        "Rio do Oeste": {
-          "h003": 0.0,
-          "h006": 0.0,
-          "h012": 0.0,
-          "h024": 0.0
-        },
-        "Rio do Sul": {
-          "h003": 0.07,
-          "h006": 0.08,
-          "h012": 0.25,
-          "h024": 0.32
-        },
-        "Salete": {
-          "h003": 0.0,
-          "h006": 0.0,
-          "h012": 0.0,
-          "h024": 0.0
-        },
-        "Santa Terezinha": {
-          "h003": 0.0,
-          "h006": 0.0,
-          "h012": 0.0,
-          "h024": 0.1
-        },
-        "Taio": {
-          "h003": 0.0,
-          "h006": 0.0,
-          "h012": 0.0,
-          "h024": 0.05
-        },
-        "Trombudo Central": {
-          "h003": 0.0,
-          "h006": 0.0,
-          "h012": 0.0,
-          "h024": 0.0
-        },
-        "Vidal Ramos": {
-          "h003": 0.0,
-          "h006": 0.0,
-          "h012": 0.0,
-          "h024": 0.0
-        },
-        "Vitor Meireles": {
-          "h003": 0.07,
-          "h006": 0.07,
-          "h012": 0.1,
-          "h024": 0.11
-        },
-        "Witmarsum": {
-          "h003": 0.06,
-          "h006": 0.11,
-          "h012": 0.11,
-          "h024": 0.11
-        },
-        "Apiuna": {
-          "h003": 0.0,
-          "h006": 0.0,
-          "h012": 0.0,
-          "h024": 0.0
-        },
-        "Ascurra": {
-          "h003": 0.0,
-          "h006": 0.0,
-          "h012": 0.01,
-          "h024": 0.03
-        },
-        "Benedito Novo": {
-          "h003": 0.0,
-          "h006": 0.0,
-          "h012": 0.0,
-          "h024": 0.0
-        },
-        "Doutor Pedrinho": {
-          "h003": 0.0,
-          "h006": 0.0,
-          "h012": 0.0,
-          "h024": 0.0
-        },
-        "Indaial": {
-          "h003": 0.4,
-          "h006": 0.73,
-          "h012": 1.03,
-          "h024": 1.16
-        },
-        "Pomerode": {
-          "h003": 0.0,
-          "h006": 0.0,
-          "h012": 0.0,
-          "h024": 0.0
-        },
-        "Rio dos Cedros": {
-          "h003": 0.0,
-          "h006": 0.0,
-          "h012": 0.025,
-          "h024": 0.025
-        },
-        "Rodeio": {
-          "h003": 0.0,
-          "h006": 0.0,
-          "h012": 0.0,
-          "h024": 0.0
-        },
-        "Timbo": {
-          "h003": 0.0,
-          "h006": 0.005,
-          "h012": 0.055,
-          "h024": 0.055
-        }
-      },
-      "regions": {
-        "alto": {
-          "h003": 0.031,
-          "h006": 0.095,
-          "h012": 0.145,
-          "h024": 0.161
-        },
-        "medio": {
-          "h003": 0.044,
-          "h006": 0.082,
-          "h012": 0.124,
-          "h024": 0.141
-        }
-      },
-      "station_count": 50
-    },
-    "future_rain": {},
-    "dams": {
-      "open_fraction": 0.6,
-      "spill_active": 0,
-      "open": 12,
-      "total": 20,
-      "event_opening": 0,
-      "recent_event_signal": 0
-    },
-    "slope": 0.008199999999999982,
-    "pred": {
-      "2": 3.55,
-      "4": 3.55,
-      "6": 3.55,
-      "8": 3.55,
-      "12": 3.55
-    },
-    "components": {
-      "2": {
-        "unified_curve": true,
-        "curve_value": 3.55,
-        "rain_mm": 0.0,
-        "cm_per_mm": 4.5,
-        "total_response_m": 0.0,
-        "remaining_response_m": 0.0,
-        "response_delay_hours": 6.527,
-        "effective_rate_m_h": 0.0,
-        "acceleration_m_h2": 0.0,
-        "decelerating": false
-      },
-      "4": {
-        "unified_curve": true,
-        "curve_value": 3.55,
-        "rain_mm": 0.0,
-        "cm_per_mm": 4.5,
-        "total_response_m": 0.0,
-        "remaining_response_m": 0.0,
-        "response_delay_hours": 6.527,
-        "effective_rate_m_h": 0.0,
-        "acceleration_m_h2": 0.0,
-        "decelerating": false
-      },
-      "6": {
-        "unified_curve": true,
-        "curve_value": 3.55,
-        "rain_mm": 0.0,
-        "cm_per_mm": 4.5,
-        "total_response_m": 0.0,
-        "remaining_response_m": 0.0,
-        "response_delay_hours": 6.527,
-        "effective_rate_m_h": 0.0,
-        "acceleration_m_h2": 0.0,
-        "decelerating": false
-      },
-      "8": {
-        "unified_curve": true,
-        "curve_value": 3.55,
-        "rain_mm": 0.0,
-        "cm_per_mm": 4.5,
-        "total_response_m": 0.0,
-        "remaining_response_m": 0.0,
-        "response_delay_hours": 6.527,
-        "effective_rate_m_h": 0.0,
-        "acceleration_m_h2": 0.0,
-        "decelerating": false
-      },
-      "12": {
-        "unified_curve": true,
-        "curve_value": 3.55,
-        "rain_mm": 0.0,
-        "cm_per_mm": 4.5,
-        "total_response_m": 0.0,
-        "remaining_response_m": 0.0,
-        "response_delay_hours": 6.527,
-        "effective_rate_m_h": 0.0,
-        "acceleration_m_h2": 0.0,
-        "decelerating": false
-      }
-    },
-    "actual_2": 3.51,
-    "error_2": 0.040000000000000036,
-    "resolved_2": "2026-09-25T23:20:42.796220+00:00",
-    "actual_4": 3.48,
-    "error_4": 0.06999999999999984,
-    "resolved_4": "2026-09-26T01:20:59.210681+00:00",
-    "actual_6": 3.46,
-    "error_6": 0.08999999999999986,
-    "resolved_6": "2026-09-26T03:22:11.072612+00:00",
-    "actual_8": 3.43,
-    "error_8": 0.11999999999999966,
-    "resolved_8": "2026-09-26T05:21:33.387892+00:00",
-    "actual_12": 3.5,
-    "error_12": 0.04999999999999982,
-    "resolved_12": "2026-09-26T09:21:56.339112+00:00"
-  },
-  {
     "t": 1790370126627,
     "current": 3.55,
     "rain": {
@@ -541972,7 +541605,10 @@
     "resolved_4": "2026-10-25T14:02:12.085868+00:00",
     "actual_6": 2.22,
     "error_6": 0.5749,
-    "resolved_6": "2026-10-25T17:38:19.586535+00:00"
+    "resolved_6": "2026-10-25T17:38:19.586535+00:00",
+    "actual_8": 2.45,
+    "error_8": 0.5141,
+    "resolved_8": "2026-10-25T19:57:09.355621+00:00"
   },
   {
     "t": 1792936931824,
@@ -542327,7 +541963,10 @@
     },
     "actual_2": 2.22,
     "error_2": 0.0044999999999997264,
-    "resolved_2": "2026-10-25T17:38:19.586577+00:00"
+    "resolved_2": "2026-10-25T17:38:19.586577+00:00",
+    "actual_4": 2.45,
+    "error_4": -0.0394000000000001,
+    "resolved_4": "2026-10-25T19:57:09.355669+00:00"
   },
   {
     "t": 1792949899353,
@@ -542677,6 +542316,361 @@
         "response_delay_hours": 23.787,
         "effective_rate_m_h": 0.01902,
         "acceleration_m_h2": -0.00197,
+        "decelerating": true
+      }
+    },
+    "actual_2": 2.52,
+    "error_2": -0.1459999999999999,
+    "resolved_2": "2026-10-25T19:57:09.355704+00:00"
+  },
+  {
+    "t": 1792958229162,
+    "current": 2.52,
+    "rain": {
+      "h003": 0.15285714124994618,
+      "h006": 1.0039761821029798,
+      "h012": 1.2239523658795015,
+      "h024": 2.943809532906328,
+      "h048": 31.420333462669735,
+      "h096": 35.350190644037156
+    },
+    "rain_quality": {
+      "h003": {
+        "stations": 48,
+        "cities": 35,
+        "value": 0.15285714124994618
+      },
+      "h006": {
+        "stations": 48,
+        "cities": 35,
+        "value": 1.0039761821029798
+      },
+      "h012": {
+        "stations": 48,
+        "cities": 35,
+        "value": 1.2239523658795015
+      },
+      "h024": {
+        "stations": 48,
+        "cities": 35,
+        "value": 2.943809532906328
+      },
+      "h048": {
+        "stations": 48,
+        "cities": 35,
+        "value": 31.420333462669735
+      },
+      "h096": {
+        "stations": 48,
+        "cities": 35,
+        "value": 35.350190644037156
+      }
+    },
+    "spatial_rain": {
+      "cities": {
+        "Agrolandia": {
+          "h003": 0.0,
+          "h006": 0.0,
+          "h012": 0.0,
+          "h024": 0.0
+        },
+        "Agronomica": {
+          "h003": 0.0,
+          "h006": 0.0,
+          "h012": 0.0,
+          "h024": 0.0
+        },
+        "Atalanta": {
+          "h003": 0.0,
+          "h006": 1.2,
+          "h012": 2.0,
+          "h024": 2.2
+        },
+        "Aurora": {
+          "h003": 0.025,
+          "h006": 0.5,
+          "h012": 0.605,
+          "h024": 0.605
+        },
+        "Braco do Trombudo": {
+          "h003": 0.0,
+          "h006": 0.0,
+          "h012": 0.0,
+          "h024": 0.0
+        },
+        "Dona Emma": {
+          "h003": 0.0,
+          "h006": 0.05,
+          "h012": 0.18,
+          "h024": 3.11
+        },
+        "Ibirama": {
+          "h003": 0.2,
+          "h006": 0.2,
+          "h012": 1.0,
+          "h024": 1.6
+        },
+        "Ituporanga": {
+          "h003": 0.0,
+          "h006": 0.467,
+          "h012": 0.733,
+          "h024": 0.733
+        },
+        "Jose Boiteux": {
+          "h003": 0.0,
+          "h006": 0.0,
+          "h012": 1.0,
+          "h024": 3.0
+        },
+        "Laurentino": {
+          "h003": 0.0,
+          "h006": 0.0,
+          "h012": 0.0,
+          "h024": 0.0
+        },
+        "Lontras": {
+          "h003": 0.0,
+          "h006": 0.0,
+          "h012": 0.4,
+          "h024": 0.4
+        },
+        "Mirim Doce": {
+          "h003": 0.0,
+          "h006": 0.0,
+          "h012": 0.0,
+          "h024": 0.2
+        },
+        "Petrolandia": {
+          "h003": 0.0,
+          "h006": 0.2,
+          "h012": 1.0,
+          "h024": 1.0
+        },
+        "Pouso Redondo": {
+          "h003": 0.0,
+          "h006": 0.0,
+          "h012": 0.0,
+          "h024": 0.0
+        },
+        "Presidente Getulio": {
+          "h003": 0.0,
+          "h006": 0.0,
+          "h012": 0.8,
+          "h024": 2.0
+        },
+        "Presidente Nereu": {
+          "h003": 0.0,
+          "h006": 0.4,
+          "h012": 0.6,
+          "h024": 0.6
+        },
+        "Rio do Campo": {
+          "h003": 0.0,
+          "h006": 0.0,
+          "h012": 0.34,
+          "h024": 4.965
+        },
+        "Rio do Oeste": {
+          "h003": 0.0,
+          "h006": 0.0,
+          "h012": 0.0,
+          "h024": 0.0
+        },
+        "Rio do Sul": {
+          "h003": 0.0,
+          "h006": 0.0,
+          "h012": 0.0,
+          "h024": 0.0
+        },
+        "Salete": {
+          "h003": 0.0,
+          "h006": 2.0,
+          "h012": 2.0,
+          "h024": 3.2
+        },
+        "Santa Terezinha": {
+          "h003": 0.0,
+          "h006": 4.0,
+          "h012": 4.0,
+          "h024": 9.1
+        },
+        "Taio": {
+          "h003": 0.0,
+          "h006": 0.002,
+          "h012": 0.79,
+          "h024": 1.742
+        },
+        "Trombudo Central": {
+          "h003": 0.125,
+          "h006": 0.13,
+          "h012": 0.13,
+          "h024": 0.16
+        },
+        "Vidal Ramos": {
+          "h003": 0.0,
+          "h006": 0.0,
+          "h012": 0.0,
+          "h024": 0.0
+        },
+        "Vitor Meireles": {
+          "h003": 0.0,
+          "h006": 0.54,
+          "h012": 0.7,
+          "h024": 8.64
+        },
+        "Witmarsum": {
+          "h003": 0.0,
+          "h006": 4.45,
+          "h012": 4.64,
+          "h024": 11.17
+        },
+        "Apiuna": {
+          "h003": 3.6,
+          "h006": 5.0,
+          "h012": 5.0,
+          "h024": 5.6
+        },
+        "Ascurra": {
+          "h003": 0.6,
+          "h006": 1.0,
+          "h012": 1.0,
+          "h024": 2.6
+        },
+        "Benedito Novo": {
+          "h003": 0.0,
+          "h006": 0.0,
+          "h012": 0.0,
+          "h024": 3.8
+        },
+        "Doutor Pedrinho": {
+          "h003": 0.0,
+          "h006": 2.8,
+          "h012": 2.8,
+          "h024": 5.0
+        },
+        "Indaial": {
+          "h003": 0.0,
+          "h006": 3.6,
+          "h012": 3.6,
+          "h024": 5.4
+        },
+        "Pomerode": {
+          "h003": 0.0,
+          "h006": 0.6,
+          "h012": 0.6,
+          "h024": 2.8
+        },
+        "Rio dos Cedros": {
+          "h003": 0.0,
+          "h006": 3.32,
+          "h012": 3.45,
+          "h024": 9.455
+        },
+        "Rodeio": {
+          "h003": 0.8,
+          "h006": 4.6,
+          "h012": 5.2,
+          "h024": 7.0
+        },
+        "Timbo": {
+          "h003": 0.0,
+          "h006": 0.08,
+          "h012": 0.27,
+          "h024": 6.953
+        }
+      },
+      "regions": {
+        "alto": {
+          "h003": 0.013,
+          "h006": 0.544,
+          "h012": 0.805,
+          "h024": 2.093
+        },
+        "medio": {
+          "h003": 0.556,
+          "h006": 2.333,
+          "h012": 2.436,
+          "h024": 5.401
+        }
+      },
+      "station_count": 50
+    },
+    "future_rain": {},
+    "dams": {
+      "open_fraction": 0.5,
+      "spill_active": 0,
+      "open": 10,
+      "total": 20,
+      "event_opening": 0,
+      "recent_event_signal": 0
+    },
+    "slope": 0.08120000000000002,
+    "pred": {
+      "2": 2.6271,
+      "4": 2.7687,
+      "6": 2.9207,
+      "8": 3.0592,
+      "12": 3.1988
+    },
+    "components": {
+      "2": {
+        "unified_curve": true,
+        "curve_value": 2.6271,
+        "rain_mm": 31.678,
+        "cm_per_mm": 4.7,
+        "total_response_m": 1.4888,
+        "remaining_response_m": 0.6788,
+        "response_delay_hours": 23.787,
+        "effective_rate_m_h": 0.04088,
+        "acceleration_m_h2": -0.01381,
+        "decelerating": true
+      },
+      "4": {
+        "unified_curve": true,
+        "curve_value": 2.7687,
+        "rain_mm": 31.678,
+        "cm_per_mm": 4.7,
+        "total_response_m": 1.4888,
+        "remaining_response_m": 0.6788,
+        "response_delay_hours": 23.787,
+        "effective_rate_m_h": 0.04088,
+        "acceleration_m_h2": -0.01381,
+        "decelerating": true
+      },
+      "6": {
+        "unified_curve": true,
+        "curve_value": 2.9207,
+        "rain_mm": 31.678,
+        "cm_per_mm": 4.7,
+        "total_response_m": 1.4888,
+        "remaining_response_m": 0.6788,
+        "response_delay_hours": 23.787,
+        "effective_rate_m_h": 0.04088,
+        "acceleration_m_h2": -0.01381,
+        "decelerating": true
+      },
+      "8": {
+        "unified_curve": true,
+        "curve_value": 3.0592,
+        "rain_mm": 31.678,
+        "cm_per_mm": 4.7,
+        "total_response_m": 1.4888,
+        "remaining_response_m": 0.6788,
+        "response_delay_hours": 23.787,
+        "effective_rate_m_h": 0.04088,
+        "acceleration_m_h2": -0.01381,
+        "decelerating": true
+      },
+      "12": {
+        "unified_curve": true,
+        "curve_value": 3.1988,
+        "rain_mm": 31.678,
+        "cm_per_mm": 4.7,
+        "total_response_m": 1.4888,
+        "remaining_response_m": 0.6788,
+        "response_delay_hours": 23.787,
+        "effective_rate_m_h": 0.04088,
+        "acceleration_m_h2": -0.01381,
         "decelerating": true
       }
     }
