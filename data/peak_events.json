@@ -84,5 +84,18 @@
     "projected_peak_at_ms": null,
     "projected_peak_at": null,
     "peak_error_m": -1.11
+  },
+  {
+    "event_id": "1793550298283",
+    "completed_at": 1793550298283,
+    "baseline_level": 1.54,
+    "actual_peak_m": 1.71,
+    "actual_peak_at_ms": 1793338921125,
+    "actual_peak_at": "2026-10-30T05:42:01.125000+00:00",
+    "published_peak_m": 1.54,
+    "published_peak_in_hours": 0.0,
+    "projected_peak_at_ms": null,
+    "projected_peak_at": null,
+    "peak_error_m": -0.17
   }
 ]
