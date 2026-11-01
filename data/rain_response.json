@@ -2684,8 +2684,8 @@
     "baseline_level": 1.54,
     "pattern": "0_10mm_3h_long"
   },
-  "updated_at": "2026-11-01T16:24:58.285002+00:00",
-  "awaiting_rain_reset": true,
+  "updated_at": "2026-11-01T20:40:45.216822+00:00",
+  "awaiting_rain_reset": false,
   "last_rain_episode": {
     "started_at": 1793318506193,
     "ended_at": 1793380263148,
