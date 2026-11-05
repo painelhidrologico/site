@@ -2428,21 +2428,21 @@
     "started_at": 1793590674145,
     "rain_started_at": 1793590674145,
     "rain_ended_at": null,
-    "last_rain_active_at": 1793832776223,
+    "last_rain_active_at": 1793847547659,
     "dry_gap_started_at": null,
     "baseline_level": 1.41,
-    "max_level": 4.89,
-    "last_observed_level": 4.89,
+    "max_level": 5.4,
+    "last_observed_level": 5.4,
     "max_rain_h003": 18.82604784057254,
     "max_rain_h006": 24.232214214404422,
     "max_rain_h012": 43.898095437458586,
     "max_rain_h024": 62.68521430151803,
-    "max_rain_h048": 63.7150476818993,
-    "max_rain_h096": 82.32038090115502,
+    "max_rain_h048": 67.66595243272327,
+    "max_rain_h096": 86.20471392131986,
     "rain_baseline_h048": 5.337690473738171,
     "rain_baseline_h096": 14.401928499199096,
-    "event_rain_mm_h048": 58.37735720816113,
-    "event_rain_mm_h096": 67.91845240195592,
+    "event_rain_mm_h048": 62.3282619589851,
+    "event_rain_mm_h096": 71.80278542212076,
     "response_detected_at": 1793673838367,
     "response_level": 1.82,
     "initial_rise_rate_cm_h": 5.380000000000002,
@@ -2689,7 +2689,7 @@
           "h003": 38.0,
           "h006": 53.6,
           "h012": 74.4,
-          "h024": 84.8
+          "h024": 89.0
         },
         "Agronomica": {
           "h003": 24.2,
@@ -2701,7 +2701,7 @@
           "h003": 34.2,
           "h006": 46.2,
           "h012": 64.4,
-          "h024": 71.2
+          "h024": 76.8
         },
         "Aurora": {
           "h003": 43.56,
@@ -2803,7 +2803,7 @@
           "h003": 18.2,
           "h006": 18.2,
           "h012": 46.0,
-          "h024": 64.2
+          "h024": 65.8
         },
         "Santa Terezinha": {
           "h003": 12.8,
@@ -2832,14 +2832,14 @@
         "Vitor Meireles": {
           "h003": 18.11,
           "h006": 18.19,
-          "h012": 28.32,
-          "h024": 39.86
+          "h012": 31.13,
+          "h024": 46.0
         },
         "Witmarsum": {
           "h003": 17.38,
           "h006": 19.95,
           "h012": 49.64,
-          "h024": 67.25
+          "h024": 67.59
         },
         "Apiuna": {
           "h003": 12.8,
@@ -2854,16 +2854,16 @@
           "h024": 47.0
         },
         "Benedito Novo": {
-          "h003": 6.4,
-          "h006": 10.0,
+          "h003": 10.8,
+          "h006": 10.8,
           "h012": 25.6,
-          "h024": 34.2
+          "h024": 39.8
         },
         "Doutor Pedrinho": {
-          "h003": 9.0,
-          "h006": 11.2,
+          "h003": 12.6,
+          "h006": 12.6,
           "h012": 25.8,
-          "h024": 27.0
+          "h024": 29.2
         },
         "Indaial": {
           "h003": 19.2,
@@ -2893,7 +2893,7 @@
           "h003": 14.938,
           "h006": 23.28,
           "h012": 34.142,
-          "h024": 61.98
+          "h024": 65.843
         }
       },
       "regions": {
@@ -2912,10 +2912,10 @@
       },
       "station_count": 50
     },
-    "rain_duration_hours": 67.251,
-    "last_meaningful_rise_at": 1793832776223,
+    "rain_duration_hours": 71.354,
+    "last_meaningful_rise_at": 1793847547659,
     "response_delay_hours": 23.101172777777776,
-    "response_max_level": 4.89
+    "response_max_level": 5.4
   },
   "last_event": {
     "rain_started_at": 1793318506193,
@@ -3176,7 +3176,7 @@
     "baseline_level": 1.54,
     "pattern": "0_10mm_3h_long"
   },
-  "updated_at": "2026-11-04T22:52:56.225433+00:00",
+  "updated_at": "2026-11-05T02:59:07.660720+00:00",
   "awaiting_rain_reset": false,
   "last_rain_episode": {
     "started_at": 1793590674145,
@@ -4102,7 +4102,7 @@
   "similarity_status": {
     "matches": [
       {
-        "score": 0.116,
+        "score": 0.198,
         "pattern": "10_30mm_3h_long",
         "peak_level": 4.53,
         "rise_cm": 128.0,
