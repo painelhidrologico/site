@@ -2429,19 +2429,19 @@
     "rain_started_at": 1793590674145,
     "rain_ended_at": null,
     "last_rain_active_at": 1794080771293,
-    "dry_gap_started_at": null,
+    "dry_gap_started_at": 1794093428439,
     "baseline_level": 1.41,
-    "max_level": 7.32,
-    "last_observed_level": 7.32,
+    "max_level": 7.97,
+    "last_observed_level": 7.97,
     "max_rain_h003": 22.930619019269944,
     "max_rain_h006": 26.582071500732788,
     "max_rain_h012": 53.99616675476233,
     "max_rain_h024": 70.79285711206141,
-    "max_rain_h048": 70.84721424565429,
+    "max_rain_h048": 71.0785711116734,
     "max_rain_h096": 139.2027143296741,
     "rain_baseline_h048": 5.337690473738171,
     "rain_baseline_h096": 14.401928499199096,
-    "event_rain_mm_h048": 65.50952377191612,
+    "event_rain_mm_h048": 65.74088063793522,
     "event_rain_mm_h096": 124.80078583047501,
     "response_detected_at": 1793673838367,
     "response_level": 1.82,
@@ -2797,7 +2797,7 @@
           "h003": 36.62,
           "h006": 48.38,
           "h012": 89.53,
-          "h024": 123.81
+          "h024": 123.85
         },
         "Salete": {
           "h003": 19.0,
@@ -2857,7 +2857,7 @@
           "h003": 11.4,
           "h006": 25.0,
           "h012": 42.4,
-          "h024": 48.4
+          "h024": 49.2
         },
         "Doutor Pedrinho": {
           "h003": 23.2,
@@ -2869,13 +2869,13 @@
           "h003": 28.8,
           "h006": 32.2,
           "h012": 61.6,
-          "h024": 70.4
+          "h024": 71.0
         },
         "Pomerode": {
           "h003": 13.6,
           "h006": 21.4,
           "h012": 42.8,
-          "h024": 53.8
+          "h024": 56.8
         },
         "Rio dos Cedros": {
           "h003": 19.855,
@@ -2907,15 +2907,15 @@
           "h003": 19.036,
           "h006": 22.649,
           "h012": 47.005,
-          "h024": 61.851
+          "h024": 62.229
         }
       },
       "station_count": 50
     },
     "rain_duration_hours": 136.138,
-    "last_meaningful_rise_at": 1794080771293,
+    "last_meaningful_rise_at": 1794093428439,
     "response_delay_hours": 23.101172777777776,
-    "response_max_level": 7.32
+    "response_max_level": 7.97
   },
   "last_event": {
     "rain_started_at": 1793318506193,
@@ -3176,7 +3176,7 @@
     "baseline_level": 1.54,
     "pattern": "0_10mm_3h_long"
   },
-  "updated_at": "2026-11-07T19:46:11.294533+00:00",
+  "updated_at": "2026-11-07T23:17:08.440341+00:00",
   "awaiting_rain_reset": false,
   "last_rain_episode": {
     "started_at": 1793590674145,
