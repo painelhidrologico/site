@@ -13019,8 +13019,8 @@
     "started_at": 1794066920388,
     "threshold_crossed_at": 1794066920388,
     "initial_level": 6.07,
-    "peak_level": 6.07,
-    "peak_at": 1794066920388,
+    "peak_level": 7.32,
+    "peak_at": 1794080771293,
     "max_rise_rate_m_per_h": 0.3924000000000001,
     "samples": [
       {
@@ -13035,11 +13035,35 @@
           "h096": 136.86354674384708
         },
         "slope_m_per_h": 0.3924
+      },
+      {
+        "t": 1794080771293,
+        "level": 7.32,
+        "rain": {
+          "h003": 1.9030952416715166,
+          "h006": 8.115261945128442,
+          "h012": 49.22554738408043,
+          "h024": 70.79285711206141,
+          "h048": 70.84721424565429,
+          "h096": 139.2027143296741
+        },
+        "slope_m_per_h": 0.316956
       }
     ],
     "dam_events": [
       {
         "t": 1794066920388,
+        "dams": {
+          "open_fraction": 0.0,
+          "spill_active": 0,
+          "open": 0,
+          "total": 20,
+          "event_opening": 0,
+          "recent_event_signal": 0
+        }
+      },
+      {
+        "t": 1794080771293,
         "dams": {
           "open_fraction": 0.0,
           "spill_active": 0,
