@@ -2691,22 +2691,27 @@
     "dry_gap_started_at": 1794572847926,
     "baseline_level": 3.57,
     "max_level": 3.69,
-    "last_observed_level": 3.69,
+    "last_observed_level": 3.53,
     "max_rain_h003": 3.0942856909441097,
     "max_rain_h006": 3.9458571625607353,
     "max_rain_h012": 5.101809576916552,
     "max_rain_h024": 5.153166650519484,
     "max_rain_h048": 5.686880921732102,
-    "max_rain_h096": 6.56733332150394,
+    "max_rain_h096": 6.618119076124969,
     "rain_baseline_h048": 4.413595273505364,
     "rain_baseline_h096": 5.085333318653561,
     "event_rain_mm_h048": 1.2732856482267376,
-    "event_rain_mm_h096": 1.4820000028503788,
+    "event_rain_mm_h096": 1.5327857574714079,
     "response_detected_at": 1794572847926,
     "response_level": 3.69,
     "initial_rise_rate_cm_h": 3.300705882352939,
     "max_rise_rate_cm_h": 3.300705882352939,
-    "response_checkpoints_cm": {},
+    "response_checkpoints_cm": {
+      "1": 0.0,
+      "2": 0.0,
+      "4": 0.0,
+      "6": 0.0
+    },
     "spatial_start": {
       "cities": {
         "Agrolandia": {
@@ -2987,10 +2992,10 @@
           "h024": 0.133
         },
         "Jose Boiteux": {
-          "h003": 0.0,
+          "h003": 0.6,
           "h006": 4.4,
           "h012": 4.4,
-          "h024": 4.6
+          "h024": 5.2
         },
         "Laurentino": {
           "h003": 0.0,
@@ -3090,8 +3095,8 @@
         },
         "Witmarsum": {
           "h003": 0.0,
-          "h006": 0.0,
-          "h012": 0.0,
+          "h006": 0.01,
+          "h012": 0.01,
           "h024": 0.04
         },
         "Apiuna": {
@@ -3101,10 +3106,10 @@
           "h024": 0.8
         },
         "Ascurra": {
-          "h003": 0.0,
-          "h006": 0.2,
-          "h012": 0.2,
-          "h024": 0.2
+          "h003": 1.0,
+          "h006": 1.0,
+          "h012": 1.0,
+          "h024": 1.2
         },
         "Benedito Novo": {
           "h003": 0.0,
@@ -3429,7 +3434,7 @@
     "baseline_level": 1.41,
     "pattern": "10_30mm_3h_long"
   },
-  "updated_at": "2026-11-13T12:27:27.927885+00:00",
+  "updated_at": "2026-11-13T19:56:38.867970+00:00",
   "awaiting_rain_reset": false,
   "last_rain_episode": {
     "started_at": 1793590674145,
