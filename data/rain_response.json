@@ -2688,24 +2688,24 @@
     "rain_started_at": 1794527142445,
     "rain_ended_at": null,
     "last_rain_active_at": 1794543507239,
-    "dry_gap_started_at": null,
+    "dry_gap_started_at": 1794572847926,
     "baseline_level": 3.57,
-    "max_level": 3.57,
-    "last_observed_level": 3.53,
+    "max_level": 3.69,
+    "last_observed_level": 3.69,
     "max_rain_h003": 3.0942856909441097,
     "max_rain_h006": 3.9458571625607353,
     "max_rain_h012": 5.101809576916552,
     "max_rain_h024": 5.153166650519484,
     "max_rain_h048": 5.686880921732102,
-    "max_rain_h096": 6.558333392725104,
+    "max_rain_h096": 6.56733332150394,
     "rain_baseline_h048": 4.413595273505364,
     "rain_baseline_h096": 5.085333318653561,
     "event_rain_mm_h048": 1.2732856482267376,
-    "event_rain_mm_h096": 1.4730000740715434,
-    "response_detected_at": null,
-    "response_level": null,
-    "initial_rise_rate_cm_h": null,
-    "max_rise_rate_cm_h": 1.9502999999999964,
+    "event_rain_mm_h096": 1.4820000028503788,
+    "response_detected_at": 1794572847926,
+    "response_level": 3.69,
+    "initial_rise_rate_cm_h": 3.300705882352939,
+    "max_rise_rate_cm_h": 3.300705882352939,
     "response_checkpoints_cm": {},
     "spatial_start": {
       "cities": {
@@ -2945,10 +2945,10 @@
           "h024": 0.0
         },
         "Agronomica": {
-          "h003": 0.0,
-          "h006": 0.0,
-          "h012": 0.0,
-          "h024": 0.0
+          "h003": 0.2,
+          "h006": 0.2,
+          "h012": 0.2,
+          "h024": 0.2
         },
         "Atalanta": {
           "h003": 1.8,
@@ -2960,7 +2960,7 @@
           "h003": 5.245,
           "h006": 5.25,
           "h012": 5.325,
-          "h024": 5.325
+          "h024": 5.425
         },
         "Braco do Trombudo": {
           "h003": 0.8,
@@ -3165,7 +3165,10 @@
       },
       "station_count": 50
     },
-    "rain_duration_hours": 4.546
+    "rain_duration_hours": 4.546,
+    "last_meaningful_rise_at": 1794572847926,
+    "response_delay_hours": 12.695966944444445,
+    "response_max_level": 3.69
   },
   "last_event": {
     "rain_started_at": 1793590674145,
@@ -3426,7 +3429,7 @@
     "baseline_level": 1.41,
     "pattern": "10_30mm_3h_long"
   },
-  "updated_at": "2026-11-13T04:18:27.241413+00:00",
+  "updated_at": "2026-11-13T12:27:27.927885+00:00",
   "awaiting_rain_reset": false,
   "last_rain_episode": {
     "started_at": 1793590674145,
@@ -4352,28 +4355,28 @@
   "similarity_status": {
     "matches": [
       {
-        "score": 0.175,
-        "pattern": "0_10mm_3h_long",
-        "peak_level": 1.71,
-        "rise_cm": 17.0,
-        "delay_hours": 11.624
-      },
-      {
-        "score": 0.174,
+        "score": 0.179,
         "pattern": "0_10mm_3h_short",
         "peak_level": 3.64,
         "rise_cm": 12.0,
         "delay_hours": 6.541
       },
       {
-        "score": 0.09,
+        "score": 0.173,
+        "pattern": "0_10mm_3h_long",
+        "peak_level": 1.71,
+        "rise_cm": 17.0,
+        "delay_hours": 11.624
+      },
+      {
+        "score": 0.095,
         "pattern": "0_10mm_3h_long",
         "peak_level": 2.85,
         "rise_cm": 29.0,
         "delay_hours": 8.6
       },
       {
-        "score": 0.07,
+        "score": 0.075,
         "pattern": "10_30mm_3h_long",
         "peak_level": 3.17,
         "rise_cm": 99.0,
