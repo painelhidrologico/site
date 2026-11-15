@@ -1,24 +1,23 @@
 {
   "version": 12,
-  "updated_at": "2026-11-14T22:57:30.379457+00:00",
-  "evaluated": 13447,
+  "updated_at": "2026-11-15T02:22:26.206854+00:00",
+  "evaluated": 13449,
   "mae_m": {
     "2": 0.0965,
     "4": 0.195,
     "6": 0.305,
-    "12": 0.5592,
+    "12": 0.5591,
     "24": 0.9259,
     "8": 0.4167
   },
   "metrics_by_horizon": {
     "2": {
-      "evaluated": 2646,
+      "evaluated": 2647,
       "sum_abs_error": 255.46060000000048,
       "sum_error": 14.746800000000007,
       "mae_m": 0.0965,
       "bias_m": 0.0056,
       "recent_abs_errors": [
-        0.0916,
         0.0373,
         0.0276,
         0.0163,
@@ -67,10 +66,10 @@
         0.0317,
         0.0638,
         0.012,
-        0.07
+        0.07,
+        0.0
       ],
       "recent_errors": [
-        0.0916,
         -0.0373,
         -0.0276,
         0.0163,
@@ -119,10 +118,10 @@
         -0.0317,
         0.0638,
         0.012,
-        0.07
+        0.07,
+        0.0
       ],
       "recent_persistence_errors": [
-        0.07,
         0.07,
         0.06,
         0.01,
@@ -171,7 +170,8 @@
         0.04,
         0.05,
         0.0,
-        0.1
+        0.1,
+        0.0
       ]
     },
     "4": {
@@ -664,13 +664,12 @@
       ]
     },
     "12": {
-      "evaluated": 2626,
-      "sum_abs_error": 1468.5775999999898,
-      "sum_error": 497.1862000000012,
-      "mae_m": 0.5592,
-      "bias_m": 0.1893,
+      "evaluated": 2627,
+      "sum_abs_error": 1468.6675999999898,
+      "sum_error": 497.0962000000012,
+      "mae_m": 0.5591,
+      "bias_m": 0.1892,
       "recent_abs_errors": [
-        0.12,
         0.1488,
         0.29,
         0.2721,
@@ -719,10 +718,10 @@
         0.08,
         0.182,
         0.162,
-        0.302
+        0.302,
+        0.09
       ],
       "recent_errors": [
-        -0.12,
         0.1488,
         0.29,
         0.2721,
@@ -771,10 +770,10 @@
         0.08,
         0.182,
         0.162,
-        0.302
+        0.302,
+        -0.09
       ],
       "recent_persistence_errors": [
-        0.12,
         0.01,
         0.29,
         0.02,
@@ -823,7 +822,8 @@
         0.08,
         0.07,
         0.13,
-        0.14
+        0.14,
+        0.09
       ]
     },
     "24": {
@@ -876,11 +876,11 @@
     "24": 1.0
   },
   "bias_correction": {
-    "2": 0.01486,
+    "2": 0.0155,
     "4": 0.01584,
     "6": 0.00904,
     "8": 0.00305,
-    "12": 0.01371,
+    "12": 0.0135,
     "24": 0.0
   },
   "persistence_blend": {
@@ -888,7 +888,7 @@
     "4": 0.00234,
     "6": 0.0142,
     "8": 0.02427,
-    "12": 0.03704,
+    "12": 0.03334,
     "24": 0.0
   },
   "damping": {
@@ -903,32 +903,32 @@
     "h003": {
       "stations": 48,
       "cities": 35,
-      "value": 0.0
+      "value": 0.0003571428491600922
     },
     "h006": {
       "stations": 48,
       "cities": 35,
-      "value": 0.010571428814104625
+      "value": 0.0003571428491600922
     },
     "h012": {
       "stations": 48,
       "cities": 35,
-      "value": 0.012714285909065178
+      "value": 0.011642857414803335
     },
     "h024": {
       "stations": 48,
       "cities": 35,
-      "value": 0.015000000250126634
+      "value": 0.014785714593849012
     },
     "h048": {
       "stations": 48,
       "cities": 35,
-      "value": 3.709142857923039
+      "value": 0.08321428644870009
     },
     "h096": {
       "stations": 48,
       "cities": 35,
-      "value": 5.981309482668127
+      "value": 5.878523822128773
     }
   },
   "spatial_rain": {
@@ -1032,7 +1032,7 @@
       "Rio do Campo": {
         "h003": 0.0,
         "h006": 0.0,
-        "h012": 0.01,
+        "h012": 0.0,
         "h024": 0.01
       },
       "Rio do Oeste": {
@@ -1042,10 +1042,10 @@
         "h024": 0.0
       },
       "Rio do Sul": {
-        "h003": 0.0,
-        "h006": 0.02,
-        "h012": 0.04,
-        "h024": 0.04
+        "h003": 0.01,
+        "h006": 0.01,
+        "h012": 0.05,
+        "h024": 0.05
       },
       "Salete": {
         "h003": 0.0,
@@ -1081,12 +1081,12 @@
         "h003": 0.0,
         "h006": 0.0,
         "h012": 0.0,
-        "h024": 0.02
+        "h024": 0.0
       },
       "Witmarsum": {
         "h003": 0.0,
         "h006": 0.0,
-        "h012": 0.04,
+        "h012": 0.0,
         "h024": 0.1
       },
       "Apiuna": {
@@ -1138,22 +1138,22 @@
         "h024": 0.0
       },
       "Timbo": {
-        "h003": 0.0,
-        "h006": 0.35,
-        "h012": 0.35,
-        "h024": 0.35
+        "h003": 0.002,
+        "h006": 0.002,
+        "h012": 0.353,
+        "h024": 0.353
       }
     },
     "regions": {
       "alto": {
         "h003": 0.0,
-        "h006": 0.001,
-        "h012": 0.004,
-        "h024": 0.007
+        "h006": 0.0,
+        "h012": 0.002,
+        "h024": 0.006
       },
       "medio": {
         "h003": 0.0,
-        "h006": 0.039,
+        "h006": 0.0,
         "h012": 0.039,
         "h024": 0.039
       }
@@ -4396,7 +4396,7 @@
       "baseline_level": 3.57,
       "pattern": "0_10mm_3h_medium"
     },
-    "updated_at": "2026-11-14T22:57:30.168017+00:00",
+    "updated_at": "2026-11-15T02:22:25.961766+00:00",
     "awaiting_rain_reset": false,
     "last_rain_episode": {
       "started_at": 1794527142445,
@@ -5717,9 +5717,9 @@
     "event_id": "1794664873755",
     "mode": "recessao",
     "status": "rio_em_recessao",
-    "current_level_m": 3.38,
+    "current_level_m": 3.39,
     "peak_level_m": 3.69,
-    "peak_at": "2026-11-14T01:00:00+00:00",
+    "peak_at": "2026-11-14T03:00:00+00:00",
     "published_peak_m": 3.57,
     "published_peak_in_hours": 0.0,
     "projected_peak_at_ms": null,
@@ -5727,17 +5727,17 @@
     "peak_window_hours": 0.0,
     "confidence": 0.9,
     "update_interval_minutes": 60,
-    "peak_at_ms": 1794618000000,
-    "peak_age_hours": 21.96,
-    "fallen_m": 0.31,
-    "fallen_cm": 31.0,
-    "remaining_post_peak_hours": 2.04,
+    "peak_at_ms": 1794625200000,
+    "peak_age_hours": 23.37,
+    "fallen_m": 0.3,
+    "fallen_cm": 30.0,
+    "remaining_post_peak_hours": 0.63,
     "rain_24h_mm": 0.0,
     "rain_since_peak_mm": 0.0,
     "rain_3h_mm": 0.0,
-    "rain_since_peak_last_at": 1794697050167,
+    "rain_since_peak_last_at": 1794709345960,
     "rain_since_peak_last_h003": 0.0,
-    "rain_since_peak_started_at": 1794697050167,
+    "rain_since_peak_started_at": 1794709345960,
     "new_rain_detected": false,
     "new_rise_detected": false,
     "message": "Pico confirmado. Mantido até o encerramento do evento sem gatilho de 5 mm em 3h.",
@@ -5748,8 +5748,8 @@
   "recession": {
     "active": false,
     "reason": "rise_detected_after_peak",
-    "rise_count": 2,
-    "rise_total_m": 0.04
+    "rise_count": 4,
+    "rise_total_m": 0.06
   },
   "peak_learning": {
     "evaluated_events": 10,
