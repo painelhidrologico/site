@@ -2981,17 +2981,17 @@
     "last_rain_active_at": 1794791689308,
     "dry_gap_started_at": 1794816034888,
     "baseline_level": 3.19,
-    "max_level": 3.76,
-    "last_observed_level": 3.76,
+    "max_level": 3.82,
+    "last_observed_level": 3.82,
     "max_rain_h003": 19.91530949601105,
     "max_rain_h006": 21.04330960554736,
     "max_rain_h012": 22.225928448353496,
     "max_rain_h024": 22.817547584715342,
-    "max_rain_h048": 22.83797616050357,
+    "max_rain_h048": 22.915404660361155,
     "max_rain_h096": 28.054428468431745,
     "rain_baseline_h048": 21.651214311236426,
     "rain_baseline_h096": 26.875381142752513,
-    "event_rain_mm_h048": 1.1867618492671426,
+    "event_rain_mm_h048": 1.2641903491247284,
     "event_rain_mm_h096": 1.1790473256792318,
     "response_detected_at": 1794791689308,
     "response_level": 3.48,
@@ -3001,7 +3001,8 @@
       "1": 28.0,
       "2": 28.0,
       "4": 28.0,
-      "6": 28.0
+      "6": 28.0,
+      "12": 34.0
     },
     "spatial_start": {
       "cities": {
@@ -3322,7 +3323,7 @@
           "h003": 36.8,
           "h006": 37.8,
           "h012": 37.8,
-          "h024": 37.8
+          "h024": 38.0
         },
         "Presidente Nereu": {
           "h003": 28.4,
@@ -3376,7 +3377,7 @@
           "h003": 20.0,
           "h006": 20.0,
           "h012": 20.0,
-          "h024": 20.0
+          "h024": 20.6
         },
         "Vitor Meireles": {
           "h003": 6.16,
@@ -3462,9 +3463,9 @@
       "station_count": 50
     },
     "rain_duration_hours": 3.965,
-    "last_meaningful_rise_at": 1794816034888,
+    "last_meaningful_rise_at": 1794852662666,
     "response_delay_hours": 3.9651675,
-    "response_max_level": 3.76
+    "response_max_level": 3.82
   },
   "last_event": {
     "rain_started_at": 1794527142445,
@@ -3725,7 +3726,7 @@
     "baseline_level": 3.57,
     "pattern": "0_10mm_3h_medium"
   },
-  "updated_at": "2026-11-16T08:00:34.889307+00:00",
+  "updated_at": "2026-11-16T18:11:02.667994+00:00",
   "awaiting_rain_reset": false,
   "last_rain_episode": {
     "started_at": 1794527142445,
